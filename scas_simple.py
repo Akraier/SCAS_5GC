@@ -3,6 +3,7 @@ import os
 import argparse
 import multiprocessing
 import subprocess
+import signal
 from sctp import *
 
 
@@ -56,22 +57,27 @@ def sniff(interface):
     print("[+] Sniffing for packets...", flush=True)
 
     #Creating raw socket for sniffing any packet on the interface
+    global raw_socket 
     raw_socket = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons(3))
+    raw_socket.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 2**30)  # Large buffer
+    #raw_socket.setblocking(False)  # Non-blocking mode
     raw_socket.bind((interface, 0x0003))
 
     #Creating queues to store packets and avoid received packets not processed
-    _pkt_queue = multiprocessing.SimpleQueue()
-    pkt_queue_ = multiprocessing.SimpleQueue()
+    """ _pkt_queue = multiprocessing.SimpleQueue()
+    pkt_queue_ = multiprocessing.SimpleQueue() """
     pkt_counter = 0
 
     while True:
         try:
             pkt_counter += 1
             packet = raw_socket.recvfrom(65535)[0]
+            print(f"[+]Packet captured:\n>>{packet[23:24]}")
+            process_pkt(packet)
             #print(f"[+]Packet captured:\n>>{packet.hex()}")
-            _pkt_queue.put(packet)
-            multiprocessing.Process(target=process_queue, args=(_pkt_queue, pkt_queue_,pkt_counter)).start()
-
+            """ _pkt_queue.put(packet)
+            p = multiprocessing.Process(target=process_queue, args=(_pkt_queue, pkt_queue_,pkt_counter)).start()
+            p.daemon = True """
         except Exception as e:
             print("[!]Error sniffing packets:", e)
 
@@ -86,6 +92,21 @@ def start_free5gc(path):
     except Exception as e:
         print("Error starting Free5GC:", e, flush=True)
 
+
+#Signal handler for graceful docker compose shutdown
+def graceful_shutdown(signal, frame):
+    #Function to handle cleanup and shutdown gracefully
+    print(f"\nGracefully shutting down... Signal: {signal}")
+    os.system("docker compose -f {} down >/dev/null 2>&1".format(free5g_path))
+    print("[-]Docker Compose shutdown completed.")
+    if raw_socket:
+        raw_socket.close
+        print("[-]Raw socket closed")
+    exit(0)
+
+signal.signal(signal.SIGINT, graceful_shutdown) 
+#signal.signal(signal.SIGTERM, graceful_shutdown)
+#signal.signal(signal.SIGABRT, graceful_shutdown) 
 
 if __name__ == "__main__":
     argparse = argparse.ArgumentParser(description="SCAS_AMF")
