@@ -4,6 +4,7 @@ import signal
 import time
 import json
 import sctp
+import socket
 import logging
 import argparse
 import traceback
@@ -37,13 +38,14 @@ Function that retrieves container's ip
 
 def container_ip(container):
     output = subprocess.run(
-        ["docker", "inspect", "-f", "'{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'", {container}], 
+        ["docker", "inspect", "-f", "'{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'", container], 
         capture_output=True, 
         text=True)
     if output.returncode != 0:
         print("[!]Error retrieving IP")
         return None
     ip = output.stdout.strip()
+    ip = ip.strip("'")
     return ip
 
 """
@@ -109,7 +111,7 @@ Create sctp association and send message
 
 def sctp_send(ip, port, raw_message):
     
-    sctp_socket = sctp.sctpsocket_tcp()
+    sctp_socket = sctp.sctpsocket_tcp(socket.AF_INET)
 
     sctp_socket.bind(('0.0.0.0', 5000))
 
@@ -131,16 +133,24 @@ def dereg_resp_find(pipe):
     while time.time() - start < 10:
         try:
             pkt = Qmanager.get('qpkt')
-            ngap = NGAP()
-            ngap.dissect_ngap_pdu(pkt)
-            nas = ngap.get_nas_pdu()
-            if "Deregistration accept" in nas.pdu["PlainNASPDU"]["message_type"] :
-                return False
+            if pkt.haslayer(SCTPChunkData) and pkt[SCTPChunkData].proto_id == 60:
+                #NGAP found
+                ngap = NGAP()
+                ngap.dissect_ngap_pdu(pkt[SCTPChunkData].data)
+                nas = ngap.get_nas_pdu()
+                if nas is None:
+                    continue
+                elif "Deregistration accept" in nas["PlainNASPDU"]["message_type"] :
+                    pipe.send(False)
+                    return 
+            else:
+                continue
         except Exception as e:
             traceback.print_exc()
             print(f"[!] Error looking for DEREGISTRATION ACCEPT: {e}")
             continue
-    return True
+    pipe.send(True)
+    return 
 
 """
 Test case: TC_AMF_NAS_INTEGRITY_FAILURE
@@ -164,46 +174,54 @@ Attention points:
 """
 def tc_amf_nas_integrity_failure():
     print("[+] amf_nas_integrity test case STARTED")
-    while Qmanager.empty('qpkt'):
-        """queue will be filled only once the env is set and ready""" 
-        time.sleep(1)
+
     
-    ue_status = ueransim_ue_interaction("status")
-    if "MM-REGISTERED" not in ue_status or "RM-REGISTERED" not in ue_status:
-        """ 
-        no real need to check since Reg Req is sent automatically by UERANSIM after deregistration
-        not known way to manually trigger Reg Req in UE
-        So if in this case, a blocking error probably occurred with UERANSIM 
-        conservative approach kill free5gc and exit 
-        """
-        print("[!]UE not registered")
-        graceful_shutdown(signal.SIGTERM, None)
+    while True:
+        ue_status = ueransim_ue_interaction("status")
+        if "MM-REGISTERED" not in ue_status or "RM-REGISTERED" not in ue_status:
+            """ 
+            Sync with ue waiting for registration  
+            """
+            print("[!]UE not yet Registered")
+            #print(ue_status)
+            time.sleep(2)
+            continue
+        else:
+            print("[+]UE Registered")
+            break
         
     """ 
     2. The AMF sends the Security Mode Complete message to the UE.
     scan q looking for Security Mode Complete message 
     """
 
-    smc_fnd = False
-
     """
     qngap queue should have been created by sniff process at this point, in case not, wait for
     """
     
-    while Qmanager.empty('qngap'):
+    while Qmanager.empty('qpkt'):
         time.sleep(1)
-
+    #Qmanager.add_queue('qngap') #needed?
+    #Qmanager.add_queue('qbkup')
+    ngap = NGAP()
+    nas_pdu = {}
     while True:
 
-        ngap_segment = Qmanager.get('qngap')
-        nas_pdu = ngap_segment.get_nas_pdu()
-    
+        pkt = Qmanager.get('qpkt')
+        if pkt.haslayer(SCTPChunkData) and pkt[SCTPChunkData].proto_id == 60:
+            
+            ngap.dissect_ngap_pdu(pkt[SCTPChunkData].data)
+            nas_pdu = ngap.get_nas_pdu() 
+            if nas_pdu is None:
+                #NO NAS PDU
+                continue
+        else:
+            #NO NGAP PDU
+            continue
         """
         Look for Security Mode Complete message
         """
-        if nas_pdu["epd"] == "Mobility Management Message"\
-                and nas_pdu["sht"] == "Integrity + Encryption by 5GNAS Security Context"\
-                and SEC_MODE_COMPLETE in nas_pdu["end_msg"] :
+        if nas_pdu["PlainNASPDU"]["message_type"] == "Security mode complete":
             print("[+] Security Mode Complete message found")
             break
         else:
@@ -242,16 +260,16 @@ def tc_amf_nas_integrity_failure():
         ngap.dissect_ngap_pdu(bytes.fromhex(data["ngap"]))
         print("[+]Injecting DEREGISTRATION REQUEST with wrong NAS-MAC")
         
-        print("[+]Untampered Deregistration")
-        ngap.print_ngap()   #In case any further clearence is needed
+        print("[+]Untampered Deregistration Retrieved")
+        #ngap.print_ngap()   #In case any further clearence is needed
         mac = ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"]
-        mac_bytes = bytes.from_hex(mac)
-        mac_bytes = 0xffffffff  #overwrite mac
+        mac_bytes = bytes.fromhex(mac)
+        mac_bytes = b'\xff\xff\xff\xff'  #overwrite mac
         mac = mac_bytes.hex()
         print(f"[+] --> Tampered MAC with 0xff: {mac}")
         ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"] = mac
-        print("[+]Tampered Deregistration")
-        ngap.print_ngap()
+        print("[+]Tampered Deregistration Crafted")
+        #ngap.print_ngap()
 
         """ 
         Compose tampered packet
@@ -267,9 +285,10 @@ def tc_amf_nas_integrity_failure():
         """ 
 
         amf_ip = container_ip('amf')
-        gnb_ip = container_ip('ueransim')   #NAS is actually enforced by gnb working as proxy for ue
+        #gnb_ip = container_ip('ueransim')   #NAS is actually enforced by gnb working as proxy for ue
         raw_ngap = ngap.build_ngap_pdu(ngap.segment)
         sctp_send(amf_ip,38412,raw_ngap)
+
         """ while True:
             
             #Looking for sctp data from the actual co
@@ -297,17 +316,18 @@ def tc_amf_nas_integrity_failure():
         dereg_resp_finder.join()
         if result:
             print("[+] AMF NAS INTEGRITY Test Case: PASSED")
+             
             return True
         else:
             print("[+] AMF NAS INTEGRITY Test Case: FAILED")
+            
             return False
-        
     except Exception as e:
         print("[!]Error extracting deregistration request: ")
         traceback.print_exc()
         return None
 
-def n1n2_packet_processing(pkt):
+def packet_processing(pkt):
     """
     In case of N1/N2 Interface we are looking for NGAP segments.
     Following approach: 
@@ -337,13 +357,8 @@ def n1n2_packet_processing(pkt):
                 
                 pkt_counter += 1
                 print(f"[+] Processing NGAP packet #{pkt_counter}")
-                #Dissect NGAP data
-                ngap = NGAP()   
-                if ngap.dissect_ngap_pdu(chunk_data):
-                    ngap.print_ngap()
-                #Store data in queues
-                Qmanager.put('qngap',ngap.segment)
-                Qmanager.put('qpkt', pkt)   
+                Qmanager.put('qngap',pkt)   #store pkt as ngap 
+        Qmanager.put('qpkt', pkt)   #store pkt
     except Exception as e:
         print("[!]Error processing packet:", e)
         print("[!]Exception type:", type(e).__name__)
@@ -371,22 +386,16 @@ def sniff_packets(dump,test):
             print("[!]Error checking interface: ", e)
             continue
     
-    print("[*]Sniffing for packets...", flush=True)
-    
-    #TBD: Packet class is needed?
-    #Test cases selected by protocol(s)
-    if tests[test]["group"] == "NGAP/NAS":
-        #n1n2 interface sniffing
-        Qmanager.add_queue('qngap')
-        packets = sniff(iface="br-free5gc",
-                        filter="sctp port 38412",
-                        prn=lambda packet: n1n2_packet_processing(packet),
-                        store=False)
+    print("[+]Sniffing for packets...", flush=True)
+    packets = sniff(iface="br-free5gc",
+                    filter="sctp port 38412",
+                    prn=lambda packet: Qmanager.put('qpkt',packet),
+                    store=False)    #port
     
         
         
 
-def graceful_shutdown(signal, frame):
+def graceful_shutdown(signal):
     #Function to handle cleanup and shutdown gracefully
     #When multi-process a signal is caught by every process and this function is called multiple times. Watch out>>>Find a method to fix the behavior
     print(f"\nGracefully shutting down... Signal: {signal}")
@@ -422,18 +431,18 @@ if __name__ == "__main__":
     free5gc_proc = multiprocessing.Process(target=start_free5gc)
     interface_proc= multiprocessing.Process(target=sniff_packets, args=(arg.dump,arg.test,))
     print(f"[+][{time.strftime('%Y%m%d_%H:%M:%S')}] Starting Free5GC")
+    Qmanager.add_queue('qngap')
+    
     free5gc_proc.start()
     interface_proc.start()
 
     if tests[arg.test]["name"] == "TC_AMF_NAS_INTEGRITY_FAILURE":
+        free5gc_proc.join()
 
         print(f"[+] Test case: {tests[arg.test]['name']} selected")
         test_nas_integrity_failure = multiprocessing.Process(target=tc_amf_nas_integrity_failure, args=())
         test_nas_integrity_failure.start()
         test_nas_integrity_failure.join() 
         
-    
-    
-    
-    free5gc_proc.join()
+        
     interface_proc.join()

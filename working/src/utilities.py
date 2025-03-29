@@ -24,8 +24,7 @@ class DynamicMultiQueueManager:
         if queue_name not in self.queues:
             return False
         self.queues[queue_name].put(item)
-        
-        return True
+        return 
     
     def get(self, queue_name):
         if queue_name not in self.queues:

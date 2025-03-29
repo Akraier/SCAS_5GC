@@ -525,8 +525,9 @@ ngap_ie_dict = {
     440: "id-AUN3DeviceAccessInfo"
 }
 
+
 message_type_dict = {
-    65: "Registration request",                        # 0b01000001
+    65: "Registration request",                        # 0b01000001 MOBILITY MANAGEMENT
     66: "Registration accept",                         # 0b01000010
     67: "Registration complete",                       # 0b01000011
     68: "Registration reject",                         # 0b01000100
@@ -548,41 +549,41 @@ message_type_dict = {
     88: "Authentication reject",                       # 0b01011000
     89: "Authentication failure",                      # 0b01011001
     90: "Authentication result",                       # 0b01011010
-    92: "Identity request",                            # 0b01011100
-    93: "Identity response",                           # 0b01011101
-    94: "Security mode command",                       # 0b01011110
-    95: "Security mode complete",                      # 0b01011111
-    96: "Security mode reject",                        # 0b01100000
-    97: "5GMM status",                                 # 0b01100001
-    98: "Notification",                                # 0b01100010
-    99: "Notification response",                       # 0b01100011
-    100: "UL NAS transport",                           # 0b01100100
-    101: "DL NAS transport",                           # 0b01100101
-    102: "Relay key request",                          # 0b01100110
-    103: "Relay key accept",                           # 0b01100111
-    104: "Relay key reject",                           # 0b01101000
-    105: "Relay authentication request",               # 0b01101001
-    106: "Relay authentication response",              # 0b01101010
-    193: "PDU session establishment request",          # 0b11000001
+    91: "Identity request",                            # 0b01011011
+    92: "Identity response",                           # 0b01011100
+    93: "Security mode command",                       # 0b01011101
+    94: "Security mode complete",                      # 0b01011110
+    95: "Security mode reject",                        # 0b01011111
+    96: "5GMM status",                                 # 0b01100000
+    97: "Notification",                                # 0b01100001
+    98: "Notification response",                       # 0b01100010
+    99: "UL NAS transport",                            # 0b01100011
+    100: "DL NAS transport",                           # 0b01100100
+    101: "Relay key request",                          # 0b01100101
+    102: "Relay key accept",                           # 0b01100110
+    103: "Relay key reject",                           # 0b01100111
+    104: "Relay authentication request",               # 0b01101000
+    105: "Relay authentication response",              # 0b01101001
+    193: "PDU session establishment request",          # 0b11000001 SESSION MANAGEMENT 
     194: "PDU session establishment accept",           # 0b11000010
     195: "PDU session establishment reject",           # 0b11000011
     196: "PDU session authentication command",         # 0b11000100
     197: "PDU session authentication complete",        # 0b11000101
     198: "PDU session authentication result",          # 0b11000110
-    200: "PDU session modification request",           # 0b11001000
-    201: "PDU session modification reject",            # 0b11001001
-    202: "PDU session modification command",           # 0b11001010
-    203: "PDU session modification complete",          # 0b11001011
-    204: "PDU session modification command reject",    # 0b11001100
-    205: "PDU session release request",                # 0b11001101
-    206: "PDU session release reject",                 # 0b11001110
-    207: "PDU session release command",                # 0b11001111
-    208: "PDU session release complete",               # 0b11010000
-    209: "5GSM status",                                # 0b11010001
-    210: "Service-level authentication command",       # 0b11010010
-    211: "Service-level authentication complete",      # 0b11010011
-    212: "Remote UE report",                           # 0b11010100
-    213: "Remote UE report response"                   # 0b11010101
+    199: "PDU session modification request",           # 0b11000111
+    200: "PDU session modification reject",            # 0b11001000
+    201: "PDU session modification command",           # 0b11001001
+    202: "PDU session modification complete",          # 0b11001010
+    203: "PDU session modification command reject",    # 0b11001011
+    204: "PDU session release request",                # 0b11001100
+    205: "PDU session release reject",                 # 0b11001101
+    206: "PDU session release command",                # 0b11001110
+    207: "PDU session release complete",               # 0b11001111
+    208: "5GSM status",                                # 0b11010000
+    209: "Service-level authentication command",       # 0b11010001
+    210: "Service-level authentication complete",      # 0b11010010
+    211: "Remote UE report",                           # 0b11010011
+    212: "Remote UE report response"                   # 0b11010100
 }
 epd_enum = {
         46: "Session Management Message",
@@ -678,7 +679,7 @@ class NAS:
             mac_byte = bytes.fromhex(mac)
             seq_no_byte = seq_no.to_bytes(1, byteorder='big')
             raw = epd_byte + sht_byte + mac_byte + seq_no_byte + plain_msg
-            print("[DEBUG] serialized nas pdu", raw.hex())
+            #print("[DEBUG] serialized nas pdu", raw.hex())
             return raw
         except Exception as e:
             print(f"[!]An Error Occurred during NAS serialization {e}")
@@ -695,7 +696,7 @@ class NAS:
                 pti = None
             elif epd == SM_epd:
                 #Session Management message, PTI present
-                print("[DEBUG] Session Management Message")
+                #print("[DEBUG] Session Management Message")
                 pti = raw[0]
                 message_type = raw[1]
                 message_value = raw[2:]
@@ -703,11 +704,11 @@ class NAS:
             elif epd == MM_epd:
                 #Mobility Management message, PTI Optional
                 #assume pti present
-                print("[DEBUG] Mobility Management Message")
+                #print("[DEBUG] Mobility Management Message")
                 pti = raw[0]
                 message_type = raw[1]
                 message_value = raw[2:]
-                print(f"[DEBUG] Message Type: {message_type}")
+                #print(f"[DEBUG] Message Type: {message_type}")
                 #pti should be present only in the following MM message types
                 if (message_type != 12) and (message_type != 13) and (message_type != 14):
                     #pti not present, erase previous values
@@ -751,13 +752,13 @@ class NAS:
                 raw = raw[1:] """
 
             sht = raw[2] & 0x0F    #SHT is lower nibble bits 0-3
-            print(f"[DEBUG] Raw NAS PDU: {raw.hex()}")
-            print(f"[DEBUG] Length: {length}")
-            print(f"[DEBUG] epd value: {epd}")
-            print(f"[DEBUG] sht value: {sht}")
+            #print(f"[DEBUG] Raw NAS PDU: {raw.hex()}")
+            #print(f"[DEBUG] Length: {length}")
+            #print(f"[DEBUG] epd value: {epd}")
+            #print(f"[DEBUG] sht value: {sht}")
             if sht == 0:
                 #plain NAS PDU
-                print("[DEBUG] Plain NAS PDU")
+                #print("[DEBUG] Plain NAS PDU")
                 pdu = self.dissect_plain_nas_pdu(raw[3:], epd, sht)
                 if pdu != None:
                     self.pdu = {"PlainNASPDU":pdu}
@@ -772,11 +773,11 @@ class NAS:
                 epd_enc = enc_msg[0]
                 sht_enc = enc_msg[1] & 0x0F
                 pdu_enc = enc_msg[2:]
-                print(f"[DEBUG] MAC : {mac.hex()}")
-                print(f"[DEBUG] Seq.No: {seq_no}")
-                print(f"[DEBUG]EPD_ENC: {epd_enc}")
-                print(f"[DEBUG]SHT_ENC: {sht_enc}")
-                print(f"[DEBUG]PDU_END: {pdu_enc.hex()}")
+                #print(f"[DEBUG] MAC : {mac.hex()}")
+                #print(f"[DEBUG] Seq.No: {seq_no}")
+                #print(f"[DEBUG]EPD_ENC: {epd_enc}")
+                #print(f"[DEBUG]SHT_ENC: {sht_enc}")
+                #print(f"[DEBUG]PDU_END: {pdu_enc.hex()}")
 
                 plain_pdu = self.dissect_plain_nas_pdu(pdu_enc, epd_enc, sht_enc)
                 if plain_pdu is None:
@@ -912,7 +913,7 @@ class NGAP:
             pdu += IEs            
             #padding
             if len(IEs) < length:
-                print("[DEBUG] Padding")
+                #print("[DEBUG] Padding")
                 padding = b'\x00' * (length - len(IEs))
                 pdu += padding
                 return  pdu 
@@ -959,7 +960,7 @@ class NGAP:
                     ie[ngap_ie_dict[IE_id]] = {"IE_criticality": IE_criticality, "IE_length": IE_length, "IE_value": IE_value.hex()}
                 elif IE_id not in ngap_ie_dict:
                     #Atypical case, NGAP length is bigger than 217 bytes,
-                    print(f"[DEBUG] Atypical Segment: {raw_segment.hex()}")
+                    #print(f"[DEBUG] Atypical Segment: {raw_segment.hex()}")
                     self.dissect_ngap_ie(raw_segment[2:])
                     ie[ngap_ie_dict[IE_id]] = {"IE_criticality": IE_criticality, "IE_length": IE_length, "IE_value": IE_value.hex()}
                     break
