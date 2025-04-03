@@ -87,11 +87,10 @@ class Testbench:
         """
         print("[+] TestBench Packet parser started")
         self.amfip.value = self.__container_ip('amf') #When this function run containers are up and ready
-        print(f"IP {self.amfip}")
         try:
             filename = "SCAS_" + time.strftime("%Y%m%d_%H%M") + ".pcap"
             rel_path = script_dir + "/../ws_captures/" + filename
-            
+            manager = multiprocessing.Manager()
             pcap = PcapWriter(rel_path, append = True, sync = True)
 
             ngap = NGAP()
@@ -109,7 +108,7 @@ class Testbench:
                         History is usefull for later access of packets. Only for TEST INTERESTING DATA 
                         """
                         with self.lock:
-                            self.history.append({"ID":self.pktcounter, "RAW": pkt.data, "NAS": nas_pdu, "_scanned": False})
+                            self.history.append(manager.dict({"ID":self.pktcounter, "RAW": pkt.data, "NAS": nas_pdu, "_scanned": False}))
                 pcap.write(pkt)
                 
         except Exception as e:
@@ -174,11 +173,11 @@ class Testbench:
 
         sctp_socket.bind(('0.0.0.0', 5000))
 
-        print(f"[+]Connection to AMF at {ip}:{port}")
+        print(f"[+] SCTP Connection to AMF at {ip}:{port}")
         sctp_socket.connect((ip,port))
 
         sctp_socket.send(raw_message)
-        print(f"[+]SCTP message sent!")
+        print(f"[+] SCTP message sent!")
 
         sctp_socket.close()
 
@@ -191,12 +190,12 @@ class Testbench:
                 """ 
                 Sync with ue waiting for registration  
                 """
-                print("[!]UE not yet Registered")
+                print("[!] UE not yet Registered")
                 #print(ue_status)
                 time.sleep(2)
                 continue
             else:
-                print("[+]UE Registered")
+                print("[+] UE Registered")
                 break
         return True
     
@@ -206,11 +205,11 @@ class Testbench:
         """
         INPUT: 'msg' to look for, 'fresh' if you look for a fresh msg or an old one is good enough 
         Look for msg into history with some precautions
-        1. Ensure to be in time for the message, not to early. Kindly wait some time for the message, in case it got delayed :)
+        1. Ensure to be in time for the message, not too early. Kindly wait some time for the message, in case it got delayed :)
         2. Because of replay - or anything - there could be more message_type of the same kind, handle the dopplegangers. Always scan the whole history
         """
         attempt = 0
-
+        print(f"[+] Searching for {msg} message")
         while not self.history:
             """ Polling in case history still empty """
             time.sleep(1)
@@ -218,35 +217,41 @@ class Testbench:
         while True:
 
             attempt += 1
+            ret = None
 
-            for m in self.history: 
-                if msg in m['NAS']["PlainNASPDU"]["message_type"]:
-                    print("[DEBUG] History Match... ")
-                    """Handle 'doppleganger' """
-                    if m['_scanned'] is False:
+            for item in range(len(self.history)):
+                t = self.history[item]
+                if msg in t["NAS"]["PlainNASPDU"]["message_type"]:
+                    if t['_scanned'] is False:
                         """ Fresh value """
                         with self.lock:
-                            m['_scanned'] = True
-                        print(f"[+] Found {msg} OLD message!")
-                        return m
-                    elif (m['_scanned'] is True) and (fresh is False):
+                            self.history[item]['_scanned'] = True
+                        print(f"[+] Found {msg} FRESH message!")
+                        ret = self.history[item]
+                    elif (t['_scanned'] is True) and (fresh is False):
                         """ Old value, but fair enough"""
                         print(f"[+] Found {msg} OLD message!")
-                        return m
+                        ret = self.history[item]
+
+                """Everytime this function is called, everything is _scanned"""
                 with self.lock:
-                    m['_scanned'] = True
-                       
+                    self.history[item]['_scanned'] = True
+            
             """ 
+            While True exit conditions.
             If not found, wait for it - just a bit  
             Looking for it 3 times, roughly 3s should be enough for every response/processing synchronization 
             """  
+            if ret is not None:
+                break
             if attempt == 3:
                 print(f"[!] No {msg} message found in history ")
-                return None
+                break
             else:
                 print(f"[*] {attempt} attempt failed looking for {msg} message into history...")
                 time.sleep(1)
-
+        
+        return ret
     
 
 
@@ -263,14 +268,14 @@ class Testbench:
         to see if no corresponding response message was sent by the AMF. If applicable, AMF application logs could be checked for the rejection of the replayed     
         NAS Security Mode Complete message.
     """
-    def tc_nas_replay_amf(self):
+    def tc_nas_replay_amf(self,pipe):
         print("[+] tc_nas_replay_amf test case STARTED")
 
         self.__ue_check_alive()
         print("[+] UE Alive & Registered ")
 
         """Capture NAS Security Mode Complete message, not necessary the last received one"""
-
+        
         msg = self.__search_NAS_message('Security mode complete', False)
 
         if msg is None:
@@ -283,9 +288,13 @@ class Testbench:
 
         """ Check whether the SMC was not processed by the AMF --> Looking for Registration Accept """
 
-        self.__search_NAS_message("Registration Accept")
-
-        return
+        ret = self.__search_NAS_message("Registration Accept")
+        if ret is None:
+            #Not found, TEST PASSED
+            pipe.send(True)
+        else:
+            #Found, TEST FAILED
+            pipe.send(False)
     
     """
     Test case: TC_AMF_NAS_INTEGRITY_FAILURE
@@ -307,7 +316,7 @@ class Testbench:
             Craft and send Deregistration message with tampered integrity value, possibly 0xffffffff
             
     """
-    def tc_amf_nas_integrity_failure(self):
+    def tc_amf_nas_integrity_failure(self,pipe):
         print("[+] amf_nas_integrity test case STARTED")
 
         self.__ue_check_alive()
@@ -356,9 +365,9 @@ class Testbench:
         ngap = NGAP()
         """Using dissected json for easier modification of target fields """
         ngap.dissect_ngap_pdu(bytes.fromhex(data["ngap"]))
-        print("[+]Injecting DEREGISTRATION REQUEST with wrong NAS-MAC")
+        print("[+] Injecting DEREGISTRATION REQUEST with wrong NAS-MAC")
         
-        print("[+]Untampered Deregistration Retrieved")
+        print("[+] Untampered Deregistration Retrieved")
         #ngap.print_ngap()   #In case any further clearence is needed
         mac = ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"]
         mac_bytes = bytes.fromhex(mac)
@@ -366,7 +375,7 @@ class Testbench:
         mac = mac_bytes.hex()
         print(f"[+] --> Tampered MAC with 0xff: {mac}")
         ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"] = mac
-        print("[+]Tampered Deregistration Crafted")
+        print("[+] Tampered Deregistration Crafted")
         #ngap.print_ngap()
 
         raw_ngap = ngap.build_ngap_pdu(ngap.segment)
@@ -380,15 +389,13 @@ class Testbench:
         --> ALSO, look at the UE MM status, if still registered tast fails.
         """    
 
-        result = self.__search_NAS_message('Deregistration accept')
-
-        if result:
-            print("[+] AMF NAS INTEGRITY Test Case: FAILED")
-            return False
+        ret = self.__search_NAS_message('Deregistration accept')
+        if ret is None:
+            #Not found, TEST PASSED
+            pipe.send(True)
         else:
-            print("[+] AMF NAS INTEGRITY Test Case: PASSED")
-            return True
-                                                                                        
+            #Found, TEST FAILED
+            pipe.send(False)                                                                                
 
 
 def start_free5gc():
@@ -414,7 +421,7 @@ def sniff_packets():
     
     
 
-    print("[+]Sniffing for packets...", flush=True)
+    print("[+] Sniffing for packets...", flush=True)
     packets = sniff(iface="br-free5gc",
                     filter="sctp port 38412",
                     prn=lambda packet: qpkt.put(packet),
@@ -422,26 +429,23 @@ def sniff_packets():
     
         
         
-def graceful_shutdown(signal,frame):
+def graceful_shutdown(signal=None,frame=None):
     """ 
     Function to handle cleanup and shutdown gracefully
     When multi-process a signal is caught by every process and this function is called multiple times. Watch out>>>Find a method to fix the behavior 
     """
-    print(f"\nGracefully shutting down... Signal: {signal}")
+    print(f"\nGracefully shutting down docker.")
     subprocess.run(["docker", "compose", "-f", "/home/vincenzo_d/free5gc-compose/docker-compose.yaml", "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print("Docker Compose shutdown completed.")
     exit(0)
 
 signal.signal(signal.SIGINT, graceful_shutdown) 
-signal.signal(signal.SIGTERM, graceful_shutdown)
-signal.signal(signal.SIGABRT, graceful_shutdown) 
 
 
     
 if __name__ == "__main__":
     # Parse arguments
     argparser = argparse.ArgumentParser(description="Free5GC Network Sniffer")
-    argparser.add_argument("--dump",type=str, dest="dump", help="Save sniffed traffic to a pcap file", default="n")
     argparser.add_argument("--test",type=str, dest="test", help="Select test case, default 'ANY'. Comma separated values and range values supported . --tests-enum lists available tests", default=-1)
     argparser.add_argument("--test-enum", action="store_true", help="Show every test available")
     arg = argparser.parse_args()
@@ -464,7 +468,7 @@ if __name__ == "__main__":
     # Start Free5GC containers.
     free5gc_proc = multiprocessing.Process(target=start_free5gc)
     sniffer = multiprocessing.Process(target=sniff_packets)
-    print(f"[+][{time.strftime('%Y%m%d_%H:%M:%S')}] Starting Free5GC")
+    print(f"[+] [{time.strftime('%Y%m%d_%H:%M:%S')}] Starting Free5GC")
     
     """ Start Free5gc Docker env """
     free5gc_proc.start()
@@ -482,19 +486,34 @@ if __name__ == "__main__":
     """
     Running tests in self.td_test
     """
+    parent_pipe, child_pipe = multiprocessing.Pipe() 
+
     for test in testbench.td_test:
         fun = getattr(testbench,testbench.tests[test]['name'],None)
         if callable(fun):
-            print(f'[DEBUG] Running test {testbench.tests[test]["name"]}')
-            t = multiprocessing.Process(target = fun)
+            #print(f'[DEBUG] Running test {testbench.tests[test]["name"]}')
+            t = multiprocessing.Process(target = fun, args=(child_pipe,))
             t.start()
+            result = parent_pipe.recv()
+            if result:
+                print(f"[+] Test {testbench.tests[test]['name']} PASSED!")
+            else:
+                print(f"[+] Test {testbench.tests[test]['name']} FAILED!")
             t.join() 
         else:
-            print(f'[DEBUG] Method {testbench.tests[test]["name"]} not found')
+            print(f'[!] Method {testbench.tests[test]["name"]} not found')
 
+    """
+    End gracefully
+    """
+    sniffer.terminate()
     sniffer.join()
+
+    testbench.pktparser.terminate()
     testbench.pktparser.join()
     
+    graceful_shutdown()
+
 
 
         
