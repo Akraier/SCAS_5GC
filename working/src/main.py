@@ -10,7 +10,7 @@ import argparse
 import traceback
 import queue
 import os
-from MyNGAPdissector import *
+from MyNGAPdissector import NAS, NGAP
 #from MyTest import *
 from scapy.all import sniff, PcapWriter, Ether, SCTPChunkData, SCTP, IP, wrpcap
 
@@ -34,6 +34,11 @@ class Testbench:
         },
         1: {
             "name":"tc_nas_replay_amf",
+            "group":"NGAP/NAS",
+            "NFs":"AMF"
+        },
+        2: {
+            "name":"tc_nas_null_int_amf",
             "group":"NGAP/NAS",
             "NFs":"AMF"
         }
@@ -397,6 +402,45 @@ class Testbench:
             #Found, TEST FAILED
             pipe.send(False)                                                                                
 
+    def tc_nas_null_int_amf(self,pipe):
+        """
+        NIA0 is disabled in AMF in the deployments where support of unauthenticated emergency session is not a regulatory requirement 
+        as specified in TS 33.501 [2], clause 5.5.2
+        Expected Results:
+        In both emergency and non-emergency registrations, the UE was successfully authentication and the integrity algorithm selected 
+        by the AMF in the NAS SMC message is different from NIA0.
+        The NAS Security Mode Command message is integrity protected by the AMF.
+        """
+        print(f'[+] tc_nas_null_int_amf test case STARTED')
+
+        """ 
+        non-emergency registrations already performed at startup 
+        1. ensure UE registered
+        """
+        self.__ue_check_alive()
+        
+        """
+        2. inspect Security Mode Command 
+        """
+
+        smc = self.__search_NAS_message('Security mode command', False)
+        if smc is not None:
+            
+            algs = NAS.dissect_NAS_Sec_Alg(smc['NAS'])
+            if algs is not None:
+                """ Algorithms correctly issued"""
+                integrity = algs[1]
+                if integrity == '5GIA0':
+                    """Test Failed"""
+                    pipe.send(False)
+                else:
+                    """Test Passed"""
+                    pipe.send(True)
+                
+                print(f'[+] Integrity Algorithm Used in Security Mode Command {integrity}')
+            else:
+                print(f'[!] Security Mode Command not Integrity Protected - or Error during NAS dissecting')
+                pipe.send(False)
 
 def start_free5gc():
     try:

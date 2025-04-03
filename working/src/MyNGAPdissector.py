@@ -525,6 +525,27 @@ ngap_ie_dict = {
     440: "id-AUN3DeviceAccessInfo"
 }
 
+nas_int_algs = {
+    0 : "5GIA0",
+    1 : "128 5GIA1",
+    2 : "128 5GIA2",
+    3 : "128 5GIA3",
+    4 : "5GIA4",
+    5 : "5GIA5",
+    6 : "5GIA6",
+    7 : "5GIA7"
+}
+
+nas_enc_algs = {
+    0 : "5GEA0",
+    1 : "128 5GEA1",
+    2 : "128 5GEA2",
+    3 : "128 5GEA3",
+    4 : "5GEA4",
+    5 : "5GEA5",
+    6 : "5GEA6",
+    7 : "5GEA7"
+}
 
 message_type_dict = {
     65: "Registration request",                        # 0b01000001 MOBILITY MANAGEMENT
@@ -797,6 +818,24 @@ class NAS:
         except Exception as e:
             print("[!]Error dissecting NAS PDU:")
             traceback.print_exc()
+            return None
+        
+    @staticmethod
+    def dissect_NAS_Sec_Alg(NAS_PDU):
+        msg_v = NAS_PDU.get('PlainNASPDU').get('message_value')
+        if msg_v is not None:
+            raw_msg = bytes.fromhex(msg_v)
+            security_algs = raw_msg[0]
+
+            """4 LSBits"""
+            int_alg = security_algs & 0x0F
+            """4 MSBits"""
+            cipher_alg = (security_algs & 0xF0) >> 4
+            
+            return [nas_enc_algs[cipher_alg], nas_int_algs[int_alg]]
+
+        else:
+            print('[!] Wrong NAS PDU')
             return None
 
 """
