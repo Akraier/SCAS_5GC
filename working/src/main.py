@@ -8,10 +8,9 @@ import socket
 import logging
 import argparse
 import traceback
-import queue
 import os
-from MyNGAPdissector import NAS, NGAP
-#from MyTest import *
+from pycrate_asn1dir import NGAP as NGAP_asn1
+from MyNGAPdissector import NAS, NGAP # type: ignore
 from scapy.all import sniff, PcapWriter, Ether, SCTPChunkData, SCTP, IP, wrpcap
 
 pkt_counter = 0
@@ -22,22 +21,22 @@ qpkt = multiprocessing.Queue()
 class Testbench:
     """Definition of Available Test Cases"""
     tests = {
-        -1: {
+        0: {
             "name": "ANY",
             "group": "ANY",
             "NFs": "ANY"
         },
-        0: {
+        1: {
             "name": "tc_amf_nas_integrity_failure",
             "group": "NGAP/NAS",
             "NFs": "AMF"
         },
-        1: {
+        2: {
             "name":"tc_nas_replay_amf",
             "group":"NGAP/NAS",
             "NFs":"AMF"
         },
-        2: {
+        3: {
             "name":"tc_nas_null_int_amf",
             "group":"NGAP/NAS",
             "NFs":"AMF"
@@ -53,6 +52,7 @@ class Testbench:
         self.td_test = self.__test_parser(tests)
         self.history = manager.list() 
         self.amfip = manager.Value('s','')
+        self.nas_seq_num = manager.Value('i',0) 
         self.lock = multiprocessing.Lock()  
         self.pktcounter = 0
 
@@ -64,17 +64,17 @@ class Testbench:
         """
         testl = []
         try:
-            if isinstance(test_arg, int):
-                testl.append(test_arg)
-            if test_arg == -1:
-                #ANY
-                testl = list(range(0,len(tests)))
+            
+            if test_arg == "0":
+                testl = list(range(1,len(self.tests)))
             elif "," in test_arg:
                 testl = [int(v.strip()) for v in test_arg.split(",")]
             elif "-" in test_arg:
                 start, end = map(int, test_arg.split("-"))
                 testl = list(range(start,end+1))
-            
+            elif test_arg.isdigit():
+                testl.append(int(test_arg))
+
             if any(x not in self.tests.keys() for x in testl):
                 #Invalid test case
                 return None
@@ -113,7 +113,13 @@ class Testbench:
                         History is usefull for later access of packets. Only for TEST INTERESTING DATA 
                         """
                         with self.lock:
-                            self.history.append(manager.dict({"ID":self.pktcounter, "RAW": pkt.data, "NAS": nas_pdu, "_scanned": False}))
+                            self.history.append(manager.dict({"ID":self.pktcounter, "RAW": pkt.data, "NGAP": ngap.segment, "NAS": nas_pdu, "_scanned": False}))
+                            if nas_pdu.get("SecurityProtectedNASPDU") is not None:
+                                self.nas_seq_num.value = nas_pdu["SecurityProtectedNASPDU"]["seq_no"] + 1
+                    else:
+                        #NGAP PDU without NAS
+                        with self.lock:
+                            self.history.append(manager.dict({"ID":self.pktcounter, "RAW": pkt.data, "NGAP": ngap.segment, "_scanned": False}))
                 pcap.write(pkt)
                 
         except Exception as e:
@@ -169,20 +175,94 @@ class Testbench:
             return None
 
     
-    @staticmethod
-    def __sctp_send(ip, port, raw_message):
+    def __sctp_send_nas(self,ip, port, nas_data_dict):
         """
         Create sctp association and send message
         """
         sctp_socket = sctp.sctpsocket_tcp(socket.AF_INET)
 
-        sctp_socket.bind(('0.0.0.0', 5000))
+        sctp_socket.bind(('0.0.0.0', 5001))
 
         print(f"[+] SCTP Connection to AMF at {ip}:{port}")
         sctp_socket.connect((ip,port))
 
-        sctp_socket.send(raw_message)
+        """ Send NGSetupRequest """
+        """ """
+
+        NGSetupReq = self.__search_NGAP("id-NGSetup")
+        if len(NGSetupReq) == 0:
+            print("[!] NGSetupReq not found...")
+            return None
+        for i in range(len(NGSetupReq)):
+            k = next(iter(NGSetupReq[i]))
+            t = NGSetupReq[i][k]["IEs"].get("id-RANNodeName",{}).get("IE_value")
+            if t is None:
+                continue
+            elif "UERANSIM" in bytes.fromhex(t).decode("utf-8"):
+                break
+
+        """
+        0000   00 02 f8 39 50 00 00 00 01                        2089300000001
+        """
+        NGSetupReq[i]["Initiating Message"]["IEs"]["id-GlobalRANNodeID"]["IE_value"] = "0002f8395000000001"
+        
+        """
+        0000   55 45 52 41 4e 53 49 4d 2d 67 6e 62 2d 32 30 38   UERANSIM-gnb-208
+        0010   2d 39 33 2d 31                                    -93-1
+        """
+        NGSetupReq[i]["Initiating Message"]["IEs"]["id-RANNodeName"]["IE_value"] = "0a00554552414e53494d2d676e622d3230382d39332d31"        
+        
+        print(f"[+] Tampered NGSetupRequest Crafted")
+        
+        ppid = socket.htonl(60)
+        ngap_ = NGAP()
+        raw_NGSetupReq = ngap_.build_ngap_pdu(NGSetupReq[i])
+
+        sctp_socket.sctp_send(raw_NGSetupReq, ppid=ppid)
+        print(f"[+] NGSetupRequest sent!")
+
+        sctp_socket.sctp_recv(1024)
+
+        """ Search InitialUEMessage Registration Request"""
+        RegReq = self.__search_NAS_message("Registration request")
+        if RegReq is None:
+            print("[!] Registration Request not found...")
+            return None
+        print(f'[DEBUG] Registration Request {RegReq["NGAP"]}')
+        raw_RegReq = ngap_.build_ngap_pdu(RegReq["NGAP"])
+        print(f'[DEBUG] Registration Request raw {raw_RegReq}')
+        sctp_socket.sctp_send(raw_RegReq, ppid=ppid)
+        print(f"[+] Registration Request sent!")
+        sctp_socket.sctp_recv(1024)
+
+        """ Search UplinkNASTransport"""
+
+        """ Retrieve NGAP initialUEMessage """
+        InitUEMsg = self.__search_NGAP("id-InitialUEMessage")
+
+        """ Modify IEs if required"""
+        """ id-RAN-UE-NGAP-ID <- Want to reuse the exhistent one"""
+        """ id-NAS-PDU <- Modify with raw_nas"""
+        """ id-UserLocationInformation """
+        """ id-RRCEstablishmentCause """
+        """ id-UEContextRequest """
+
+        if len(InitUEMsg) == 0:
+            print("[!] InitialUEMessage not found...")
+            return None
+        print(f'[DEBUG] Initial {InitUEMsg[0]["Initiating Message"]["IEs"]["id-NAS-PDU"]}')
+        print(f'[DEBUG] Target {nas_data_dict}')
+        InitUEMsg[0]["Initiating Message"]["IEs"]["id-NAS-PDU"] = nas_data_dict
+        print(f'[DEBUG] Final {InitUEMsg[0]}')
+
+        """ Insert id-Five5-S-TMSI IE"""
+        raw_data = ngap_.build_ngap_pdu(InitUEMsg[0])
+        print(f"[DEBUG] raw_data {raw_data}")
+        sctp_socket.sctp_send(raw_data, ppid=ppid)
         print(f"[+] SCTP message sent!")
+
+        sctp_socket.sctp_recv(1024)
+        print(f"[+] SCTP message received!")
 
         sctp_socket.close()
 
@@ -204,8 +284,25 @@ class Testbench:
                 break
         return True
     
+    def __search_NGAP(self, msg):
+        """
+        Search NGAP IE into history, less restrictive than NAS search. Don't care about freshness
+        INPUT: msg to look for, add(itional information)s for the search {'ie':id-}
+        OUTPUT: list of dict Segment/IE of every NGAP message containing the IE 
+        """
+        while not self.history:
+            """ Polling in case history still empty """
+            time.sleep(1)
 
-    
+        ret = []
+
+        for item in range(len(self.history)):
+            with self.lock:
+                ngap = next(iter(self.history[item]["NGAP"]))
+                if self.history[item]["NGAP"][ngap].get("procedure_code") == msg:
+                    ret.append(self.history[item]["NGAP"])
+        return ret
+
     def __search_NAS_message(self, msg, fresh = True):
         """
         INPUT: 'msg' to look for, 'fresh' if you look for a fresh msg or an old one is good enough 
@@ -225,15 +322,17 @@ class Testbench:
             ret = None
 
             for item in range(len(self.history)):
-                t = self.history[item]
-                if msg in t["NAS"]["PlainNASPDU"]["message_type"]:
-                    if t['_scanned'] is False:
+                with self.lock:
+                    t = self.history[item].get("NAS",None)
+                    h = self.history[item] 
+                if (t is not None) and (msg in t["NAS PDU"]["PlainNASPDU"]["message_type"]):
+                    if h['_scanned'] is False:
                         """ Fresh value """
                         with self.lock:
                             self.history[item]['_scanned'] = True
                         print(f"[+] Found {msg} FRESH message!")
                         ret = self.history[item]
-                    elif (t['_scanned'] is True) and (fresh is False):
+                    elif (h['_scanned'] is True) and (fresh is False):
                         """ Old value, but fair enough"""
                         print(f"[+] Found {msg} OLD message!")
                         ret = self.history[item]
@@ -288,8 +387,8 @@ class Testbench:
             exit(0)
 
         """Replay Security Mode Complete message"""
-        
-        self.__sctp_send(self.amfip.value, 38412, msg['RAW'])
+        print(f"[DEBUG] {msg['NAS']}")
+        self.__sctp_send_nas(self.amfip.value, 38412, msg['NAS'])
 
         """ Check whether the SMC was not processed by the AMF --> Looking for Registration Accept """
 
@@ -373,18 +472,25 @@ class Testbench:
         print("[+] Injecting DEREGISTRATION REQUEST with wrong NAS-MAC")
         
         print("[+] Untampered Deregistration Retrieved")
-        #ngap.print_ngap()   #In case any further clearence is needed
+        """MAC tampering"""
         mac = ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"]
         mac_bytes = bytes.fromhex(mac)
         mac_bytes = b'\xff\xff\xff\xff'  #overwrite mac
         mac = mac_bytes.hex()
         print(f"[+] --> Tampered MAC with 0xff: {mac}")
         ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"] = mac
+        """Adequating necessary values """
+        ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["seq_no"] = self.nas_seq_num.value
+
+        """ InitUEMsg = self.__search_NGAP("id-InitialUEMessage")
+        ngap.segment["Initiating Message"]["IEs"]["id-AMF-UE-NGAP-ID"]["IE_value"] = InitUEMsg[0]["Initiating Message"]["IEs"]["id-AMF-UE-NGAP-ID"]["IE_value"]
+        ngap.segment["Initiating Message"]["IEs"]["id-RAN-UE-NGAP-ID"]["IE_value"] = InitUEMsg[0]["Initiating Message"]["IEs"]["id-RAN-UE-NGAP-ID"]["IE_value"] """
+
         print("[+] Tampered Deregistration Crafted")
         #ngap.print_ngap()
 
         raw_ngap = ngap.build_ngap_pdu(ngap.segment)
-        self.__sctp_send(self.amfip.value,38412,raw_ngap)
+        self.__sctp_send_nas(self.amfip.value,38412,ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"])
 
         """
         Evaluate test result.
@@ -442,6 +548,21 @@ class Testbench:
                 print(f'[!] Security Mode Command not Integrity Protected - or Error during NAS dissecting')
                 pipe.send(False)
 
+    def tc_ue_sec_cap_handling_amf(self, pipe):
+        """
+        Registration Request with unsecure UE security capabilities
+        """
+
+        self.__ue_check_alive()
+
+        rr = self.__search_NAS_message('Registration request', False)
+        if rr is not None:
+            return
+        else:
+            print(f'[!] Registration Request not found')
+            pipe.send(False)
+            return
+
 def start_free5gc():
     try:
         os.system("docker compose -f /home/vincenzo_d/free5gc-compose/docker-compose.yaml up -d >/dev/null 2>&1")
@@ -479,7 +600,14 @@ def graceful_shutdown(signal=None,frame=None):
     When multi-process a signal is caught by every process and this function is called multiple times. Watch out>>>Find a method to fix the behavior 
     """
     print(f"\nGracefully shutting down docker.")
+    with open("amf.log", "a") as log_file:
+        subprocess.run(["docker", "logs", "amf"], stdout=log_file, stderr=subprocess.STDOUT)
+    with open("gnb.log", "a") as log_file:
+        subprocess.run(["docker", "logs", "ueransim"], stdout=log_file, stderr=subprocess.STDOUT)
+    with open("ue.log", "a") as log_file:
+        subprocess.run(["docker", "logs", "ue"], stdout=log_file, stderr=subprocess.STDOUT)
     subprocess.run(["docker", "compose", "-f", "/home/vincenzo_d/free5gc-compose/docker-compose.yaml", "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    
     print("Docker Compose shutdown completed.")
     exit(0)
 
@@ -497,14 +625,9 @@ if __name__ == "__main__":
     global testbench
     testbench = Testbench(arg.test)
 
-    if testbench.td_test is None:
+    if testbench.td_test is None or arg.test_enum:
         argparser.print_help()
-        print(f"[!]Available tests: \n {testbench.tests}")
-        exit(0)
-
-    if arg.test_enum:
-        tests = json.dumps(testbench.tests,indent=4)
-        print(tests)
+        print(f"[/]Available tests: {json.dumps(testbench.tests, indent=4)}")
         exit(0)
 
     

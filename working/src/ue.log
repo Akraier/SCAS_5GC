@@ -1,0 +1,1121 @@
+UERANSIM v3.2.6
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 20:57:33.424] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 20:57:33.424] [nas] [info] Selected plmn[208/93]
+[2025-04-09 20:57:33.424] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 20:57:33.424] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 20:57:33.424] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.424] [nas] [debug] Sending Initial Registration
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 20:57:33.424] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 20:57:33.425] [rrc] [info] RRC connection established
+[2025-04-09 20:57:33.425] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 20:57:33.425] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 20:57:33.457] [nas] [debug] Authentication Request received
+[2025-04-09 20:57:33.457] [nas] [debug] Received SQN [0000000001E9]
+[2025-04-09 20:57:33.457] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 20:57:33.505] [nas] [debug] Security Mode Command received
+[2025-04-09 20:57:33.505] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 20:57:33.658] [nas] [debug] Registration accept received
+[2025-04-09 20:57:33.658] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 20:57:33.658] [nas] [debug] Sending Registration Complete
+[2025-04-09 20:57:33.658] [nas] [info] Initial Registration is successful
+[2025-04-09 20:57:33.658] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 20:57:33.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.658] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 20:57:33.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.861] [nas] [debug] Configuration Update Command received
+[2025-04-09 20:57:33.999] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 20:57:33.999] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 20:57:34.007] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 20:57:34.010] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 20:57:34.011] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 20:57:34.017] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 20:57:33.424] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 20:57:33.424] [nas] [info] Selected plmn[208/93]
+[2025-04-09 20:57:33.424] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 20:57:33.424] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 20:57:33.424] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.424] [nas] [debug] Sending Initial Registration
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 20:57:33.424] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 20:57:33.425] [rrc] [info] RRC connection established
+[2025-04-09 20:57:33.425] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 20:57:33.425] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 20:57:33.457] [nas] [debug] Authentication Request received
+[2025-04-09 20:57:33.457] [nas] [debug] Received SQN [0000000001E9]
+[2025-04-09 20:57:33.457] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 20:57:33.505] [nas] [debug] Security Mode Command received
+[2025-04-09 20:57:33.505] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 20:57:33.658] [nas] [debug] Registration accept received
+[2025-04-09 20:57:33.658] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 20:57:33.658] [nas] [debug] Sending Registration Complete
+[2025-04-09 20:57:33.658] [nas] [info] Initial Registration is successful
+[2025-04-09 20:57:33.658] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 20:57:33.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.658] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 20:57:33.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.861] [nas] [debug] Configuration Update Command received
+[2025-04-09 20:57:33.999] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 20:57:33.999] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 20:57:34.007] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 20:57:34.010] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 20:57:34.011] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 20:57:34.017] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 20:57:33.424] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 20:57:33.424] [nas] [info] Selected plmn[208/93]
+[2025-04-09 20:57:33.424] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 20:57:33.424] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 20:57:33.424] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.424] [nas] [debug] Sending Initial Registration
+[2025-04-09 20:57:33.424] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 20:57:33.424] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 20:57:33.425] [rrc] [info] RRC connection established
+[2025-04-09 20:57:33.425] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 20:57:33.425] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 20:57:33.457] [nas] [debug] Authentication Request received
+[2025-04-09 20:57:33.457] [nas] [debug] Received SQN [0000000001E9]
+[2025-04-09 20:57:33.457] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 20:57:33.505] [nas] [debug] Security Mode Command received
+[2025-04-09 20:57:33.505] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 20:57:33.658] [nas] [debug] Registration accept received
+[2025-04-09 20:57:33.658] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 20:57:33.658] [nas] [debug] Sending Registration Complete
+[2025-04-09 20:57:33.658] [nas] [info] Initial Registration is successful
+[2025-04-09 20:57:33.658] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 20:57:33.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.658] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 20:57:33.658] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 20:57:33.861] [nas] [debug] Configuration Update Command received
+[2025-04-09 20:57:33.999] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 20:57:33.999] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 20:57:34.007] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 20:57:34.010] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 20:57:34.011] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 20:57:34.017] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:00:14.458] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:00:14.458] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:00:14.458] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:00:14.458] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:00:14.458] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.458] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:00:14.458] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:00:14.459] [rrc] [info] RRC connection established
+[2025-04-09 21:00:14.459] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:00:14.459] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:00:14.494] [nas] [debug] Authentication Request received
+[2025-04-09 21:00:14.494] [nas] [debug] Received SQN [0000000001EA]
+[2025-04-09 21:00:14.494] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:00:14.543] [nas] [debug] Security Mode Command received
+[2025-04-09 21:00:14.543] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:00:14.682] [nas] [debug] Registration accept received
+[2025-04-09 21:00:14.682] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:00:14.682] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:00:14.682] [nas] [info] Initial Registration is successful
+[2025-04-09 21:00:14.682] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:00:14.682] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.682] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:00:14.683] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.884] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:00:15.032] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:00:15.033] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:00:15.042] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:00:15.048] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:00:15.048] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:00:15.055] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:00:14.458] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:00:14.458] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:00:14.458] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:00:14.458] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:00:14.458] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.458] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:00:14.458] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:00:14.459] [rrc] [info] RRC connection established
+[2025-04-09 21:00:14.459] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:00:14.459] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:00:14.494] [nas] [debug] Authentication Request received
+[2025-04-09 21:00:14.494] [nas] [debug] Received SQN [0000000001EA]
+[2025-04-09 21:00:14.494] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:00:14.543] [nas] [debug] Security Mode Command received
+[2025-04-09 21:00:14.543] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:00:14.682] [nas] [debug] Registration accept received
+[2025-04-09 21:00:14.682] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:00:14.682] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:00:14.682] [nas] [info] Initial Registration is successful
+[2025-04-09 21:00:14.682] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:00:14.682] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.682] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:00:14.683] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.884] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:00:15.032] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:00:15.033] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:00:15.042] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:00:15.048] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:00:15.048] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:00:15.055] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:00:14.458] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:00:14.458] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:00:14.458] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:00:14.458] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:00:14.458] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.458] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:00:14.458] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:00:14.458] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:00:14.459] [rrc] [info] RRC connection established
+[2025-04-09 21:00:14.459] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:00:14.459] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:00:14.494] [nas] [debug] Authentication Request received
+[2025-04-09 21:00:14.494] [nas] [debug] Received SQN [0000000001EA]
+[2025-04-09 21:00:14.494] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:00:14.543] [nas] [debug] Security Mode Command received
+[2025-04-09 21:00:14.543] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:00:14.682] [nas] [debug] Registration accept received
+[2025-04-09 21:00:14.682] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:00:14.682] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:00:14.682] [nas] [info] Initial Registration is successful
+[2025-04-09 21:00:14.682] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:00:14.682] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.682] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:00:14.683] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:00:14.884] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:00:15.032] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:00:15.033] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:00:15.042] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:00:15.048] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:00:15.048] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:00:15.055] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:04:38.492] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:04:38.495] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:04:38.495] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:04:38.495] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:04:38.495] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:04:38.495] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.495] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:04:38.495] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:04:38.497] [rrc] [info] RRC connection established
+[2025-04-09 21:04:38.497] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:04:38.497] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:04:38.554] [nas] [debug] Authentication Request received
+[2025-04-09 21:04:38.554] [nas] [debug] Received SQN [0000000001EB]
+[2025-04-09 21:04:38.554] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:04:38.584] [nas] [debug] Security Mode Command received
+[2025-04-09 21:04:38.584] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:04:38.699] [nas] [debug] Registration accept received
+[2025-04-09 21:04:38.699] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:04:38.699] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:04:38.699] [nas] [info] Initial Registration is successful
+[2025-04-09 21:04:38.699] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:04:38.699] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.699] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:04:38.700] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.901] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:04:39.055] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:04:39.055] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:04:39.066] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:04:39.069] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:04:39.069] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:04:39.077] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:04:38.492] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:04:38.495] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:04:38.495] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:04:38.495] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:04:38.495] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:04:38.495] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.495] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:04:38.495] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:04:38.497] [rrc] [info] RRC connection established
+[2025-04-09 21:04:38.497] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:04:38.497] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:04:38.554] [nas] [debug] Authentication Request received
+[2025-04-09 21:04:38.554] [nas] [debug] Received SQN [0000000001EB]
+[2025-04-09 21:04:38.554] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:04:38.584] [nas] [debug] Security Mode Command received
+[2025-04-09 21:04:38.584] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:04:38.699] [nas] [debug] Registration accept received
+[2025-04-09 21:04:38.699] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:04:38.699] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:04:38.699] [nas] [info] Initial Registration is successful
+[2025-04-09 21:04:38.699] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:04:38.699] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.699] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:04:38.700] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.901] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:04:39.055] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:04:39.055] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:04:39.066] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:04:39.069] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:04:39.069] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:04:39.077] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:04:38.492] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:04:38.495] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:04:38.495] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:04:38.495] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:04:38.495] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:04:38.495] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.495] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:04:38.495] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:04:38.495] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:04:38.497] [rrc] [info] RRC connection established
+[2025-04-09 21:04:38.497] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:04:38.497] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:04:38.554] [nas] [debug] Authentication Request received
+[2025-04-09 21:04:38.554] [nas] [debug] Received SQN [0000000001EB]
+[2025-04-09 21:04:38.554] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:04:38.584] [nas] [debug] Security Mode Command received
+[2025-04-09 21:04:38.584] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:04:38.699] [nas] [debug] Registration accept received
+[2025-04-09 21:04:38.699] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:04:38.699] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:04:38.699] [nas] [info] Initial Registration is successful
+[2025-04-09 21:04:38.699] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:04:38.699] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.699] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:04:38.700] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:04:38.901] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:04:39.055] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:04:39.055] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:04:39.066] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:04:39.069] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:04:39.069] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:04:39.077] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:11:09.920] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:11:09.921] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:11:09.921] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:11:09.921] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:09.921] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:11:09.921] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:11:09.921] [rrc] [info] RRC connection established
+[2025-04-09 21:11:09.921] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:11:09.956] [nas] [debug] Authentication Request received
+[2025-04-09 21:11:09.956] [nas] [debug] Received SQN [0000000001EC]
+[2025-04-09 21:11:09.956] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:11:09.973] [nas] [debug] Security Mode Command received
+[2025-04-09 21:11:09.973] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:11:10.097] [nas] [debug] Registration accept received
+[2025-04-09 21:11:10.097] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:10.097] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:11:10.097] [nas] [info] Initial Registration is successful
+[2025-04-09 21:11:10.097] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.100] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.300] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:11:10.441] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.441] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:11:10.454] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:11:10.459] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.459] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:11:10.467] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:11:09.920] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:11:09.921] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:11:09.921] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:11:09.921] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:09.921] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:11:09.921] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:11:09.921] [rrc] [info] RRC connection established
+[2025-04-09 21:11:09.921] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:11:09.956] [nas] [debug] Authentication Request received
+[2025-04-09 21:11:09.956] [nas] [debug] Received SQN [0000000001EC]
+[2025-04-09 21:11:09.956] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:11:09.973] [nas] [debug] Security Mode Command received
+[2025-04-09 21:11:09.973] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:11:10.097] [nas] [debug] Registration accept received
+[2025-04-09 21:11:10.097] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:10.097] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:11:10.097] [nas] [info] Initial Registration is successful
+[2025-04-09 21:11:10.097] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.100] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.300] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:11:10.441] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.441] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:11:10.454] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:11:10.459] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.459] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:11:10.467] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:11:09.920] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:11:09.921] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:11:09.921] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:11:09.921] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:09.921] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:11:09.921] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:11:09.921] [rrc] [info] RRC connection established
+[2025-04-09 21:11:09.921] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:11:09.956] [nas] [debug] Authentication Request received
+[2025-04-09 21:11:09.956] [nas] [debug] Received SQN [0000000001EC]
+[2025-04-09 21:11:09.956] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:11:09.973] [nas] [debug] Security Mode Command received
+[2025-04-09 21:11:09.973] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:11:10.097] [nas] [debug] Registration accept received
+[2025-04-09 21:11:10.097] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:10.097] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:11:10.097] [nas] [info] Initial Registration is successful
+[2025-04-09 21:11:10.097] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.100] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.300] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:11:10.441] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.441] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:11:10.454] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:11:10.459] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.459] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:11:10.467] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:11:09.920] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:11:09.921] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:11:09.921] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:11:09.921] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:11:09.921] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:09.921] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:11:09.921] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:11:09.921] [rrc] [info] RRC connection established
+[2025-04-09 21:11:09.921] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:11:09.921] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:11:09.956] [nas] [debug] Authentication Request received
+[2025-04-09 21:11:09.956] [nas] [debug] Received SQN [0000000001EC]
+[2025-04-09 21:11:09.956] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:11:09.973] [nas] [debug] Security Mode Command received
+[2025-04-09 21:11:09.973] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:11:10.097] [nas] [debug] Registration accept received
+[2025-04-09 21:11:10.097] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:11:10.097] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:11:10.097] [nas] [info] Initial Registration is successful
+[2025-04-09 21:11:10.097] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.100] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:11:10.100] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:11:10.300] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:11:10.441] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.441] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:11:10.454] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:11:10.459] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:11:10.459] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:11:10.467] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:18:51.309] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:18:51.309] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:18:51.310] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:18:51.310] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.310] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:18:51.310] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:18:51.310] [rrc] [info] RRC connection established
+[2025-04-09 21:18:51.310] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:18:51.357] [nas] [debug] Authentication Request received
+[2025-04-09 21:18:51.357] [nas] [debug] Received SQN [0000000001ED]
+[2025-04-09 21:18:51.357] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:18:51.379] [nas] [debug] Security Mode Command received
+[2025-04-09 21:18:51.379] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:18:51.562] [nas] [debug] Registration accept received
+[2025-04-09 21:18:51.562] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.562] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:18:51.562] [nas] [info] Initial Registration is successful
+[2025-04-09 21:18:51.562] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.563] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.563] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.567] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.757] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:18:51.868] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.868] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:18:51.878] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:18:51.946] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.946] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:18:51.955] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:18:51.309] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:18:51.309] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:18:51.310] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:18:51.310] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.310] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:18:51.310] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:18:51.310] [rrc] [info] RRC connection established
+[2025-04-09 21:18:51.310] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:18:51.357] [nas] [debug] Authentication Request received
+[2025-04-09 21:18:51.357] [nas] [debug] Received SQN [0000000001ED]
+[2025-04-09 21:18:51.357] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:18:51.379] [nas] [debug] Security Mode Command received
+[2025-04-09 21:18:51.379] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:18:51.562] [nas] [debug] Registration accept received
+[2025-04-09 21:18:51.562] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.562] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:18:51.562] [nas] [info] Initial Registration is successful
+[2025-04-09 21:18:51.562] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.563] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.563] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.567] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.757] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:18:51.868] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.868] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:18:51.878] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:18:51.946] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.946] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:18:51.955] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:18:51.309] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:18:51.309] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:18:51.310] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:18:51.310] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.310] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:18:51.310] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:18:51.310] [rrc] [info] RRC connection established
+[2025-04-09 21:18:51.310] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:18:51.357] [nas] [debug] Authentication Request received
+[2025-04-09 21:18:51.357] [nas] [debug] Received SQN [0000000001ED]
+[2025-04-09 21:18:51.357] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:18:51.379] [nas] [debug] Security Mode Command received
+[2025-04-09 21:18:51.379] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:18:51.562] [nas] [debug] Registration accept received
+[2025-04-09 21:18:51.562] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.562] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:18:51.562] [nas] [info] Initial Registration is successful
+[2025-04-09 21:18:51.562] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.563] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.563] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.567] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.757] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:18:51.868] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.868] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:18:51.878] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:18:51.946] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.946] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:18:51.955] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:18:51.309] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:18:51.309] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:18:51.310] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:18:51.310] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:18:51.310] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.310] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:18:51.310] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:18:51.310] [rrc] [info] RRC connection established
+[2025-04-09 21:18:51.310] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:18:51.310] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:18:51.357] [nas] [debug] Authentication Request received
+[2025-04-09 21:18:51.357] [nas] [debug] Received SQN [0000000001ED]
+[2025-04-09 21:18:51.357] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:18:51.379] [nas] [debug] Security Mode Command received
+[2025-04-09 21:18:51.379] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:18:51.562] [nas] [debug] Registration accept received
+[2025-04-09 21:18:51.562] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:18:51.562] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:18:51.562] [nas] [info] Initial Registration is successful
+[2025-04-09 21:18:51.562] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.563] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.563] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:18:51.567] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:18:51.757] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:18:51.868] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.868] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:18:51.878] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:18:51.946] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:18:51.946] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:18:51.955] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:22:50.499] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:22:50.499] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:22:50.500] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:22:50.500] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.500] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:22:50.500] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:22:50.500] [rrc] [info] RRC connection established
+[2025-04-09 21:22:50.500] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:22:50.530] [nas] [debug] Authentication Request received
+[2025-04-09 21:22:50.530] [nas] [debug] Received SQN [0000000001EE]
+[2025-04-09 21:22:50.530] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:22:50.552] [nas] [debug] Security Mode Command received
+[2025-04-09 21:22:50.552] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:22:50.710] [nas] [debug] Registration accept received
+[2025-04-09 21:22:50.710] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.710] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:22:50.710] [nas] [info] Initial Registration is successful
+[2025-04-09 21:22:50.710] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.711] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.711] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.721] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.913] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:22:51.074] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.075] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:22:51.084] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:22:51.090] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.091] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:22:51.099] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:22:50.499] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:22:50.499] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:22:50.500] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:22:50.500] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.500] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:22:50.500] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:22:50.500] [rrc] [info] RRC connection established
+[2025-04-09 21:22:50.500] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:22:50.530] [nas] [debug] Authentication Request received
+[2025-04-09 21:22:50.530] [nas] [debug] Received SQN [0000000001EE]
+[2025-04-09 21:22:50.530] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:22:50.552] [nas] [debug] Security Mode Command received
+[2025-04-09 21:22:50.552] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:22:50.710] [nas] [debug] Registration accept received
+[2025-04-09 21:22:50.710] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.710] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:22:50.710] [nas] [info] Initial Registration is successful
+[2025-04-09 21:22:50.710] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.711] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.711] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.721] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.913] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:22:51.074] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.075] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:22:51.084] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:22:51.090] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.091] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:22:51.099] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:22:50.499] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:22:50.499] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:22:50.500] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:22:50.500] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.500] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:22:50.500] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:22:50.500] [rrc] [info] RRC connection established
+[2025-04-09 21:22:50.500] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:22:50.530] [nas] [debug] Authentication Request received
+[2025-04-09 21:22:50.530] [nas] [debug] Received SQN [0000000001EE]
+[2025-04-09 21:22:50.530] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:22:50.552] [nas] [debug] Security Mode Command received
+[2025-04-09 21:22:50.552] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:22:50.710] [nas] [debug] Registration accept received
+[2025-04-09 21:22:50.710] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.710] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:22:50.710] [nas] [info] Initial Registration is successful
+[2025-04-09 21:22:50.710] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.711] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.711] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.721] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.913] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:22:51.074] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.075] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:22:51.084] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:22:51.090] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.091] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:22:51.099] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:22:50.499] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:22:50.499] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:22:50.500] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:22:50.500] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:22:50.500] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.500] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:22:50.500] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:22:50.500] [rrc] [info] RRC connection established
+[2025-04-09 21:22:50.500] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:22:50.500] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:22:50.530] [nas] [debug] Authentication Request received
+[2025-04-09 21:22:50.530] [nas] [debug] Received SQN [0000000001EE]
+[2025-04-09 21:22:50.530] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:22:50.552] [nas] [debug] Security Mode Command received
+[2025-04-09 21:22:50.552] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:22:50.710] [nas] [debug] Registration accept received
+[2025-04-09 21:22:50.710] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:22:50.710] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:22:50.710] [nas] [info] Initial Registration is successful
+[2025-04-09 21:22:50.710] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.711] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.711] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:22:50.721] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:22:50.913] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:22:51.074] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.075] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:22:51.084] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:22:51.090] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:22:51.091] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:22:51.099] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:39:53.925] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:39:53.926] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:39:53.926] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:39:53.926] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:53.926] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:39:53.926] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:39:53.926] [rrc] [info] RRC connection established
+[2025-04-09 21:39:53.926] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:39:53.964] [nas] [debug] Authentication Request received
+[2025-04-09 21:39:53.964] [nas] [debug] Received SQN [0000000001EF]
+[2025-04-09 21:39:53.964] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:39:54.020] [nas] [debug] Security Mode Command received
+[2025-04-09 21:39:54.020] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:39:54.142] [nas] [debug] Registration accept received
+[2025-04-09 21:39:54.142] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:54.142] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:39:54.142] [nas] [info] Initial Registration is successful
+[2025-04-09 21:39:54.142] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.144] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.144] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.161] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.345] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:39:54.490] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.490] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:39:54.502] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.502] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:39:54.502] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:39:54.514] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:39:53.925] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:39:53.926] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:39:53.926] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:39:53.926] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:53.926] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:39:53.926] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:39:53.926] [rrc] [info] RRC connection established
+[2025-04-09 21:39:53.926] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:39:53.964] [nas] [debug] Authentication Request received
+[2025-04-09 21:39:53.964] [nas] [debug] Received SQN [0000000001EF]
+[2025-04-09 21:39:53.964] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:39:54.020] [nas] [debug] Security Mode Command received
+[2025-04-09 21:39:54.020] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:39:54.142] [nas] [debug] Registration accept received
+[2025-04-09 21:39:54.142] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:54.142] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:39:54.142] [nas] [info] Initial Registration is successful
+[2025-04-09 21:39:54.142] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.144] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.144] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.161] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.345] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:39:54.490] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.490] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:39:54.502] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.502] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:39:54.502] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:39:54.514] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:39:53.925] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:39:53.926] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:39:53.926] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:39:53.926] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:53.926] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:39:53.926] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:39:53.926] [rrc] [info] RRC connection established
+[2025-04-09 21:39:53.926] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:39:53.964] [nas] [debug] Authentication Request received
+[2025-04-09 21:39:53.964] [nas] [debug] Received SQN [0000000001EF]
+[2025-04-09 21:39:53.964] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:39:54.020] [nas] [debug] Security Mode Command received
+[2025-04-09 21:39:54.020] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:39:54.142] [nas] [debug] Registration accept received
+[2025-04-09 21:39:54.142] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:54.142] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:39:54.142] [nas] [info] Initial Registration is successful
+[2025-04-09 21:39:54.142] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.144] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.144] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.161] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.345] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:39:54.490] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.490] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:39:54.502] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.502] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:39:54.502] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:39:54.514] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:39:53.925] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:39:53.926] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:39:53.926] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:39:53.926] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:39:53.926] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:53.926] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:39:53.926] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:39:53.926] [rrc] [info] RRC connection established
+[2025-04-09 21:39:53.926] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:39:53.926] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:39:53.964] [nas] [debug] Authentication Request received
+[2025-04-09 21:39:53.964] [nas] [debug] Received SQN [0000000001EF]
+[2025-04-09 21:39:53.964] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:39:54.020] [nas] [debug] Security Mode Command received
+[2025-04-09 21:39:54.020] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:39:54.142] [nas] [debug] Registration accept received
+[2025-04-09 21:39:54.142] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:39:54.142] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:39:54.142] [nas] [info] Initial Registration is successful
+[2025-04-09 21:39:54.142] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.144] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.144] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:39:54.161] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:39:54.345] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:39:54.490] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.490] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:39:54.502] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:39:54.502] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:39:54.502] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:39:54.514] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:41:26.645] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:41:26.645] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:41:26.645] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.645] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:41:26.645] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:41:26.646] [rrc] [info] RRC connection established
+[2025-04-09 21:41:26.646] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:41:26.646] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:41:26.693] [nas] [debug] Authentication Request received
+[2025-04-09 21:41:26.693] [nas] [debug] Received SQN [0000000001F0]
+[2025-04-09 21:41:26.693] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:41:26.722] [nas] [debug] Security Mode Command received
+[2025-04-09 21:41:26.722] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:41:26.828] [nas] [debug] Registration accept received
+[2025-04-09 21:41:26.828] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.828] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:41:26.828] [nas] [info] Initial Registration is successful
+[2025-04-09 21:41:26.828] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.843] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.844] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.844] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.037] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.825] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.826] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:41:27.834] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:41:27.901] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.901] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:41:27.909] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:41:26.645] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:41:26.645] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:41:26.645] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.645] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:41:26.645] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:41:26.646] [rrc] [info] RRC connection established
+[2025-04-09 21:41:26.646] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:41:26.646] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:41:26.693] [nas] [debug] Authentication Request received
+[2025-04-09 21:41:26.693] [nas] [debug] Received SQN [0000000001F0]
+[2025-04-09 21:41:26.693] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:41:26.722] [nas] [debug] Security Mode Command received
+[2025-04-09 21:41:26.722] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:41:26.828] [nas] [debug] Registration accept received
+[2025-04-09 21:41:26.828] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.828] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:41:26.828] [nas] [info] Initial Registration is successful
+[2025-04-09 21:41:26.828] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.843] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.844] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.844] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.037] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.825] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.826] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:41:27.834] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:41:27.901] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.901] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:41:27.909] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:41:26.645] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:41:26.645] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:41:26.645] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.645] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:41:26.645] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:41:26.646] [rrc] [info] RRC connection established
+[2025-04-09 21:41:26.646] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:41:26.646] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:41:26.693] [nas] [debug] Authentication Request received
+[2025-04-09 21:41:26.693] [nas] [debug] Received SQN [0000000001F0]
+[2025-04-09 21:41:26.693] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:41:26.722] [nas] [debug] Security Mode Command received
+[2025-04-09 21:41:26.722] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:41:26.828] [nas] [debug] Registration accept received
+[2025-04-09 21:41:26.828] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.828] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:41:26.828] [nas] [info] Initial Registration is successful
+[2025-04-09 21:41:26.828] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.843] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.844] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.844] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.037] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.825] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.826] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:41:27.834] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:41:27.901] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.901] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:41:27.909] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:41:26.645] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:41:26.645] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:41:26.645] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:41:26.645] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.645] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:41:26.645] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:41:26.645] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:41:26.646] [rrc] [info] RRC connection established
+[2025-04-09 21:41:26.646] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:41:26.646] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:41:26.693] [nas] [debug] Authentication Request received
+[2025-04-09 21:41:26.693] [nas] [debug] Received SQN [0000000001F0]
+[2025-04-09 21:41:26.693] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:41:26.722] [nas] [debug] Security Mode Command received
+[2025-04-09 21:41:26.722] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:41:26.828] [nas] [debug] Registration accept received
+[2025-04-09 21:41:26.828] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:41:26.828] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:41:26.828] [nas] [info] Initial Registration is successful
+[2025-04-09 21:41:26.828] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.843] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:26.844] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:26.844] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.037] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.143] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.747] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:41:27.747] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:41:27.825] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.826] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:41:27.834] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:41:27.901] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:41:27.901] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:41:27.909] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-09 21:42:19.007] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-09 21:42:19.008] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-09 21:42:19.009] [nas] [info] Selected plmn[208/93]
+[2025-04-09 21:42:19.009] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-09 21:42:19.009] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-09 21:42:19.009] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:42:19.009] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-09 21:42:19.015] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:42:19.015] [nas] [debug] Sending Initial Registration
+[2025-04-09 21:42:19.015] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-09 21:42:19.015] [rrc] [debug] Sending RRC Setup Request
+[2025-04-09 21:42:19.016] [rrc] [info] RRC connection established
+[2025-04-09 21:42:19.016] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-09 21:42:19.016] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-09 21:42:19.052] [nas] [debug] Authentication Request received
+[2025-04-09 21:42:19.052] [nas] [debug] Received SQN [0000000001F1]
+[2025-04-09 21:42:19.052] [nas] [debug] SQN-MS [000000000000]
+[2025-04-09 21:42:19.077] [nas] [debug] Security Mode Command received
+[2025-04-09 21:42:19.078] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-09 21:42:19.211] [nas] [debug] Registration accept received
+[2025-04-09 21:42:19.211] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-09 21:42:19.211] [nas] [debug] Sending Registration Complete
+[2025-04-09 21:42:19.211] [nas] [info] Initial Registration is successful
+[2025-04-09 21:42:19.211] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:42:19.212] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:42:19.212] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:42:19.214] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:42:19.413] [nas] [debug] Configuration Update Command received
+[2025-04-09 21:42:19.521] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:42:19.521] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-09 21:42:20.108] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:42:20.108] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:42:20.108] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-09 21:42:20.108] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-09 21:42:20.183] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:42:20.183] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-09 21:42:20.191] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-09 21:42:20.266] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-09 21:42:20.266] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-09 21:42:20.274] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
+UERANSIM v3.2.6
+[2025-04-10 10:02:16.372] [nas] [info] UE switches to state [MM-DEREGISTERED/PLMN-SEARCH]
+[2025-04-10 10:02:16.373] [rrc] [debug] New signal detected for cell[1], total [1] cells in coverage
+[2025-04-10 10:02:16.374] [nas] [info] Selected plmn[208/93]
+[2025-04-10 10:02:16.374] [rrc] [info] Selected cell plmn[208/93] tac[1] category[SUITABLE]
+[2025-04-10 10:02:16.374] [nas] [info] UE switches to state [MM-DEREGISTERED/PS]
+[2025-04-10 10:02:16.374] [nas] [info] UE switches to state [MM-DEREGISTERED/NORMAL-SERVICE]
+[2025-04-10 10:02:16.374] [nas] [debug] Initial registration required due to [MM-DEREG-NORMAL-SERVICE]
+[2025-04-10 10:02:16.374] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-10 10:02:16.374] [nas] [debug] Sending Initial Registration
+[2025-04-10 10:02:16.375] [nas] [info] UE switches to state [MM-REGISTER-INITIATED]
+[2025-04-10 10:02:16.375] [rrc] [debug] Sending RRC Setup Request
+[2025-04-10 10:02:16.376] [rrc] [info] RRC connection established
+[2025-04-10 10:02:16.376] [rrc] [info] UE switches to state [RRC-CONNECTED]
+[2025-04-10 10:02:16.376] [nas] [info] UE switches to state [CM-CONNECTED]
+[2025-04-10 10:02:16.440] [nas] [debug] Authentication Request received
+[2025-04-10 10:02:16.440] [nas] [debug] Received SQN [0000000001F2]
+[2025-04-10 10:02:16.440] [nas] [debug] SQN-MS [000000000000]
+[2025-04-10 10:02:16.455] [nas] [debug] Security Mode Command received
+[2025-04-10 10:02:16.455] [nas] [debug] Selected integrity[2] ciphering[0]
+[2025-04-10 10:02:16.604] [nas] [debug] Registration accept received
+[2025-04-10 10:02:16.604] [nas] [info] UE switches to state [MM-REGISTERED/NORMAL-SERVICE]
+[2025-04-10 10:02:16.604] [nas] [debug] Sending Registration Complete
+[2025-04-10 10:02:16.604] [nas] [info] Initial Registration is successful
+[2025-04-10 10:02:16.604] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-10 10:02:16.604] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-10 10:02:16.604] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-10 10:02:16.604] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-10 10:02:16.804] [nas] [debug] Configuration Update Command received
+[2025-04-10 10:02:16.908] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-10 10:02:16.908] [nas] [error] PDU Session Establishment Reject received [INSUFFICIENT_RESOURCES_FOR_SPECIFIC_SLICE_AND_DNN]
+[2025-04-10 10:02:17.473] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-10 10:02:17.473] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-10 10:02:17.473] [nas] [debug] Sending PDU Session Establishment Request
+[2025-04-10 10:02:17.473] [nas] [debug] UAC access attempt is allowed for identity[0], category[MO_sig]
+[2025-04-10 10:02:17.557] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-10 10:02:17.557] [nas] [info] PDU Session establishment is successful PSI[1]
+[2025-04-10 10:02:17.574] [app] [info] Connection setup for PDU session[1] is successful, TUN interface[uesimtun0, 10.60.0.1] is up.
+[2025-04-10 10:02:17.651] [nas] [debug] PDU Session Establishment Accept received
+[2025-04-10 10:02:17.651] [nas] [info] PDU Session establishment is successful PSI[2]
+[2025-04-10 10:02:17.657] [app] [info] Connection setup for PDU session[2] is successful, TUN interface[uesimtun1, 10.61.0.1] is up.
