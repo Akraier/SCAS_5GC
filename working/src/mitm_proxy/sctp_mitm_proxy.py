@@ -3,7 +3,6 @@ import socket
 import threading
 import traceback
 import json
-from MyNGAPdissector import NAS, NGAP 
 
 CTRL_PORT = 1337
 GNB_PORT = 38412
@@ -14,8 +13,12 @@ active_conns = {}
 
 tests= ["tc_amf_nas_integrity_failure", "tc_nas_replay_amf"]
 
-def amf_nas_integrity(amf_conn):
-    """Craft a NAS message with tampered MAC Address"""
+def amf_nas_integrity(amf_conn, gnb_conn, msg):
+    """Inject msg into amf_conn"""
+    ppid = socket.htonl(60)
+    amf_conn.sctp_send(msg, ppid=ppid)
+
+    
 
 def nas_replay_amf(amf_conn):
     """Replay Security Mode Command message"""
@@ -56,32 +59,56 @@ def control_server():
     ctrl_sock.listen(1)
     print(f"[+] Control server listening on port {CTRL_PORT}", flush=True)
 
+    ppid = socket.htonl(60)
+    
     while True:
-        conn, _ = ctrl_sock.accept()
-        data = conn.recv(4096).decode().strip()
-        try:
-            msg = json.loads(data)
-            print("[CTRL] Received JSON:", msg, flush=True)
-            if msg["testCase"] not in tests:
-                print(f"[!] Unknown test case: {msg['testCase']}", flush=True)
-                conn.send(b"Unknown test case\n")
-                continue
-            if msg["testCase"] == "tc_amf_nas_integrity_failure":
-                print("[CTRL] Test case: tc_amf_nas_integrity_failure", flush=True)
-                amf_nas_integrity(active_conns['amf'])
-                conn.send(b"Test case OK\n")
-            elif msg["testCase"] == "tc_nas_replay_amf":
-                print("[CTRL] Test case: tc_nas_replay_amf", flush=True)
-                nas_replay_amf(active_conns['amf'])
-                conn.send(b"Test case OK\n")
-        except json.JSONDecodeError:
-            print(f"[!] Invalid JSON format: {data}", flush=True)
-            conn.send(b"Invalid JSON format\n")
-            conn.close()
-            continue
+        conn, addr = ctrl_sock.accept()
+        print(f"[+] Control connection accepted {addr}", flush=True)
 
-        conn.send(b"OK\n")
+        while True:
+            try:
+                data = conn.recv(4096).decode('utf-8').strip()
+                msg = json.loads(data)
+                print("[CTRL] Received JSON:", msg, flush=True)
+                if msg["testCase"] not in tests:
+                    print(f"[!] Unknown test case: {msg['testCase']}", flush=True)
+                    conn.sendall(b"Test KO\n")
+                    continue
+                elif msg["testCase"] == "tc_amf_nas_integrity_failure":
+                    print(f"[CTRL] Test case: tc_amf_nas_integrity_failure STARTED", flush=True)
+                    print(f"[CTRL] Trying to inject {bytes.fromhex(msg['msg'])}", flush=True)
+
+                    active_conns["amf"].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
+
+                    print(f"[CTRL] tc_amf_nas_integrity_failure injected", flush=True)
+                    conn.sendall(b"Test OK\n")
+                    print("[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED", flush=True)
+                    continue
+                elif msg["testCase"] == "tc_nas_replay_amf":
+                    print("[CTRL] Test case: tc_nas_replay_amf", flush=True)
+                    print(f"[CTRL] Trying to inject {bytes.fromhex(msg['msg'])}", flush=True)
+                    active_conns["amf"].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
+                    print(f"[CTRL] tc_nas_replay_amf injected", flush=True)
+                    conn.sendall(b"Test OK\n")
+                    print("[CTRL] Test case: tc_nas_replay_amf FINISHED", flush=True)
+                    continue
+                elif not msg:
+                    print("[CTRL] Control Connection closed", flush=True)
+                    conn.close()
+                    return
+            except json.JSONDecodeError:
+                print(f"[!] Invalid JSON format: {data}", flush=True)
+                conn.send(b"Test KO\n")
+                conn.close()
+                traceback.print_exc()
+                continue
+            except Exception as e:
+                print(f"[!] Error: {e}", flush=True)
+                conn.send(b"Test KO\n")
+                conn.close()
+                traceback.print_exc()
         conn.close()
+
 
 def main():
     """ Server waiting for gNB connections"""

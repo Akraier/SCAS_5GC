@@ -14,6 +14,8 @@ from MyNGAPdissector import NAS, NGAP # type: ignore
 from scapy.all import sniff, PcapWriter, Ether, SCTPChunkData, SCTP, IP, wrpcap
 
 pkt_counter = 0
+PROXY_IP = "10.100.200.200"
+PROXY_PORT = 1337
 script_dir = os.path.dirname(os.path.abspath(__file__))
 qpkt = multiprocessing.Queue()
 
@@ -372,7 +374,7 @@ class Testbench:
         to see if no corresponding response message was sent by the AMF. If applicable, AMF application logs could be checked for the rejection of the replayed     
         NAS Security Mode Complete message.
     """
-    def tc_nas_replay_amf(self,pipe):
+    def tc_nas_replay_amf(self, pipe, ctrl_pipe):
         print("[+] tc_nas_replay_amf test case STARTED")
 
         self.__ue_check_alive()
@@ -381,24 +383,35 @@ class Testbench:
         """Capture NAS Security Mode Complete message, not necessary the last received one"""
         
         msg = self.__search_NAS_message('Security mode complete', False)
-
+        
         if msg is None:
             print("[!] Somehow Security Mode Complete message not found in history...")
             exit(0)
 
         """Replay Security Mode Complete message"""
-        print(f"[DEBUG] {msg['NAS']}")
-        self.__sctp_send_nas(self.amfip.value, 38412, msg['NAS'])
+        smc_raw = NGAP()
+        smc_raw = smc_raw.build_ngap_pdu(msg.get("NGAP"))
+        smc = {"testCase":"tc_nas_replay_amf",
+               "msg": smc_raw.hex()}
+        print(f"[DEBUG] Security Mode Complete message {smc}")
+        ctrl_pipe.send(smc)
+        print(f"[+] Security Mode Complete message sent to Controller")
+
 
         """ Check whether the SMC was not processed by the AMF --> Looking for Registration Accept """
-
-        ret = self.__search_NAS_message("Registration Accept")
-        if ret is None:
-            #Not found, TEST PASSED
-            pipe.send(True)
-        else:
-            #Found, TEST FAILED
+        test_result = ctrl_pipe.recv()
+        if test_result == "Test OK":
+            print(f"[+] Test OK", flush=True)
+            ret = self.__search_NAS_message('Registration accept')
+            if ret is None:
+                pipe.send(True)
+            else:
+                pipe.send(False)
+        elif test_result == "Test KO":
+            print(f"[!] Test KO", flush=True)
             pipe.send(False)
+            return
+        
     
     """
     Test case: TC_AMF_NAS_INTEGRITY_FAILURE
@@ -420,7 +433,7 @@ class Testbench:
             Craft and send Deregistration message with tampered integrity value, possibly 0xffffffff
             
     """
-    def tc_amf_nas_integrity_failure(self,pipe):
+    def tc_amf_nas_integrity_failure(self,pipe, ctrl_pipe):
         print("[+] amf_nas_integrity test case STARTED")
 
         self.__ue_check_alive()
@@ -432,43 +445,20 @@ class Testbench:
         """
 
         msg = self.__search_NAS_message('Security mode complete')
-
+        if msg is None:
+            print("[!] Somehow Security Mode Complete message not found in history...")
+            pipe.send(False)
+            return
                 
         """ 
         3. After the Security Mode Complete message, send a NAS message from the UE to the AMF with a wrong NAS-MAC. 
         The message used must not be an exception in TS 24.501 [5].
         grub a NAS message from the history from which AMF reaction is expected 
         """
-        
-        #send tampered mac deregistration request
-        #ensure no deregistration response is received
-        try:
-            """
-            Read deregistration request sample previously sniffed
-            .json format ->
-            {
-                "raw": //full dereg request Eth to NAS
-                "NGAP": ..
-                "NAS": .. 
-            }
-            """
-            file_path = os.path.join(script_dir, "../data/hex_dereg_req.json")
-            """ 
-            hex_dereg_req.json is extracted from the particular free5gc instance 
-            I'm using in this study. For other instances, consider regenerate the
-            file to better fit your environment.  
-            
-            """
-            with open(file_path) as f:
-                data = json.load(f)
-        except Exception as e:
-            print("[!]Error extracting deregistration request: ")
-            traceback.print_exc()
-            return None
-        
+       
+        dereg_ngap = "002e4043000004000a0002000100550002000100260019187e02b9ddb068047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406"
         ngap = NGAP()
-        """Using dissected json for easier modification of target fields """
-        ngap.dissect_ngap_pdu(bytes.fromhex(data["ngap"]))
+        ngap.dissect_ngap_pdu(bytes.fromhex(dereg_ngap))
         print("[+] Injecting DEREGISTRATION REQUEST with wrong NAS-MAC")
         
         print("[+] Untampered Deregistration Retrieved")
@@ -479,18 +469,19 @@ class Testbench:
         mac = mac_bytes.hex()
         print(f"[+] --> Tampered MAC with 0xff: {mac}")
         ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["mac"] = mac
+
         """Adequating necessary values """
         ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"]["NAS PDU"]["SecurityProtectedNASPDU"]["seq_no"] = self.nas_seq_num.value
 
-        """ InitUEMsg = self.__search_NGAP("id-InitialUEMessage")
-        ngap.segment["Initiating Message"]["IEs"]["id-AMF-UE-NGAP-ID"]["IE_value"] = InitUEMsg[0]["Initiating Message"]["IEs"]["id-AMF-UE-NGAP-ID"]["IE_value"]
-        ngap.segment["Initiating Message"]["IEs"]["id-RAN-UE-NGAP-ID"]["IE_value"] = InitUEMsg[0]["Initiating Message"]["IEs"]["id-RAN-UE-NGAP-ID"]["IE_value"] """
-
         print("[+] Tampered Deregistration Crafted")
-        #ngap.print_ngap()
+        raw_msg = ngap.build_ngap_pdu(ngap.segment).hex()
 
-        raw_ngap = ngap.build_ngap_pdu(ngap.segment)
-        self.__sctp_send_nas(self.amfip.value,38412,ngap.segment["Initiating Message"]["IEs"]["id-NAS-PDU"])
+        ctrl_data = {
+            "testCase": "tc_amf_nas_integrity_failure", 
+            "msg": raw_msg
+        }
+        
+        ctrl_pipe.send(ctrl_data)
 
         """
         Evaluate test result.
@@ -499,16 +490,23 @@ class Testbench:
             IF NONE, TEST PASS. IF ANY TAST FAILS. 
         --> ALSO, look at the UE MM status, if still registered tast fails.
         """    
+        print("[DEBUG] Waiting for test result from Controller")
+        test_result = ctrl_pipe.recv()
+        print(f"[DEBUG] Test result: {test_result}")
+        if test_result == "Test OK":
+            print(f"[+] Test OK", flush=True)
+            ret = self.__search_NAS_message('Deregistration accept')
+            if ret is None:
+                pipe.send(True)
+            else:
+                pipe.send(False)
+        elif test_result == "Test KO":
+            print(f"[!] Test KO", flush=True)
+            pipe.send(False)
+            return
+        
 
-        ret = self.__search_NAS_message('Deregistration accept')
-        if ret is None:
-            #Not found, TEST PASSED
-            pipe.send(True)
-        else:
-            #Found, TEST FAILED
-            pipe.send(False)                                                                                
-
-    def tc_nas_null_int_amf(self,pipe):
+    def tc_nas_null_int_amf(self, pipe, ctrl_pipe):
         """
         NIA0 is disabled in AMF in the deployments where support of unauthenticated emergency session is not a regulatory requirement 
         as specified in TS 33.501 [2], clause 5.5.2
@@ -531,7 +529,7 @@ class Testbench:
 
         smc = self.__search_NAS_message('Security mode command', False)
         if smc is not None:
-            
+            print(f"[+] Extracting Integrity Algorithm from Security Mode Command...")
             algs = NAS.dissect_NAS_Sec_Alg(smc['NAS'])
             if algs is not None:
                 """ Algorithms correctly issued"""
@@ -548,6 +546,10 @@ class Testbench:
                 print(f'[!] Security Mode Command not Integrity Protected - or Error during NAS dissecting')
                 pipe.send(False)
 
+    def tc_ue_sec_cap_as_context_setup(self, pipe, ctrl_pipe):
+        """Verify that the UE security capabilities sent by the UE in the initial NAS registration request are the same 
+           UE security capabilities sent in the NGAP Context Setup Request message to establish AS security."""
+
     def tc_ue_sec_cap_handling_amf(self, pipe):
         """
         Registration Request with unsecure UE security capabilities
@@ -563,9 +565,51 @@ class Testbench:
             pipe.send(False)
             return
 
+def ctrl(pipe):
+    """ Function handling control connection with the proxy"""
+    """ Receives data from the testCase function through the pipe
+        and sends it to the proxy through the socket """
+    
+    sckt = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sckt.connect((PROXY_IP, PROXY_PORT))
+    print(f"[+] Control connection established with {PROXY_IP}:{PROXY_PORT}", flush=True)
+
+    while True:
+        if pipe.poll():
+            """ Expected data is dict = {'testCase': tc_name, 'msg': msg} """
+
+            data = pipe.recv()
+            print(f"[CTRL] Received data: {data}", flush=True)
+            
+            """ Exit condition """
+            if data == "exit":
+                print("[CTRL] Exiting control connection", flush=True)
+                sckt.close()
+                break
+
+            data = json.dumps(data).encode()
+
+            sckt.sendall(data) 
+            print(f"[CTRL] Sent data to proxy: {data}", flush=True)
+            sckt.settimeout(5)
+            try:
+                resp = sckt.recv(1024).decode('utf-8').strip()
+            except socket.timeout:
+                print("[!] Timeout waiting for response from proxy", flush=True)
+            if resp == "Test OK":
+                print(f"[CTRL] Test case executed successfully", flush=True)
+                pipe.send("Test OK")
+            elif resp == "Test KO":
+                print(f"[CTRL] Test case execution failed", flush=True)
+                pipe.send("Test KO")  
+            elif not resp:
+                print("[CTRL] Control connection closed by proxy", flush=True)
+                sckt.close()
+                break
+
 def start_free5gc():
     try:
-        os.system("docker compose -f /home/vincenzo_d/free5gc-compose/docker-compose.yaml up -d >/dev/null 2>&1")
+        os.system("docker compose -f /home/vincenzo_d/free5gc-compose/docker-compose.yaml up --build -d >/dev/null 2>&1")
     except Exception as e:
         print("Error starting Free5GC:", e, flush=True)
 
@@ -606,6 +650,8 @@ def graceful_shutdown(signal=None,frame=None):
         subprocess.run(["docker", "logs", "ueransim"], stdout=log_file, stderr=subprocess.STDOUT)
     with open("ue.log", "a") as log_file:
         subprocess.run(["docker", "logs", "ue"], stdout=log_file, stderr=subprocess.STDOUT)
+    with open("proxy.log", "a") as log_file:
+        subprocess.run(["docker", "logs", "sctp-proxy"], stdout=log_file, stderr=subprocess.STDOUT)
     subprocess.run(["docker", "compose", "-f", "/home/vincenzo_d/free5gc-compose/docker-compose.yaml", "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     
     print("Docker Compose shutdown completed.")
@@ -648,7 +694,12 @@ if __name__ == "__main__":
     """ Once free5gc is ready start parsing data"""
     testbench.pktparser.start()
 
+    """ Create testCase-Controller pipe"""
+    server_pipe, client_pipe = multiprocessing.Pipe()
 
+    """ Create and start controller process"""
+    ctrl_proc = multiprocessing.Process(target=ctrl, args=(server_pipe,)) 
+    ctrl_proc.start()
 
     """
     Running tests in self.td_test
@@ -659,7 +710,7 @@ if __name__ == "__main__":
         fun = getattr(testbench,testbench.tests[test]['name'],None)
         if callable(fun):
             #print(f'[DEBUG] Running test {testbench.tests[test]["name"]}')
-            t = multiprocessing.Process(target = fun, args=(child_pipe,))
+            t = multiprocessing.Process(target = fun, args=(child_pipe,client_pipe))
             t.start()
             result = parent_pipe.recv()
             if result:
@@ -669,12 +720,16 @@ if __name__ == "__main__":
             t.join() 
         else:
             print(f'[!] Method {testbench.tests[test]["name"]} not found')
-
+    client_pipe.send("exit")
+    
     """
     End gracefully
     """
     sniffer.terminate()
     sniffer.join()
+
+    ctrl_proc.terminate()
+    ctrl_proc.join()
 
     testbench.pktparser.terminate()
     testbench.pktparser.join()

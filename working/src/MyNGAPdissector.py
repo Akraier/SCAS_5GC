@@ -775,13 +775,9 @@ class NAS:
                 raw = raw[1:] """
 
             sht = raw[2] & 0x0F    #SHT is lower nibble bits 0-3
-            #print(f"[DEBUG] Raw NAS PDU: {raw.hex()}")
-            #print(f"[DEBUG] Length: {length}")
-            #print(f"[DEBUG] epd value: {epd}")
-            #print(f"[DEBUG] sht value: {sht}")
+            
             if sht == 0:
                 #plain NAS PDU
-                #print("[DEBUG] Plain NAS PDU")
                 pdu = self.dissect_plain_nas_pdu(raw[3:], epd, sht)
                 if pdu != None:
                     self.pdu = {"PlainNASPDU":pdu}
@@ -796,11 +792,6 @@ class NAS:
                 epd_enc = enc_msg[0]
                 sht_enc = enc_msg[1] & 0x0F
                 pdu_enc = enc_msg[2:]
-                #print(f"[DEBUG] MAC : {mac.hex()}")
-                #print(f"[DEBUG] Seq.No: {seq_no}")
-                #print(f"[DEBUG]EPD_ENC: {epd_enc}")
-                #print(f"[DEBUG]SHT_ENC: {sht_enc}")
-                #print(f"[DEBUG]PDU_END: {pdu_enc.hex()}")
 
                 plain_pdu = self.dissect_plain_nas_pdu(pdu_enc, epd_enc, sht_enc)
                 if plain_pdu is None:
@@ -824,7 +815,7 @@ class NAS:
         
     @staticmethod
     def dissect_NAS_Sec_Alg(NAS_PDU):
-        msg_v = NAS_PDU.get('PlainNASPDU').get('message_value')
+        msg_v = NAS_PDU.get('NAS PDU').get('PlainNASPDU').get('message_value')
         if msg_v is not None:
             raw_msg = bytes.fromhex(msg_v)
             security_algs = raw_msg[0]
@@ -1034,13 +1025,7 @@ class NGAP:
             else:
                 value_length = chunk_data[4]
                 value = chunk_data[5:5+value_length]
-            """ print(f"[DEBUG] First Byte: {first_byte}")
-            print(f"[DEBUG] Reserved: {reserved}")
-            print(f"[DEBUG] PDU Type: {pdu_type}")
-            print(f"[DEBUG] Procedure Code: {procedure_code}")
-            print(f"[DEBUG] Criticality: {criticality}") 
-            print(f"[DEBUG] Value Length: {value_length}")
-            print(f"[DEBUG] Value: {value.hex()}")"""
+            
             IEs = self.dissect_ngap_ie(value)    #returns a dictionary containing all IEs in the packet
             if IEs is None:
                 print("[-] Error dissecting IEs")
