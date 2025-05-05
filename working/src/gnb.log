@@ -401,3 +401,1935 @@ UERANSIM v3.2.6
 [2025-04-10 10:02:16.603] [ngap] [debug] Initial Context Setup Request received
 [2025-04-10 10:02:17.556] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
 [2025-04-10 10:02:17.649] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/ueransim/json": dial unix /var/run/docker.sock: connect: permission denied
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+UERANSIM v3.2.7
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+UERANSIM v3.2.7
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+UERANSIM v3.2.7
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+UERANSIM v3.2.7
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+UERANSIM v3.2.7
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+UERANSIM v3.2.7
+[2025-04-16 10:43:41.952] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:43:46.605] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 10:45:11.207] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 10:45:20.376] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 10:45:20.378] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-16 10:45:20.378] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 10:45:20.390] [ngap] [debug] NG Setup Response received
+[2025-04-16 10:45:20.390] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 10:45:44.836] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 10:45:44.836] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 10:45:44.836] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 10:45:44.836] [ngap] [debug] Removing AMF context[2]
+ERROR: Field 'address' must be a valid IP address, or FQDN, or a valid network interface with an IP address.
+UERANSIM v3.2.7
+[2025-04-16 12:10:53.441] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:10:56.439] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+UERANSIM v3.2.7
+[2025-04-16 12:13:32.950] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:13:33.001] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:13:33.002] [sctp] [debug] SCTP association setup ascId[19]
+[2025-04-16 12:13:33.005] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:13:33.017] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:13:33.017] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:15:35.791] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:15:35.818] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:15:35.819] [sctp] [debug] SCTP association setup ascId[25]
+[2025-04-16 12:15:35.819] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:15:35.849] [ngap] [debug] NG Setup Response received
+[2025-04-16 12:15:35.849] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-16 12:32:40.451] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 12:32:40.495] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 12:32:40.496] [sctp] [debug] SCTP association setup ascId[31]
+[2025-04-16 12:32:40.496] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 12:32:46.124] [rrc] [debug] UE[1] new signal detected
+terminate called after throwing an instance of 'sctp::SctpError'
+  what():  SCTP receive message failure: Transport endpoint is not connected
+[2025-04-16 12:32:48.953] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-16 12:32:48.953] [sctp] [warning] Unhandled SCTP notification received
+[2025-04-16 12:32:48.953] [ngap] [error] Association terminated for AMF[2]
+[2025-04-16 12:32:48.953] [ngap] [debug] Removing AMF context[2]
+UERANSIM v3.2.7
+[2025-04-16 13:13:48.624] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.698] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-16 13:13:48.699] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.701] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-16 13:13:48.769] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-16 13:13:48.769] [ngap] [info] NG Setup procedure is successful
+[2025-04-16 13:13:56.551] [rrc] [debug] UE[1] new signal detected
+[2025-04-16 13:13:56.614] [rrc] [info] RRC Setup for UE[1]
+[2025-04-16 13:13:56.619] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-16 13:13:59.020] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-16 13:14:01.347] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-16 13:14:02.090] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 09:49:46.385] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 09:49:46.497] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:46.505] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:46.506] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:46.665] [ngap] [debug] NG Setup Response received
+[2025-04-28 09:49:46.666] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 09:49:53.582] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 09:49:53.657] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+UERANSIM v3.2.7
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 09:49:53.663] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 09:49:55.362] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 09:49:58.464] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 09:49:58.623] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+UERANSIM v3.2.7
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:25:57.538] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:25:57.556] [sctp] [error] Connecting to 10.100.200.200:38412 failed. SCTP could not connect: Connection refused
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:26:06.420] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 12:34:19.540] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+UERANSIM v3.2.7
+[2025-04-28 12:34:19.602] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:34:19.606] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 12:34:26.842] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:34:27.161] [sctp] [debug] SCTP association shutdown (clientId: 2)
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+[2025-04-28 12:34:27.161] [ngap] [error] Association terminated for AMF[2]
+[2025-04-28 12:34:27.161] [ngap] [debug] Removing AMF context[2]
+[2025-04-28 12:34:27.161] [sctp] [warning] Unhandled SCTP notification received
+terminate called recursively
+UERANSIM v3.2.7
+[2025-04-28 12:38:29.411] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 12:38:29.466] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 12:38:29.467] [sctp] [debug] SCTP association setup ascId[11]
+[2025-04-28 12:38:29.467] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 12:38:29.485] [ngap] [debug] NG Setup Response received
+[2025-04-28 12:38:29.485] [ngap] [info] NG Setup procedure is successful
+UERANSIM v3.2.7
+[2025-04-28 13:00:15.468] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:00:15.491] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:00:15.493] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-28 13:00:15.493] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:00:15.674] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:00:15.674] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:00:18.241] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:00:18.282] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:00:18.285] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:00:19.330] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-28 13:24:36.547] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-28 13:24:36.564] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-28 13:24:36.566] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-28 13:24:36.566] [ngap] [debug] Sending NG Setup Request
+[2025-04-28 13:24:36.583] [ngap] [debug] NG Setup Response received
+[2025-04-28 13:24:36.583] [ngap] [info] NG Setup procedure is successful
+[2025-04-28 13:24:41.632] [rrc] [debug] UE[1] new signal detected
+[2025-04-28 13:24:41.640] [rrc] [info] RRC Setup for UE[1]
+[2025-04-28 13:24:41.644] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-28 13:24:43.849] [ngap] [debug] Initial Context Setup Request received
+Error response from daemon: No such container: ueransim
+Error response from daemon: No such container: ueransim
+Error response from daemon: No such container: ueransim
+Error response from daemon: No such container: ueransim
+UERANSIM v3.2.7
+[2025-04-30 08:48:12.863] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-30 08:48:12.917] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-30 08:48:12.918] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-30 08:48:12.919] [ngap] [debug] Sending NG Setup Request
+[2025-04-30 08:48:12.987] [ngap] [debug] NG Setup Response received
+[2025-04-30 08:48:12.987] [ngap] [info] NG Setup procedure is successful
+[2025-04-30 08:48:15.568] [rrc] [debug] UE[1] new signal detected
+[2025-04-30 08:48:15.620] [rrc] [info] RRC Setup for UE[1]
+[2025-04-30 08:48:15.631] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-30 08:48:16.806] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-30 08:48:12.863] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-30 08:48:12.917] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-30 08:48:12.918] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-30 08:48:12.919] [ngap] [debug] Sending NG Setup Request
+[2025-04-30 08:48:12.987] [ngap] [debug] NG Setup Response received
+[2025-04-30 08:48:12.987] [ngap] [info] NG Setup procedure is successful
+[2025-04-30 08:48:15.568] [rrc] [debug] UE[1] new signal detected
+[2025-04-30 08:48:15.620] [rrc] [info] RRC Setup for UE[1]
+[2025-04-30 08:48:15.631] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-30 08:48:16.806] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-30 08:48:12.863] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-30 08:48:12.917] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-30 08:48:12.918] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-30 08:48:12.919] [ngap] [debug] Sending NG Setup Request
+[2025-04-30 08:48:12.987] [ngap] [debug] NG Setup Response received
+[2025-04-30 08:48:12.987] [ngap] [info] NG Setup procedure is successful
+[2025-04-30 08:48:15.568] [rrc] [debug] UE[1] new signal detected
+[2025-04-30 08:48:15.620] [rrc] [info] RRC Setup for UE[1]
+[2025-04-30 08:48:15.631] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-30 08:48:16.806] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-30 08:48:12.863] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-30 08:48:12.917] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-30 08:48:12.918] [sctp] [debug] SCTP association setup ascId[3]
+[2025-04-30 08:48:12.919] [ngap] [debug] Sending NG Setup Request
+[2025-04-30 08:48:12.987] [ngap] [debug] NG Setup Response received
+[2025-04-30 08:48:12.987] [ngap] [info] NG Setup procedure is successful
+[2025-04-30 08:48:15.568] [rrc] [debug] UE[1] new signal detected
+[2025-04-30 08:48:15.620] [rrc] [info] RRC Setup for UE[1]
+[2025-04-30 08:48:15.631] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-30 08:48:16.806] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-30 09:20:35.162] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-30 09:20:35.193] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-30 09:20:35.202] [sctp] [debug] SCTP association setup ascId[9]
+[2025-04-30 09:20:35.204] [ngap] [debug] Sending NG Setup Request
+[2025-04-30 09:20:35.224] [ngap] [debug] NG Setup Response received
+[2025-04-30 09:20:35.224] [ngap] [info] NG Setup procedure is successful
+[2025-04-30 09:20:39.441] [rrc] [debug] UE[1] new signal detected
+[2025-04-30 09:20:39.454] [rrc] [info] RRC Setup for UE[1]
+[2025-04-30 09:20:39.458] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-30 09:20:42.618] [ngap] [debug] Initial Context Setup Request received
+UERANSIM v3.2.7
+[2025-04-30 09:24:03.213] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-04-30 09:24:03.233] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-04-30 09:24:03.234] [sctp] [debug] SCTP association setup ascId[15]
+[2025-04-30 09:24:03.235] [ngap] [debug] Sending NG Setup Request
+[2025-04-30 09:24:03.250] [ngap] [debug] NG Setup Response received
+[2025-04-30 09:24:03.250] [ngap] [info] NG Setup procedure is successful
+[2025-04-30 09:24:04.995] [rrc] [debug] UE[1] new signal detected
+[2025-04-30 09:24:07.500] [rrc] [info] RRC Setup for UE[1]
+[2025-04-30 09:24:07.506] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-04-30 09:24:09.536] [ngap] [debug] Initial Context Setup Request received

@@ -1,0 +1,1487 @@
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.48/containers/sctp-proxy/json": dial unix /var/run/docker.sock: connect: permission denied
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Control server listening on port 1337
+[+] Forwarding AMF -> gNB
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+[!] Error: [Errno 9] Bad file descriptor
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+[!] Error: [Errno 9] Bad file descriptor
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52334
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+[!] Error: [Errno 9] Bad file descriptor
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+[+] Control server listening on port 1337
+           ^^^^^^^^^^^^^^^
+[+] Listening on SCTP port 38412
+OSError: [Errno 9] Bad file descriptor
+[+]gNB Connected 10.100.200.13:52334
+
+[+]Connected to AMF 10.100.200.16:38412
+During handling of the above exception, another exception occurred:
+[+] Forwarding gNB -> AMF
+
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+Traceback (most recent call last):
+    self.run()
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    dst_sock.sctp_send(data[2], ppid=ppid)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+    conn.send(b"Test KO\n")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+OSError: [Errno 9] Bad file descriptor
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.3:46211
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.17:49004
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44860)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:34430
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46530)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+[!] Error: [Errno 9] Bad file descriptor
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:37739
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44054)
+[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff007e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
+[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
+[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x00~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
+[CTRL] tc_amf_nas_integrity_failure injected
+[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+[!] Error: [Errno 9] Bad file descriptor
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Error response from daemon: No such container: sctp-proxy
+Error response from daemon: No such container: sctp-proxy
+Error response from daemon: No such container: sctp-proxy
+Error response from daemon: No such container: sctp-proxy
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37855
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37855
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37855
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37855
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.12:33190
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 48632)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:42253
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 51816)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor

@@ -218,7 +218,7 @@ ngap_ie_dict = {
     128: "id-DL-NGU-UP-TNLInformation",
     129: "id-NetworkInstance",
     130: "id-PDUSessionAggregateMaximumBitRate",
-     131: "id-PDUSessionResourceFailedToModifyListModCfm",
+    131: "id-PDUSessionResourceFailedToModifyListModCfm",
     132: "id-PDUSessionResourceFailedToSetupListCxtFail",
     133: "id-PDUSessionResourceListCxtRelReq",
     134: "id-PDUSessionType",

@@ -3,14 +3,13 @@ import subprocess
 import signal
 import time
 import json
-import sctp
+#import sctp
 import socket
 import logging
 import argparse
 import traceback
 import os
-from pycrate_asn1dir import NGAP as NGAP_asn1
-from MyNGAPdissector import NAS, NGAP # type: ignore
+from MyNGAPdissector import NAS, NGAP, nas_int_algs, nas_enc_algs
 from scapy.all import sniff, PcapWriter, Ether, SCTPChunkData, SCTP, IP, wrpcap
 
 pkt_counter = 0
@@ -177,102 +176,12 @@ class Testbench:
             return None
 
     
-    def __sctp_send_nas(self,ip, port, nas_data_dict):
-        """
-        Create sctp association and send message
-        """
-        sctp_socket = sctp.sctpsocket_tcp(socket.AF_INET)
-
-        sctp_socket.bind(('0.0.0.0', 5001))
-
-        print(f"[+] SCTP Connection to AMF at {ip}:{port}")
-        sctp_socket.connect((ip,port))
-
-        """ Send NGSetupRequest """
-        """ """
-
-        NGSetupReq = self.__search_NGAP("id-NGSetup")
-        if len(NGSetupReq) == 0:
-            print("[!] NGSetupReq not found...")
-            return None
-        for i in range(len(NGSetupReq)):
-            k = next(iter(NGSetupReq[i]))
-            t = NGSetupReq[i][k]["IEs"].get("id-RANNodeName",{}).get("IE_value")
-            if t is None:
-                continue
-            elif "UERANSIM" in bytes.fromhex(t).decode("utf-8"):
-                break
-
-        """
-        0000   00 02 f8 39 50 00 00 00 01                        2089300000001
-        """
-        NGSetupReq[i]["Initiating Message"]["IEs"]["id-GlobalRANNodeID"]["IE_value"] = "0002f8395000000001"
-        
-        """
-        0000   55 45 52 41 4e 53 49 4d 2d 67 6e 62 2d 32 30 38   UERANSIM-gnb-208
-        0010   2d 39 33 2d 31                                    -93-1
-        """
-        NGSetupReq[i]["Initiating Message"]["IEs"]["id-RANNodeName"]["IE_value"] = "0a00554552414e53494d2d676e622d3230382d39332d31"        
-        
-        print(f"[+] Tampered NGSetupRequest Crafted")
-        
-        ppid = socket.htonl(60)
-        ngap_ = NGAP()
-        raw_NGSetupReq = ngap_.build_ngap_pdu(NGSetupReq[i])
-
-        sctp_socket.sctp_send(raw_NGSetupReq, ppid=ppid)
-        print(f"[+] NGSetupRequest sent!")
-
-        sctp_socket.sctp_recv(1024)
-
-        """ Search InitialUEMessage Registration Request"""
-        RegReq = self.__search_NAS_message("Registration request")
-        if RegReq is None:
-            print("[!] Registration Request not found...")
-            return None
-        print(f'[DEBUG] Registration Request {RegReq["NGAP"]}')
-        raw_RegReq = ngap_.build_ngap_pdu(RegReq["NGAP"])
-        print(f'[DEBUG] Registration Request raw {raw_RegReq}')
-        sctp_socket.sctp_send(raw_RegReq, ppid=ppid)
-        print(f"[+] Registration Request sent!")
-        sctp_socket.sctp_recv(1024)
-
-        """ Search UplinkNASTransport"""
-
-        """ Retrieve NGAP initialUEMessage """
-        InitUEMsg = self.__search_NGAP("id-InitialUEMessage")
-
-        """ Modify IEs if required"""
-        """ id-RAN-UE-NGAP-ID <- Want to reuse the exhistent one"""
-        """ id-NAS-PDU <- Modify with raw_nas"""
-        """ id-UserLocationInformation """
-        """ id-RRCEstablishmentCause """
-        """ id-UEContextRequest """
-
-        if len(InitUEMsg) == 0:
-            print("[!] InitialUEMessage not found...")
-            return None
-        print(f'[DEBUG] Initial {InitUEMsg[0]["Initiating Message"]["IEs"]["id-NAS-PDU"]}')
-        print(f'[DEBUG] Target {nas_data_dict}')
-        InitUEMsg[0]["Initiating Message"]["IEs"]["id-NAS-PDU"] = nas_data_dict
-        print(f'[DEBUG] Final {InitUEMsg[0]}')
-
-        """ Insert id-Five5-S-TMSI IE"""
-        raw_data = ngap_.build_ngap_pdu(InitUEMsg[0])
-        print(f"[DEBUG] raw_data {raw_data}")
-        sctp_socket.sctp_send(raw_data, ppid=ppid)
-        print(f"[+] SCTP message sent!")
-
-        sctp_socket.sctp_recv(1024)
-        print(f"[+] SCTP message received!")
-
-        sctp_socket.close()
 
 
     def __ue_check_alive(self):
         """Returns control only one UE is alive"""
         while True:
-            ue_status = self.__ueransim_ue_interaction("status")   #Strongly dependent on free5gc
+            ue_status = self.__ueransim_ue_interaction("status")   #Strongly dependent on ueransim
             if "MM-REGISTERED" not in ue_status or "RM-REGISTERED" not in ue_status:
                 """ 
                 Sync with ue waiting for registration  
@@ -393,7 +302,6 @@ class Testbench:
         smc_raw = smc_raw.build_ngap_pdu(msg.get("NGAP"))
         smc = {"testCase":"tc_nas_replay_amf",
                "msg": smc_raw.hex()}
-        print(f"[DEBUG] Security Mode Complete message {smc}")
         ctrl_pipe.send(smc)
         print(f"[+] Security Mode Complete message sent to Controller")
 
@@ -490,9 +398,7 @@ class Testbench:
             IF NONE, TEST PASS. IF ANY TAST FAILS. 
         --> ALSO, look at the UE MM status, if still registered tast fails.
         """    
-        print("[DEBUG] Waiting for test result from Controller")
         test_result = ctrl_pipe.recv()
-        print(f"[DEBUG] Test result: {test_result}")
         if test_result == "Test OK":
             print(f"[+] Test OK", flush=True)
             ret = self.__search_NAS_message('Deregistration accept')
@@ -531,24 +437,47 @@ class Testbench:
         if smc is not None:
             print(f"[+] Extracting Integrity Algorithm from Security Mode Command...")
             algs = NAS.dissect_NAS_Sec_Alg(smc['NAS'])
-            if algs is not None:
-                """ Algorithms correctly issued"""
-                integrity = algs[1]
-                if integrity == '5GIA0':
+            try:
+                nas_smc = smc['NAS']
+                msg_v = nas_smc.get('NAS PDU').get('PlainNASPDU').get('message_value')
+                if msg_v is not None:
+                    raw_msg = bytes.fromhex(msg_v)
+                    security_algs = raw_msg[0]
+
+                    """4 LSBits"""
+                    int_alg = nas_int_algs[security_algs & 0x0F]
+                    """4 MSBits"""
+                    cipher_alg = nas_enc_algs[(security_algs & 0xF0) >> 4]
+                    
+                else:
+                    print('[!] Wrong NAS PDU')
+                    return None
+                
+                if int_alg == '5GIA0':
                     """Test Failed"""
                     pipe.send(False)
                 else:
                     """Test Passed"""
                     pipe.send(True)
-                
-                print(f'[+] Integrity Algorithm Used in Security Mode Command {integrity}')
-            else:
-                print(f'[!] Security Mode Command not Integrity Protected - or Error during NAS dissecting')
+
+                    print(f'[+] Integrity Algorithm Used in Security Mode Command {int_alg}')
+                    print(f'[+] Integrity Algorithm Used in Security Mode Command {cipher_alg}')
+            except Exception as e:
+                print(f'[!] Error during NAS dissecting: {e}')
                 pipe.send(False)
+                traceback.print_exc()
+
 
     def tc_ue_sec_cap_as_context_setup(self, pipe, ctrl_pipe):
         """Verify that the UE security capabilities sent by the UE in the initial NAS registration request are the same 
            UE security capabilities sent in the NGAP Context Setup Request message to establish AS security."""
+        
+
+        """ Look for NGAP Context Setup Request """
+        context_setup = self.__search_NGAP("id-InitialContextSetup") 
+        
+        """ Extract UE Sec Capabs"""
+        
 
     def tc_ue_sec_cap_handling_amf(self, pipe):
         """
@@ -609,7 +538,7 @@ def ctrl(pipe):
 
 def start_free5gc():
     try:
-        os.system("docker compose -f /home/vincenzo_d/free5gc-compose/docker-compose.yaml up --build -d >/dev/null 2>&1")
+        os.system(f"docker compose -f {path} up --build -d >/dev/null 2>&1")#
     except Exception as e:
         print("Error starting Free5GC:", e, flush=True)
 
@@ -652,7 +581,7 @@ def graceful_shutdown(signal=None,frame=None):
         subprocess.run(["docker", "logs", "ue"], stdout=log_file, stderr=subprocess.STDOUT)
     with open("proxy.log", "a") as log_file:
         subprocess.run(["docker", "logs", "sctp-proxy"], stdout=log_file, stderr=subprocess.STDOUT)
-    subprocess.run(["docker", "compose", "-f", "/home/vincenzo_d/free5gc-compose/docker-compose.yaml", "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    subprocess.run(["docker", "compose", "-f", path, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     
     print("Docker Compose shutdown completed.")
     exit(0)
@@ -664,12 +593,14 @@ signal.signal(signal.SIGINT, graceful_shutdown)
 if __name__ == "__main__":
     # Parse arguments
     argparser = argparse.ArgumentParser(description="Free5GC Network Sniffer")
+    argparser.add_argument("--path", type=str, dest="path", help=".yaml docker compose free5gc path")
     argparser.add_argument("--test",type=str, dest="test", help="Select test case, default 'ANY'. Comma separated values and range values supported . --tests-enum lists available tests", default=-1)
     argparser.add_argument("--test-enum", action="store_true", help="Show every test available")
     arg = argparser.parse_args()
 
-    global testbench
+    global testbench, path
     testbench = Testbench(arg.test)
+    path = arg.path
 
     if testbench.td_test is None or arg.test_enum:
         argparser.print_help()
@@ -690,7 +621,7 @@ if __name__ == "__main__":
     sniffer.start()
 
     free5gc_proc.join()
-
+    print("[+] FREE5GC Up & Running")
     """ Once free5gc is ready start parsing data"""
     testbench.pktparser.start()
 
@@ -709,7 +640,6 @@ if __name__ == "__main__":
     for test in testbench.td_test:
         fun = getattr(testbench,testbench.tests[test]['name'],None)
         if callable(fun):
-            #print(f'[DEBUG] Running test {testbench.tests[test]["name"]}')
             t = multiprocessing.Process(target = fun, args=(child_pipe,client_pipe))
             t.start()
             result = parent_pipe.recv()
