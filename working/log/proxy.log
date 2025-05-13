@@ -1,0 +1,502 @@
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:59488
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44816)
+[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff007e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
+[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
+[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x00~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
+[CTRL] tc_amf_nas_integrity_failure injected
+[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
+[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e0436f23438007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebcb5778'}
+[CTRL] Test case: tc_nas_replay_amf
+[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x046\xf248\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcbWx'
+[CTRL] tc_nas_replay_amf injected
+[CTRL] Test case: tc_nas_replay_amf FINISHED
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+[!] Error: [Errno 9] Bad file descriptor
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:44411
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46168)
+[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff007e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
+[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
+[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x00~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
+[CTRL] tc_amf_nas_integrity_failure injected
+[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
+[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e041aabd6d9007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebcb5830'}
+[CTRL] Test case: tc_nas_replay_amf
+[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\x1a\xab\xd6\xd9\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcbX0'
+[CTRL] tc_nas_replay_amf injected
+[CTRL] Test case: tc_nas_replay_amf FINISHED
+Traceback (most recent call last):
+[!] Invalid JSON format: 
+[!] Error: [Errno 9] Bad file descriptor
+  File "/app/sctp_mitm_proxy.py", line 71, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 70, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 107, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50447
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54198)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50447
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54198)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50447
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54198)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50447
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54198)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:32815
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60872)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:32815
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60872)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:32815
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60872)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:32815
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60872)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.14:48068
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50310)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.14:48068
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50310)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.14:48068
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50310)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.14:48068
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50310)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:55456
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41926)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:55456
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41926)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:55456
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41926)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:55456
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41926)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38523
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55212)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38523
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55212)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38523
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55212)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38523
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55212)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56557
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33594)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56557
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33594)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56557
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33594)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56557
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33594)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:33793
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39218)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7c3f005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|?\x00Z@\x01\x18\x00p@\x01\x00'
+[!] Error: name 'ppid' is not defined
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 92, in control_server
+    inject_msg(conn, 'amf', msg)
+  File "/app/sctp_mitm_proxy.py", line 60, in inject_msg
+    active_conns[target].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
+                                                                   ^^^^
+NameError: name 'ppid' is not defined
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:33793
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39218)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7c3f005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|?\x00Z@\x01\x18\x00p@\x01\x00'
+[!] Error: name 'ppid' is not defined
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 92, in control_server
+    inject_msg(conn, 'amf', msg)
+  File "/app/sctp_mitm_proxy.py", line 60, in inject_msg
+    active_conns[target].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
+                                                                   ^^^^
+NameError: name 'ppid' is not defined
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:33793
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39218)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7c3f005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|?\x00Z@\x01\x18\x00p@\x01\x00'
+[!] Error: name 'ppid' is not defined
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 92, in control_server
+    inject_msg(conn, 'amf', msg)
+  File "/app/sctp_mitm_proxy.py", line 60, in inject_msg
+    active_conns[target].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
+                                                                   ^^^^
+NameError: name 'ppid' is not defined
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:33793
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39218)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7c3f005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|?\x00Z@\x01\x18\x00p@\x01\x00'
+[!] Error: name 'ppid' is not defined
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 92, in control_server
+    inject_msg(conn, 'amf', msg)
+  File "/app/sctp_mitm_proxy.py", line 60, in inject_msg
+    active_conns[target].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
+                                                                   ^^^^
+NameError: name 'ppid' is not defined
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42822
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 34418)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7ca1005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|\xa1\x00Z@\x01\x18\x00p@\x01\x00'
+[CTRL] tc_ue_sec_cap_handling_amf injected
+[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42822
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 34418)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7ca1005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|\xa1\x00Z@\x01\x18\x00p@\x01\x00'
+[CTRL] tc_ue_sec_cap_handling_amf injected
+[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42822
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 34418)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7ca1005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|\xa1\x00Z@\x01\x18\x00p@\x01\x00'
+[CTRL] tc_ue_sec_cap_handling_amf injected
+[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42822
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 34418)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd7ca1005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd|\xa1\x00Z@\x01\x18\x00p@\x01\x00'
+[CTRL] tc_ue_sec_cap_handling_amf injected
+[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:40045
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46554)
+[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebcd8683005a4001180070400100'}
+[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
+[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xcd\x86\x83\x00Z@\x01\x18\x00p@\x01\x00'
+[CTRL] tc_ue_sec_cap_handling_amf injected
+[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+[!] Error: [Errno 9] Bad file descriptor
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor

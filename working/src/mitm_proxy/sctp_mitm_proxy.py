@@ -11,7 +11,7 @@ AMF_HOST = "amf.free5gc.org"
 
 active_conns = {}
 
-tests= ["tc_amf_nas_integrity_failure", "tc_nas_replay_amf"]
+tests= ["tc_amf_nas_integrity_failure", "tc_nas_replay_amf", "tc_ue_sec_cap_handling_amf"]
 
 def amf_nas_integrity(amf_conn, gnb_conn, msg):
     """Inject msg into amf_conn"""
@@ -53,6 +53,16 @@ def handle_client(gnb_conn):
     threading.Thread(target=forward, args=(gnb_conn, amf_conn, "gNB -> AMF")).start()
     threading.Thread(target=forward, args=(amf_conn, gnb_conn, "AMF -> gNB")).start()
 
+def inject_msg(conn, target, msg):
+    print(f"[CTRL] Test case: {msg['testCase']} STARTED", flush=True)
+    print(f"[CTRL] Trying to inject {bytes.fromhex(msg['msg'])}", flush=True)
+
+    active_conns[target].sctp_send(bytes.fromhex(msg['msg']), ppid=socket.htonl(60))
+
+    print(f"[CTRL] {msg['testCase']} injected", flush=True)
+    conn.sendall(b"Test OK\n")
+    print(f"[CTRL] Test case: {msg['testCase']} FINISHED", flush=True)
+
 def control_server():
     ctrl_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ctrl_sock.bind(('0.0.0.0',CTRL_PORT))
@@ -74,28 +84,13 @@ def control_server():
                     print(f"[!] Unknown test case: {msg['testCase']}", flush=True)
                     conn.sendall(b"Test KO\n")
                     continue
-                elif msg["testCase"] == "tc_amf_nas_integrity_failure":
-                    print(f"[CTRL] Test case: tc_amf_nas_integrity_failure STARTED", flush=True)
-                    print(f"[CTRL] Trying to inject {bytes.fromhex(msg['msg'])}", flush=True)
-
-                    active_conns["amf"].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
-
-                    print(f"[CTRL] tc_amf_nas_integrity_failure injected", flush=True)
-                    conn.sendall(b"Test OK\n")
-                    print("[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED", flush=True)
-                    continue
-                elif msg["testCase"] == "tc_nas_replay_amf":
-                    print("[CTRL] Test case: tc_nas_replay_amf", flush=True)
-                    print(f"[CTRL] Trying to inject {bytes.fromhex(msg['msg'])}", flush=True)
-                    active_conns["amf"].sctp_send(bytes.fromhex(msg['msg']), ppid=ppid)
-                    print(f"[CTRL] tc_nas_replay_amf injected", flush=True)
-                    conn.sendall(b"Test OK\n")
-                    print("[CTRL] Test case: tc_nas_replay_amf FINISHED", flush=True)
-                    continue
                 elif not msg:
                     print("[CTRL] Control Connection closed", flush=True)
                     conn.close()
                     return
+                else:
+                    inject_msg(conn, 'amf', msg)
+                    continue
             except json.JSONDecodeError:
                 print(f"[!] Invalid JSON format: {data}", flush=True)
                 conn.send(b"Test KO\n")

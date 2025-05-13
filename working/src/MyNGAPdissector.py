@@ -1,4 +1,3 @@
-from utilities import * # type: ignore
 import json
 import traceback
 
@@ -547,6 +546,28 @@ nas_enc_algs = {
     7 : "5GEA7"
 }
 
+eutra_enc_algs = {
+    0: "128-EEA0",
+    1: "128-EEA1",
+    2: "128-EEA2",
+    3: "128-EEA3",
+    4: "EEA4",
+    5: "EEA5",
+    6: "EEA6",
+    7: "EEA7"
+}
+
+eutra_int_algs = {
+    0: "128-EIA0",
+    1: "128-EIA1",
+    2: "128-EIA2",
+    3: "128-EIA3",
+    4: "EIA4",
+    5: "EIA5",
+    6: "EIA6",
+    7: "EIA7"
+}
+
 message_type_dict = {
     65: "Registration request",                        # 0b01000001 MOBILITY MANAGEMENT
     66: "Registration accept",                         # 0b01000010
@@ -1046,7 +1067,7 @@ class NGAP:
         if not nas_pdu_entry:
             return None
         return nas_pdu_entry
-    
+
     def print_ngap(self):
         #Utility function for printing NGAP in any of its fields
         try:

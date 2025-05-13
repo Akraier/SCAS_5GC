@@ -1,0 +1,19 @@
+UESec DEFINITIONS AUTOMATIC TAGS ::= BEGIN
+
+-- definizioni dei BIT STRING da TS 38.413 Annex A
+NRencryptionAlgorithms        ::= BIT STRING (SIZE(16, ...))
+NRintegrityProtectionAlgorithms ::= BIT STRING (SIZE(16, ...))
+EUTRAencryptionAlgorithms     ::= BIT STRING (SIZE(16, ...))
+EUTRAintegrityProtectionAlgorithms ::= BIT STRING (SIZE(16, ...))
+
+-- solo il tipo che ci serve
+UESecurityCapabilities ::= SEQUENCE {
+  nRencryptionAlgorithms           NRencryptionAlgorithms,
+  nRintegrityProtectionAlgorithms  NRintegrityProtectionAlgorithms,
+  eUTRAencryptionAlgorithms        EUTRAencryptionAlgorithms,
+  eUTRAintegrityProtectionAlgorithms EUTRAintegrityProtectionAlgorithms,
+  -- ignoriamo i campi opzionali di estensione
+  ...
+}
+
+END

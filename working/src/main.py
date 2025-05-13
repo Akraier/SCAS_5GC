@@ -9,6 +9,8 @@ import logging
 import argparse
 import traceback
 import os
+import asn1tools
+from binascii import unhexlify
 from MyNGAPdissector import NAS, NGAP, nas_int_algs, nas_enc_algs
 from scapy.all import sniff, PcapWriter, Ether, SCTPChunkData, SCTP, IP, wrpcap
 
@@ -30,17 +32,32 @@ class Testbench:
         1: {
             "name": "tc_amf_nas_integrity_failure",
             "group": "NGAP/NAS",
-            "NFs": "AMF"
+            "NFs": "AMF",
+            "Result": ""
         },
         2: {
             "name":"tc_nas_replay_amf",
             "group":"NGAP/NAS",
-            "NFs":"AMF"
+            "NFs":"AMF",
+            "Result": ""
         },
         3: {
             "name":"tc_nas_null_int_amf",
             "group":"NGAP/NAS",
-            "NFs":"AMF"
+            "NFs":"AMF",
+            "Result": ""
+        },
+        4: {
+            "name":"tc_ue_sec_cap_as_context_setup",
+            "group":"NGAP/NAS",
+            "NFs":"AMF",
+            "Result": ""
+        },
+        5: {
+            "name":"tc_ue_sec_cap_handling_amf",
+            "group":"NGAP/NAS",
+            "NFs":"AMF",
+            "Result": ""
         }
     }
 
@@ -49,7 +66,7 @@ class Testbench:
     def __init__(self, tests):
         manager = multiprocessing.Manager()
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
-        self.pktparser = multiprocessing.Process(target = self.__pktparser) #PARALLEL data filter
+        self.pktparser = multiprocessing.Process(target = self.__pktparser) 
         self.td_test = self.__test_parser(tests)
         self.history = manager.list() 
         self.amfip = manager.Value('s','')
@@ -211,9 +228,9 @@ class Testbench:
             with self.lock:
                 ngap = next(iter(self.history[item]["NGAP"]))
                 if self.history[item]["NGAP"][ngap].get("procedure_code") == msg:
-                    ret.append(self.history[item]["NGAP"])
+                    ret.append(self.history[item])
         return ret
-
+        
     def __search_NAS_message(self, msg, fresh = True):
         """
         INPUT: 'msg' to look for, 'fresh' if you look for a fresh msg or an old one is good enough 
@@ -466,31 +483,122 @@ class Testbench:
                 print(f'[!] Error during NAS dissecting: {e}')
                 pipe.send(False)
                 traceback.print_exc()
-
-
+    
     def tc_ue_sec_cap_as_context_setup(self, pipe, ctrl_pipe):
         """Verify that the UE security capabilities sent by the UE in the initial NAS registration request are the same 
            UE security capabilities sent in the NGAP Context Setup Request message to establish AS security."""
-        
+        """ Registration Request(Simple) and Context Setup(ASN1 PER) use different encodings for UE Security Capabilities.
+            Registration Request encode capabilities using 8 bits, one bit for each algorithm.
+            Context Setup encode capabilities using 16 bits, one bit for each algorithm plus reserved bits. EA0 and IA0 are encoded with all bits set to 0 rather than setting the corresponding bit to 1.
+            For this reason we need to convert values in a single encoding before comparing them. For the sake of simplicity we will use Registration Request encoding."""
+
+
+        print('[+] tc_ue_sec_cap_as_context_setup STARTED')
 
         """ Look for NGAP Context Setup Request """
         context_setup = self.__search_NGAP("id-InitialContextSetup") 
-        
-        """ Extract UE Sec Capabs"""
+        """ Extract UE Sec Capabs NGAP TS 9.3.1.86"""
         
 
-    def tc_ue_sec_cap_handling_amf(self, pipe):
+        next_ = next(iter(context_setup[0]["NGAP"]))
+        raw_cap = context_setup[0]["NGAP"][next_]["IEs"]["id-UESecurityCapabilities"]["IE_value"]       #1c000e000000000000
+
+        """ PER DEcoding of the UESecurityCapabilities """
+        specs = asn1tools.compile_files('UE_Sec_Cap.asn', codec='uper')
+        ue_caps = specs.decode('UESecurityCapabilities', unhexlify(raw_cap))
+        context_setup_supported = {}
+
+        for key in ue_caps.keys():
+            context_setup_supported[key] = ''.join(format(byte, '08b') for byte in ue_caps[key][0])
+            context_setup_supported[key] = '1' + context_setup_supported[key][1:8]  # exclude reserved bits and PER first bit and substitute with 1, A0 always supported
+
+        """ print(f"[+] nRencryptionAlgorithms {context_setup_supported['nRencryptionAlgorithms']}")
+        print(f"[+] nRintegrityProtectionAlgorithms {context_setup_supported['nRintegrityProtectionAlgorithms']}")
+        print(f"[+] eUTRAencryptionAlgorithms {context_setup_supported['eUTRAencryptionAlgorithms']}")
+        print(f"[+] eUTRAintegrityProtectionAlgorithms {context_setup_supported['eUTRAintegrityProtectionAlgorithms']}") """
+        
+        """ Look for Registration Request """
+        registration_request = self.__search_NAS_message('Registration request', False)
+        reg_req_cap = registration_request['NAS']['NAS PDU']['PlainNASPDU']['message_value'][36:]    #extracting UESecurityCapabilities from Registration Request, 4 bytes - 8 chars
+        """ Convert Registration Request UESecurityCapabilities to the same format as Context Setup """
+        raw_reg_req_cap = bytes.fromhex(reg_req_cap)
+        raw_reg_req_cap = ''.join(format(byte, '08b') for byte in raw_reg_req_cap)
+        reg_req_supported = {
+            'nRencryptionAlgorithms': raw_reg_req_cap[0:8],
+            'nRintegrityProtectionAlgorithms': raw_reg_req_cap[8:16],
+            'eUTRAencryptionAlgorithms': raw_reg_req_cap[16:24],
+            'eUTRAintegrityProtectionAlgorithms': raw_reg_req_cap[24:32]
+        }
+
+        match = True
+        print(f"[+] Comparing UE security capabilities...")
+        for key in reg_req_supported.keys():
+            print(f"[+] {key}: [ Registration Request > {reg_req_supported[key]} | {context_setup_supported[key]} < Context Setup ]")
+            if context_setup_supported[key] != reg_req_supported[key]:
+                print(f"[!] {key} not matching")
+                match = False
+            else:
+                print(f"[+] {key} matching")
+
+        if not match:
+            pipe.send(False)
+        else:
+            pipe.send(True)
+
+    def tc_ue_sec_cap_handling_amf(self, pipe, ctrl_pipe):
         """
         Registration Request with unsecure UE security capabilities
+        1. NO 5GS encryption algorithms (all bits 0)
+        2. NO 5GS integrity algorithms (all bits 0)
+        3. mandatory 5GS encryption algorithms not supported
+        4. mandatory 5GS integrity algorithms not supported
+
+        APPROACH: Craft a Registration Request with all bits set to 0 for 5GS encryption and integrity algorithms
         """
 
         self.__ue_check_alive()
 
+        print("[+] tc_ue_sec_cap_handling_amf test case STARTED")
+
         rr = self.__search_NAS_message('Registration request', False)
-        if rr is not None:
+        if rr is None:
+            print("[!] Somehow Registration Request message not found in history...")
+            pipe.send(False)
             return
-        else:
-            print(f'[!] Registration Request not found')
+
+        """ Extract UESecurityCapabilities from Registration Request """
+        rr_cap = rr['NAS']['NAS PDU']['PlainNASPDU']['message_value']
+        print(f"[+] Extracting UESecurityCapabilities from Registration Request...")
+        rr_cap = rr_cap[:36] + '0' * 8 
+        print(f"[+] UESecurityCapabilities modified: {rr_cap}") 
+        tmp = rr['NGAP'] 
+        tmp['Initiating Message']['IEs']['id-NAS-PDU']['NAS PDU']['PlainNASPDU']['message_value'] = rr_cap
+        print(f"[+] Modified Registration Request with unacceptable UE Security Capabilities \n")
+        """ Send modified Registration Request to proxy """
+        ngap = NGAP()
+        rr_segment = ngap.build_ngap_pdu(tmp)
+        ctrl_data = {
+            "testCase": "tc_ue_sec_cap_handling_amf",
+            "msg": rr_segment.hex()
+        }
+        ctrl_pipe.send(ctrl_data)
+        print(f"[+] Modified Registration Request sent to Proxy")
+        """ Check for AMF response """
+        test_result = ctrl_pipe.recv()
+        if test_result == "Test OK":
+            """ Look for Registration Reject """
+            rrej = self.__search_NAS_message('Registration reject', True)
+            if rrej is None:
+                """ Test Failed"""
+                print(f"[!] Registration Reject not found")
+                pipe.send(False)
+            else:
+                """ Test Passed """
+                print(f"[+] Registration Reject found")
+                pipe.send(True)
+
+        elif test_result == "Test KO":
+            print(f"[!] Error injecting message through Proxy", flush=True)
             pipe.send(False)
             return
 
@@ -508,7 +616,7 @@ def ctrl(pipe):
             """ Expected data is dict = {'testCase': tc_name, 'msg': msg} """
 
             data = pipe.recv()
-            print(f"[CTRL] Received data: {data}", flush=True)
+            print(f"[CTRL] Received data from test case", flush=True)
             
             """ Exit condition """
             if data == "exit":
@@ -519,7 +627,7 @@ def ctrl(pipe):
             data = json.dumps(data).encode()
 
             sckt.sendall(data) 
-            print(f"[CTRL] Sent data to proxy: {data}", flush=True)
+            print(f"[CTRL] Sent data to proxy", flush=True)
             sckt.settimeout(5)
             try:
                 resp = sckt.recv(1024).decode('utf-8').strip()
@@ -538,7 +646,12 @@ def ctrl(pipe):
 
 def start_free5gc():
     try:
-        os.system(f"docker compose -f {path} up --build -d >/dev/null 2>&1")#
+        command = ["docker", "compose", "-f", path, "up", "--build", "-d"]
+        result = subprocess.run(command, check=True, stdout=subprocess.DEVNULL)
+
+        if result.stderr:
+            print(f"[!] Error starting Free5GC: {result.stderr.decode()}", flush=True)
+
     except Exception as e:
         print("Error starting Free5GC:", e, flush=True)
 
@@ -573,13 +686,13 @@ def graceful_shutdown(signal=None,frame=None):
     When multi-process a signal is caught by every process and this function is called multiple times. Watch out>>>Find a method to fix the behavior 
     """
     print(f"\nGracefully shutting down docker.")
-    with open("amf.log", "a") as log_file:
+    with open("../log/amf.log", "a") as log_file:
         subprocess.run(["docker", "logs", "amf"], stdout=log_file, stderr=subprocess.STDOUT)
-    with open("gnb.log", "a") as log_file:
+    with open("../log/gnb.log", "a") as log_file:
         subprocess.run(["docker", "logs", "ueransim"], stdout=log_file, stderr=subprocess.STDOUT)
-    with open("ue.log", "a") as log_file:
+    with open("../log/ue.log", "a") as log_file:
         subprocess.run(["docker", "logs", "ue"], stdout=log_file, stderr=subprocess.STDOUT)
-    with open("proxy.log", "a") as log_file:
+    with open("../log/proxy.log", "a") as log_file:
         subprocess.run(["docker", "logs", "sctp-proxy"], stdout=log_file, stderr=subprocess.STDOUT)
     subprocess.run(["docker", "compose", "-f", path, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     
@@ -591,6 +704,7 @@ signal.signal(signal.SIGINT, graceful_shutdown)
 
     
 if __name__ == "__main__":
+    
     # Parse arguments
     argparser = argparse.ArgumentParser(description="Free5GC Network Sniffer")
     argparser.add_argument("--path", type=str, dest="path", help=".yaml docker compose free5gc path")
@@ -604,7 +718,9 @@ if __name__ == "__main__":
 
     if testbench.td_test is None or arg.test_enum:
         argparser.print_help()
-        print(f"[/]Available tests: {json.dumps(testbench.tests, indent=4)}")
+        print(f"[/]Available tests:")
+        for key, test in testbench.tests.items():
+            print(f"[>>] Test {key} - {test['name']}")
         exit(0)
 
     
@@ -622,6 +738,7 @@ if __name__ == "__main__":
 
     free5gc_proc.join()
     print("[+] FREE5GC Up & Running")
+
     """ Once free5gc is ready start parsing data"""
     testbench.pktparser.start()
 
@@ -642,12 +759,18 @@ if __name__ == "__main__":
         if callable(fun):
             t = multiprocessing.Process(target = fun, args=(child_pipe,client_pipe))
             t.start()
+            print("-----------------------")
+
             result = parent_pipe.recv()
             if result:
                 print(f"[+] Test {testbench.tests[test]['name']} PASSED!")
+                test["Result"] = "PASSED"
             else:
                 print(f"[+] Test {testbench.tests[test]['name']} FAILED!")
+                test["Result"] = "FAILED"
             t.join() 
+            print("-----------------------")
+
         else:
             print(f'[!] Method {testbench.tests[test]["name"]} not found')
     client_pipe.send("exit")
@@ -666,7 +789,9 @@ if __name__ == "__main__":
     
     graceful_shutdown()
 
-
+    print("[+] TEST COMPLETED:")
+    for test in testbench.tests:
+        print(f"[>>] Test {test['name']} - {test['Result']}")
 
         
     
