@@ -500,3 +500,1477 @@ Traceback (most recent call last):
   File "/app/sctp_mitm_proxy.py", line 102, in control_server
     conn.send(b"Test KO\n")
 OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47984
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41120)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47984
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41120)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47984
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41120)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47984
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41120)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:44693
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39868)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:44693
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39868)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:44693
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39868)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:44693
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39868)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:36980
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 35944)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:36980
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 35944)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:36980
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 35944)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:36980
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 35944)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:41685
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53370)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:41685
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53370)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:41685
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53370)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:41685
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53370)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50926
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 59452)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50926
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 59452)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50926
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 59452)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:50926
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 59452)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:49841
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 49274)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:49841
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 49274)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:49841
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 49274)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:49841
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 49274)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:38771
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60572)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:38771
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60572)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:38771
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60572)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:38771
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 60572)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56179
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 36672)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56179
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 36672)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56179
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 36672)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:56179
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 36672)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52931
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50022)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52931
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50022)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52931
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50022)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52931
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 50022)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42449
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42788)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42449
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42788)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42449
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42788)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:42449
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42788)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:43381
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 45690)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:60662
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42956)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+[!] Error: [Errno 9] Bad file descriptor
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:36265
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 58160)
+[!] Invalid JSON format: 
+[!] Error: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:44863
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 52004)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+[!] Error: [Errno 9] Bad file descriptor
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:44863
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 52004)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+[!] Error: [Errno 9] Bad file descriptor
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:51438
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 56412)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+[!] Error: [Errno 9] Bad file descriptor
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:48626
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 40642)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:48626
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 40642)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 35, in forward
+    dst_sock.sctp_send(data[2], ppid=ppid)
+  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
+    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:35098
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 58214)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+[!] Error: [Errno 9] Bad file descriptor
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:40576
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39474)
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+[!] Invalid JSON format: 
+[!] Error: [Errno 9] Bad file descriptor
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:33932
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33508)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:35721
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53426)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:35721
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53426)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:35721
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53426)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:35721
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53426)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:35721
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 53426)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37571
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42588)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:55563
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 43244)
+[!] Invalid JSON format: 
+[!] Error: [Errno 9] Bad file descriptor
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47146
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 43722)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47146
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 43722)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47146
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 43722)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47146
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 43722)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:37164
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 37778)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:37164
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 37778)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:37164
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 37778)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:37164
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 37778)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:46323
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42750)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:46323
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42750)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:46323
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42750)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:46323
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 42750)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:59337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39284)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:59337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39284)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:59337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39284)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:59337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 39284)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52968
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 48646)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52968
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 48646)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52968
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 48646)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:52968
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 48646)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.14:40262
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 41512)
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[!] Error: [Errno 9] Bad file descriptor
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:39148
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 47840)
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[!] Invalid JSON format: 
+[!] Error: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:34341
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46550)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:34341
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46550)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:34341
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46550)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:34341
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 46550)
+Error response from daemon: No such container: sctp-proxy
+Error response from daemon: No such container: sctp-proxy
+Error response from daemon: No such container: sctp-proxy
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:39250
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 45622)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:39250
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 45622)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:39250
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 45622)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:39250
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 45622)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:39250
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 45622)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53106
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53144
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 57528)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53106
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53144
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 57528)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53106
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53144
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 57528)
+[+] Control server listening on port 1337
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:53106
+[+]gNB Connected 10.100.200.13:53106
+Exception in thread Thread-2 (handle_client):
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+socket.gaierror: [Errno -5] No address associated with hostname
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+[+] Control server listening on port 1337
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:53144
+[+] Listening on SCTP port 38412
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+[+]gNB Connected 10.100.200.13:53144
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+Exception in thread Thread-2 (handle_client):
+    self.run()
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self._target(*self._args, **self._kwargs)
+    self.run()
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+    self._target(*self._args, **self._kwargs)
+socket.gaierror: [Errno -5] No address associated with hostname
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+[+] Control connection accepted ('10.100.200.1', 57528)
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control connection accepted ('10.100.200.1', 57528)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:47793
+Exception in thread Thread-2 (handle_client):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 46, in handle_client
+    amf_conn.connect((AMF_HOST,AMF_PORT))
+socket.gaierror: [Errno -5] No address associated with hostname
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:45096
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 44612)
+[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
+[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
+[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
+[CTRL] tc_amf_nas_integrity_failure injected
+[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
+[!] Invalid JSON format: 
+Traceback (most recent call last):
+[!] Error: [Errno 9] Bad file descriptor
+  File "/app/sctp_mitm_proxy.py", line 81, in control_server
+    msg = json.loads(data)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Exception in thread Thread-1 (control_server):
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 80, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/sctp_mitm_proxy.py", line 102, in control_server
+    conn.send(b"Test KO\n")
+OSError: [Errno 9] Bad file descriptor
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:60223
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55626)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:60223
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55626)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:60223
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55626)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:60223
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 55626)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54264)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54264)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54264)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:37337
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 54264)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38765
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 40112)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38765
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 40112)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38765
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 40112)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:38765
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 40112)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:40001
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33480)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:40001
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33480)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:40001
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33480)
+[+] Control server listening on port 1337
+[+] Listening on SCTP port 38412
+[+]gNB Connected 10.100.200.13:40001
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Control connection accepted ('10.100.200.1', 33480)
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:43230
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:43230
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:43230
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB
+[+] Listening on SCTP port 38412
+[+] Control server listening on port 1337
+[+]gNB Connected 10.100.200.13:43230
+[+]Connected to AMF 10.100.200.16:38412
+[+] Forwarding gNB -> AMF
+[+] Forwarding AMF -> gNB

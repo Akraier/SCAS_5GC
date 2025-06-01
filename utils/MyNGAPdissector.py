@@ -1,6 +1,7 @@
 import json
 import traceback
 import logging
+from scapy.all import *
 
 NGAP_procedure_code_values = {
     0: "id-AMFConfigurationUpdate",

@@ -1,26 +1,12 @@
-import multiprocessing
-import subprocess
-import signal
-import time
-import json
-from ruamel.yaml import YAML
-#import sctp
-import socket
-import logging
-import argparse
-import traceback
-import os
-import asn1tools
+
+import os, multiprocessing, subprocess, traceback, time, asn1tools
+from utils.MyNGAPdissector import *
+from scapy.all import *
 from binascii import unhexlify
-from MyNGAPdissector import NAS, NGAP, nas_int_algs, nas_enc_algs
-from scapy.all import sniff, PcapWriter, Ether, SCTPChunkData, SCTP, IP, wrpcap
+from ruamel.yaml import YAML
 
-
-
-""""""
 class Testbench:
-    """Definition of Available Test Cases"""
-    tests = {
+    available_tests = {
         0: {
             "name": "ANY",
             "group": "ANY",
@@ -70,21 +56,7 @@ class Testbench:
         }
     }
 
-
-
-    def __init__(self, tests):
-        manager = multiprocessing.Manager()
-        self.pktparser = multiprocessing.Process(target = self.__pktparser) 
-        self.td_test = self.__test_parser(tests)
-        self.history = manager.list() 
-        self.amfip = manager.Value('s','')
-        self.nas_seq_num = manager.Value('i',0) 
-        self.lock = multiprocessing.Lock()  
-        self.pktcounter = 0
-
-
-    
-    def __test_parser(self,test_arg):
+    def __test_parser(self, test_arg):
         """
         Construct a list with all the test required by the user
         """
@@ -92,7 +64,7 @@ class Testbench:
         try:
             
             if test_arg == "0":
-                testl = list(range(1,len(self.tests)))
+                testl = list(range(1,len(self.available_tests)))
             elif "," in test_arg:
                 testl = [int(v.strip()) for v in test_arg.split(",")]
             elif "-" in test_arg:
@@ -101,8 +73,9 @@ class Testbench:
             elif test_arg.isdigit():
                 testl.append(int(test_arg))
 
-            if any(x not in self.tests.keys() for x in testl):
+            if any(x not in self.available_tests.keys() for x in testl):
                 #Invalid test case
+                print(f"[!] {x} is not a valid test case.")
                 return None
             
             return testl
@@ -111,56 +84,11 @@ class Testbench:
             traceback.print_exc()
             return None
 
-    def __pktparser(self):
-        """
-        This function populates self.history continuously without overloading scapy sniff func
-        and saves pkt captures in pcap file
-        """
-        print("[+] TestBench Packet parser started")
-        self.amfip.value = self.__container_ip('amf') #When this function run containers are up and ready
-        try:
-            filename = "SCAS_" + time.strftime("%Y%m%d_%H%M") + ".pcap"
-            rel_path = script_dir + "/../ws_captures/" + filename
-            manager = multiprocessing.Manager()
-            pcap = PcapWriter(rel_path, append = True, sync = True)
-
-            ngap = NGAP()
-            while True:
-                pkt = qpkt.get()
-                """CONSIDER TO USE A STOPPING CONDITION eg. if pkt is None - Sent by packet processing func"""
-
-                self.pktcounter += 1
-                if pkt.haslayer(SCTPChunkData) and pkt[SCTPChunkData].proto_id == 60:
-                    ret = ngap.dissect_ngap_pdu(pkt[SCTPChunkData].data)
-                    if ret == 0:
-                        print(f"[!] Error parsing NGAP PDU")
-                    nas_pdu = ngap.get_nas_pdu() 
-                    if nas_pdu is not None:
-                        #NO NAS PDU
-                        """
-                        History is usefull for later access of packets. 
-                        """
-                        with self.lock:
-                            self.history.append(manager.dict({"ID":self.pktcounter, "RAW": pkt.data, "NGAP": ngap.segment, "NAS": nas_pdu, "_scanned": False}))
-                            if nas_pdu.get("SecurityProtectedNASPDU") is not None:
-                                self.nas_seq_num.value = nas_pdu["SecurityProtectedNASPDU"]["seq_no"] + 1
-                    else:
-                        #NGAP PDU without NAS
-                        with self.lock:
-                            self.history.append(manager.dict({"ID":self.pktcounter, "RAW": pkt.data, "NGAP": ngap.segment, "_scanned": False}))
-                pcap.write(pkt)
-                
-        except Exception as e:
-            print("[!] Error parsing network traffic from queue..")
-            traceback.print_exc()
-            exit(0)
-
-
-
     @staticmethod
     def __container_ip(container):
         """
         Function that retrieves container's ip 
+        Will this work for open5gs and others?
         """
         output = subprocess.run(
             ["docker", "inspect", "-f", "'{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'", container], 
@@ -173,7 +101,145 @@ class Testbench:
         ip = ip.strip("'")
         return ip
 
-    
+    def __init__(self, tests, path):
+        self.manager = multiprocessing.Manager()
+        self.script_dir = os.path.dirname(os.path.abspath(__file__))
+        self.tests = self.__test_parser(tests)
+        self.history = self.manager.list()
+        self.qpkt = multiprocessing.Queue() #Queue for packet capture
+        self.amfip = self.manager.Value('s','')
+        self.lock = multiprocessing.Lock()
+        self.simulator_proxy_ip = "10.100.200.200"
+        self.simulator_proxy_port = 1337
+        self.result = self.manager.dict()
+        if 'free5gc' in path:
+            self.simulator_name = "free5gc"
+            self.simulator_path = path
+            self.simulator_config_path = os.path.join(path, "config")
+            self.simulator_docker_compose = os.path.join(path, "docker-compose.yaml")
+            self.simulator_interface = "br-free5gc"
+            self.nfs = {
+                "amf": "amf",
+                "gnb": "ueransim",
+                "ue": "ue",
+                "proxy": "sctp-proxy"
+            }
+        #Other simulators missing... TBD
+    def _saveLog(self):
+        log_dir = os.path.join(self.script_dir, "../log")
+        logs = []
+        for x in ["amf", "gnb", "ue", "proxy"]:
+            logs.append((self.nfs[x],f"{x}.log"))
+        
+
+        for nf, log_file in logs:
+            log_path = os.path.join(log_dir, log_file)
+            if not os.path.exists(log_dir):
+                os.makedirs(log_dir)
+            with open(log_path, 'a') as f:
+                subprocess.run(["docker", "logs", nf], stdout=f, stderr=subprocess.STDOUT)
+
+    def graceful_shutdown(self,cmd_q, signal=None,frame=None):
+        """ 
+        Function to handle cleanup and shutdown gracefully
+        When multi-process a signal is caught by every process and this function is called multiple times. Watch out>>>Find a method to fix the behavior 
+        """
+        print(f"\nGracefully shutting down docker.")
+        self._saveLog()
+        cmd_q.put(("shutdown_all",None))  # Notify the procManager to shutdown all processes
+        
+        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print("Docker Compose shutdown completed.")
+        exit(0)
+
+    def manage_core_simulator(self,cmd_q, action="start"):
+        """
+        Start or restart the core simulator.
+
+        :param action: 'start' or 'restart'
+        :param rebuild: if True, run 'up --build --force-recreate' to apply any changes
+        """
+        if action not in ("start", "restart"):
+            raise ValueError(f"[!] Action must be 'start' or 'restart', got '{action}'")
+
+        if action == "start":
+            command = [
+                "docker", "compose", "-f", self.simulator_docker_compose,
+                "up", "--build", "-d"
+            ]
+            operation = "Starting"
+            error_prefix = "Error starting"
+        else:
+            command = [
+                "docker", "compose", "-f", self.simulator_docker_compose,
+                "restart"
+            ]
+            operation = "Restarting"
+            error_prefix = "Error restarting"
+
+        try:
+            result = subprocess.run(
+                command,
+                check=True,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+        except subprocess.CalledProcessError as e:
+            error_message = e.stderr.decode(errors="ignore").strip() or str(e)
+            print(f"[+] {error_prefix} core simulator: {error_message}", flush=True)
+            raise RuntimeError(f"{error_prefix} core simulator: {error_message}") from e
+        except Exception:
+            print(f"[!] Unexpected error during {action} core simulator", flush=True)
+            raise
+
+        print(f"[+] {operation} core simulator succeeded", flush=True)
+        return result
+
+
+
+    def pktparser(self, cmd_q):
+        """
+        This function populates self.history continuously without overloading scapy sniff func
+        and saves pkt captures in pcap file
+        """
+        print("[+] TestBench Packet parser started")
+        self.amfip.value = self.__container_ip(self.nfs["amf"]) #When this function run containers are up and ready
+        try:
+            filename = "SCAS_" + time.strftime("%Y%m%d_%H%M") + ".pcap"
+            capture_dir = os.path.normpath(os.path.join(self.script_dir, os.pardir, "ws_captures"))
+            os.makedirs(capture_dir, exist_ok=True)
+            capture_file = os.path.join(capture_dir, filename)
+            pcap = PcapWriter(capture_file, append = True, sync = True)
+
+            ngap = NGAP()
+            while True:
+                pkt = self.qpkt.get()
+                """CONSIDER TO USE A STOPPING CONDITION eg. if pkt is None - Sent by packet processing func"""
+
+                if pkt.haslayer(SCTPChunkData) and pkt[SCTPChunkData].proto_id == 60:
+                    ret = ngap.dissect_ngap_pdu(pkt[SCTPChunkData].data)
+                    if ret == 0:
+                        print(f"[!] Error parsing NGAP PDU")
+                    nas_pdu = ngap.get_nas_pdu() 
+                    if nas_pdu is not None:
+                        #NO NAS PDU
+                        """
+                        History is usefull for later access of packets. 
+                        """
+                        with self.lock:
+                            self.history.append(self.manager.dict({"RAW": pkt.data, "NGAP": ngap.segment, "NAS": nas_pdu, "_scanned": False}))
+                            if nas_pdu.get("SecurityProtectedNASPDU") is not None:
+                                self.nas_seq_num.value = nas_pdu["SecurityProtectedNASPDU"]["seq_no"] + 1
+                    else:
+                        #NGAP PDU without NAS
+                        with self.lock:
+                            self.history.append(self.manager.dict({"RAW": pkt.data, "NGAP": ngap.segment, "_scanned": False}))
+                pcap.write(pkt)
+        except Exception as e:
+            print("[!] Error parsing network traffic from queue..")
+            traceback.print_exc()
+            cmd_q.put(("shutdown_all",None)) 
+            exit(0)
     
     @staticmethod
     def __ueransim_ue_interaction(command):
@@ -201,10 +267,7 @@ class Testbench:
         except Exception as e:
             print("[!]Error interacting with UERANSIM UE shell: ", e)
             return None
-
     
-
-
     def __ue_check_alive(self):
         """Returns control only one UE is alive"""
         while True:
@@ -221,7 +284,6 @@ class Testbench:
                 print("[+] UE Registered")
                 break
         return True
-    
     def __search_NGAP(self, msg):
         """
         Search NGAP IE into history, less restrictive than NAS search. Don't care about freshness
@@ -240,7 +302,7 @@ class Testbench:
                 if self.history[item]["NGAP"][ngap].get("procedure_code") == msg:
                     ret.append(self.history[item])
         return ret
-        
+
     def __search_NAS_message(self, msg, fresh = True):
         """
         INPUT: 'msg' to look for, 'fresh' if you look for a fresh msg or an old one is good enough 
@@ -295,59 +357,6 @@ class Testbench:
         
         return ret
     
-
-
-    """
-    Test case: TC_NAS_REPLAY_AMF
-
-    AMF supports integrity protection of NAS-signalling as speficied in TS 33.501 clause 5.5.2
-
-    Execution Steps: 
-    1.	The tester shall capture the NAS Security Mode Command procedure taking place between UE and AMF over N1 interface using any network analyser.
-    2.	The tester shall filter the NAS Security Mode Complete message by using a filter.
-    3.	The tester shall replay the captured NAS Security Mode Complete message.
-    4.	The tester shall check whether the replayed NAS Security Mode Complete message was not processed by the AMF by capturing traffic over the N1 interface 
-        to see if no corresponding response message was sent by the AMF. If applicable, AMF application logs could be checked for the rejection of the replayed     
-        NAS Security Mode Complete message.
-    """
-    def tc_nas_replay_amf(self, pipe, ctrl_pipe):
-        print("[+] tc_nas_replay_amf test case STARTED")
-
-        self.__ue_check_alive()
-        print("[+] UE Alive & Registered ")
-
-        """Capture NAS Security Mode Complete message, not necessary the last received one"""
-        
-        msg = self.__search_NAS_message('Security mode complete', False)
-        
-        if msg is None:
-            print("[!] Somehow Security Mode Complete message not found in history...")
-            exit(0)
-
-        """Replay Security Mode Complete message"""
-        smc_raw = NGAP()
-        smc_raw = smc_raw.build_ngap_pdu(msg.get("NGAP"))
-        smc = {"testCase":"tc_nas_replay_amf",
-               "msg": smc_raw.hex()}
-        ctrl_pipe.send(smc)
-        print(f"[+] Security Mode Complete message sent to Controller")
-
-
-        """ Check whether the SMC was not processed by the AMF --> Looking for Registration Accept """
-        test_result = ctrl_pipe.recv()
-        if test_result == "Test OK":
-            print(f"[+] Test OK", flush=True)
-            ret = self.__search_NAS_message('Registration accept')
-            if ret is None:
-                pipe.send(True)
-            else:
-                pipe.send(False)
-        elif test_result == "Test KO":
-            print(f"[!] Test KO", flush=True)
-            pipe.send(False)
-            return
-        
-    
     """
     Test case: TC_AMF_NAS_INTEGRITY_FAILURE
 
@@ -368,7 +377,7 @@ class Testbench:
             Craft and send Deregistration message with tampered integrity value, possibly 0xffffffff
             
     """
-    def tc_amf_nas_integrity_failure(self,pipe, ctrl_pipe):
+    def tc_amf_nas_integrity_failure(self,cmd_q, ctrl_pipe):
         print("[+] amf_nas_integrity test case STARTED")
 
         self.__ue_check_alive()
@@ -382,7 +391,8 @@ class Testbench:
         msg = self.__search_NAS_message('Security mode complete')
         if msg is None:
             print("[!] Somehow Security Mode Complete message not found in history...")
-            pipe.send(False)
+            with self.lock:
+                self.result["tc_amf_nas_integrity_failure"] = False
             return
                 
         """ 
@@ -426,20 +436,77 @@ class Testbench:
         --> ALSO, look at the UE MM status, if still registered tast fails.
         """    
         test_result = ctrl_pipe.recv()
+        
         if test_result == "Test OK":
             print(f"[+] Test OK", flush=True)
             ret = self.__search_NAS_message('Deregistration accept')
             if ret is None:
-                pipe.send(True)
+                with self.lock:
+                    self.result["tc_amf_nas_integrity_failure"] = True
+
             else:
-                pipe.send(False)
+                with self.lock:
+                    self.result["tc_amf_nas_integrity_failure"] = False
+
         elif test_result == "Test KO":
             print(f"[!] Test KO", flush=True)
-            pipe.send(False)
+            with self.lock:
+                self.result["tc_amf_nas_integrity_failure"] = False
             return
-        
 
-    def tc_nas_null_int_amf(self, pipe, ctrl_pipe):
+    """
+    Test case: TC_NAS_REPLAY_AMF
+
+    AMF supports integrity protection of NAS-signalling as speficied in TS 33.501 clause 5.5.2
+
+    Execution Steps: 
+    1.	The tester shall capture the NAS Security Mode Command procedure taking place between UE and AMF over N1 interface using any network analyser.
+    2.	The tester shall filter the NAS Security Mode Complete message by using a filter.
+    3.	The tester shall replay the captured NAS Security Mode Complete message.
+    4.	The tester shall check whether the replayed NAS Security Mode Complete message was not processed by the AMF by capturing traffic over the N1 interface 
+        to see if no corresponding response message was sent by the AMF. If applicable, AMF application logs could be checked for the rejection of the replayed     
+        NAS Security Mode Complete message.
+    """
+    def tc_nas_replay_amf(self,cmd_q, ctrl_pipe):
+        print("[+] tc_nas_replay_amf test case STARTED")
+
+        self.__ue_check_alive()
+        print("[+] UE Alive & Registered ")
+
+        """Capture NAS Security Mode Complete message, not necessary the last received one"""
+        
+        msg = self.__search_NAS_message('Security mode complete', False)
+        
+        if msg is None:
+            print("[!] Somehow Security Mode Complete message not found in history...")
+            exit(0)
+
+        """Replay Security Mode Complete message"""
+        smc_raw = NGAP()
+        smc_raw = smc_raw.build_ngap_pdu(msg.get("NGAP"))
+        smc = {"testCase":"tc_nas_replay_amf",
+               "msg": smc_raw.hex()}
+        ctrl_pipe.send(smc)
+        print(f"[+] Security Mode Complete message sent to Controller")
+
+
+        """ Check whether the SMC was not processed by the AMF --> Looking for Registration Accept """
+        test_result = ctrl_pipe.recv()
+        if test_result == "Test OK":
+            print(f"[+] Test OK", flush=True)
+            ret = self.__search_NAS_message('Registration accept')
+            with self.lock:
+                if ret is None:
+                    self.result["tc_nas_replay_amf"]= True 
+                else:
+                    self.result["tc_nas_replay_amf"] = False
+        elif test_result == "Test KO":
+            print(f"[!] Test KO", flush=True)
+            with self.lock:
+                self.result["tc_nas_replay_amf"]= False
+            return
+    
+    def tc_nas_null_int_amf(self, cmd_q, ctrl_pipe):
         """
         NIA0 is disabled in AMF in the deployments where support of unauthenticated emergency session is not a regulatory requirement 
         as specified in TS 33.501 [2], clause 5.5.2
@@ -468,22 +535,22 @@ class Testbench:
 
                 int_alg = nas_int_algs[algs[1]]
                 cipher_alg = nas_enc_algs[algs[0]]
-                
-                if int_alg == 'NIA0':
-                    """Test Failed"""
-                    pipe.send(False)
-                else:
-                    """Test Passed"""
-                    pipe.send(True)
+                with self.lock:
+                    if int_alg == 'NIA0':
+                        """Test Failed"""
+                        self.result["tc_nas_null_int_amf"] = False 
+                    else:
+                        """Test Passed"""
+                        self.result["tc_nas_null_int_amf"] = True 
 
-                    print(f'[+] Integrity Algorithm Used in Security Mode Command {int_alg}')
-                    print(f'[+] Integrity Algorithm Used in Security Mode Command {cipher_alg}')
+                print(f'[+] Integrity Algorithm Used in Security Mode Command {int_alg}')
+                print(f'[+] Integrity Algorithm Used in Security Mode Command {cipher_alg}')
             except Exception as e:
                 print(f'[!] Error during NAS dissecting: {e}')
-                pipe.send(False)
+                self.result["tc_nas_null_int_amf"] = False 
                 traceback.print_exc()
     
-    def tc_ue_sec_cap_as_context_setup(self, pipe, ctrl_pipe):
+    def tc_ue_sec_cap_as_context_setup(self, cmd_q, ctrl_pipe):
         """Verify that the UE security capabilities sent by the UE in the initial NAS registration request are the same 
            UE security capabilities sent in the NGAP Context Setup Request message to establish AS security."""
         """ Registration Request(Simple) and Context Setup(ASN1 PER) use different encodings for UE Security Capabilities.
@@ -503,7 +570,8 @@ class Testbench:
         raw_cap = context_setup[0]["NGAP"][next_]["IEs"]["id-UESecurityCapabilities"]["IE_value"]       #1c000e000000000000
 
         """ PER DEcoding of the UESecurityCapabilities """
-        specs = asn1tools.compile_files('UE_Sec_Cap.asn', codec='uper')
+        asn_file = os.path.join(self.script_dir, "UE_Sec_Cap.asn")
+        specs = asn1tools.compile_files(asn_file, codec='uper')
         ue_caps = specs.decode('UESecurityCapabilities', unhexlify(raw_cap))
         context_setup_supported = {}
 
@@ -540,11 +608,11 @@ class Testbench:
                 print(f"[+] {key} matching")
 
         if not match:
-            pipe.send(False)
+            self.result["tc_ue_sec_cap_as_context_setup"] = False 
         else:
-            pipe.send(True)
-
-    def tc_ue_sec_cap_handling_amf(self, pipe, ctrl_pipe):
+            self.result["tc_ue_sec_cap_as_context_setup"] = True 
+    
+    def tc_ue_sec_cap_handling_amf(self, cmd_q, ctrl_pipe):
         """
         Registration Request with unsecure UE security capabilities
         1. NO 5GS encryption algorithms (all bits 0)
@@ -562,7 +630,7 @@ class Testbench:
         rr = self.__search_NAS_message('Registration request', False)
         if rr is None:
             print("[!] Somehow Registration Request message not found in history...")
-            pipe.send(False)
+            self.result["tc_ue_sec_cap_handling_amf"] = False 
             return
 
         """ Extract UESecurityCapabilities from Registration Request """
@@ -590,18 +658,18 @@ class Testbench:
             if rrej is None:
                 """ Test Failed"""
                 print(f"[!] Registration Reject not found")
-                pipe.send(False)
+                self.result["tc_ue_sec_cap_handling_amf"] = False 
             else:
                 """ Test Passed """
                 print(f"[+] Registration Reject found")
-                pipe.send(True)
+                self.result["tc_ue_sec_cap_handling_amf"] = True 
 
         elif test_result == "Test KO":
             print(f"[!] Error injecting message through Proxy", flush=True)
-            pipe.send(False)
+            self.result["tc_ue_sec_cap_handling_amf"] = False 
             return
-
-    def tc_guti_allocation_amf(self, pipe, ctrl_pipe):
+    
+    def tc_guti_allocation_amf(self, cmd_q, ctrl_pipe):
         """ Upon receiving Registration Request message of type "initial registration" from a UE 
         (triggered by the tester), the AMF sends a new 5G-GUTI to the UE during the registration procedure. 
         <<Upon receiving Registration Request message of type "initial registration" or "mobility registration update" 
@@ -614,7 +682,7 @@ class Testbench:
         reg_accept = self.__search_NAS_message('Registration accept', False)
         if reg_accept is None:
             print("[!] Somehow Registration Accept message not found in history...")
-            pipe.send(False)
+            self.result["tc_guti_allocation_amf"] = False 
             return
         print(f"[+] Extracting GUTI from Registration Accept...")
         guti = reg_accept['NAS']['NAS PDU']['PlainNASPDU']['message_value'][10:50]  #extracting GUTI from Registration Accept, 16 bytes - 32 chars
@@ -633,7 +701,7 @@ class Testbench:
         new_reg_accept = self.__search_NAS_message('Registration accept', True)
         if new_reg_accept is None:
             print("[!] Somehow NEW Registration Accept message not found in history...")
-            pipe.send(False)
+            self.result["tc_guti_allocation_amf"] = False 
             return
         else:
             print(f"[+] Extracting GUTI from NEW Registration Accept...")
@@ -641,11 +709,12 @@ class Testbench:
             print(f"[+] #2 Registration Accept > GUTI extracted: {new_guti}")
             if new_guti == guti:
                 print(f"[!] GUTI not changed!")
-                pipe.send(False)
+                self.result["tc_guti_allocation_amf"] = False
             else:
                 print(f"[+] GUTI changed!")
-                pipe.send(True)
+                self.result["tc_guti_allocation_amf"] = True 
                 return
+    
     @staticmethod
     def __get_integrity_alg_from_config(amf_yaml_path):
         """
@@ -686,30 +755,19 @@ class Testbench:
             tmp = algs[0]
             data['configuration']['security']['integrityOrder'][0] = algs[1]
             data['configuration']['security']['integrityOrder'][1] = tmp
+            """ UERANSIM ue can't handle emergency (NIA0/NEA0) """
+            if data['configuration']['security']['integrityOrder'][0] == "NIA0" and data['configuration']['security']['cipheringOrder'][0] == "NEA0":
+                """ Enable NEA2 to avoid emergency auth"""
+                data['configuration']['security']['cipheringOrder'][0] = "NEA2"
+            elif data['configuration']['security']['integrityOrder'][0] == "NIA2" and data['configuration']['security']['cipheringOrder'][0] == "NEA2":
+                """ Restore Default """
+                data['configuration']['security']['cipheringOrder'][0] == "NEA0"
             print(f"[+] Integrity Algorithms modified: {data['configuration']['security']['integrityOrder']}")
             
         with open(amf_yaml_path, 'w', encoding='utf-8') as f:
             yaml.dump(data, f)
-        """ try:
-            with open(amf_yaml_path, 'r', encoding='utf-8') as f:
-                cfg = yaml.safe_load(f)
-            algs = cfg['configuration']['security']['integrityOrder']
-            if len(algs) < 2:
-                print("[!] 'integrityOrder' should be a list with at least 2 elements")
-                return False
-            else:
-                # Invert the order of the first two algorithms 
-                tmp = algs[0]
-                cfg['configuration']['security']['integrityOrder'][0] = algs[1]
-                cfg['configuration']['security']['integrityOrder'][1] = tmp
-                print(f"[+] Integrity Algorithms modified: {cfg['configuration']['security']['integrityOrder']}")
-            
-            with open(amf_yaml_path, 'w', encoding='utf-8') as f:
-                yaml.safe_dump(cfg, f,allow_unicode=True, sort_keys=False, default_flow_style=False)
-        except Exception as e:
-            print(f"[!] Error modifying AMF config file: {e}")
-            return False
-        return True """
+        
+
     @staticmethod
     def __get_sec_algs_from_smc(NAS_PDU):
         msg_v = NAS_PDU.get('NAS PDU').get('PlainNASPDU').get('message_value')
@@ -726,11 +784,11 @@ class Testbench:
         else:
             print('[!] Wrong NAS PDU')
             return None
-    
-    def __tc_nas_int_selection_use_amf_core(self):
+
+    def __tc_nas_int_selection_use_amf_core(self,cmd_q):
 
         """1 Retrieve the first supported integrity algorithm from the AMF config"""
-        int_algs_from_conf = self.__get_integrity_alg_from_config(config_path + "/amfcfg.yaml")
+        int_algs_from_conf = self.__get_integrity_alg_from_config(self.simulator_config_path + "/amfcfg.yaml")
 
         """2 Security Mode Command """
         smc = self.__search_NAS_message('Security mode command', False)
@@ -751,248 +809,37 @@ class Testbench:
         print(f"[+] Modifying AMF config file...")
 
         """4 Modify config file inverting """
-        if self.__modify_integrity_alg_in_config(config_path + "/amfcfg.yaml") is False:
+        if self.__modify_integrity_alg_in_config(self.simulator_config_path + "/amfcfg.yaml") is False:
             print("[!] Error modifying AMF config file")
             return False
+
+        self._saveLog()
+        cmd_q.put(("stop", "sniff_packets"))
         """Restart Free5GC with modified config"""
         print("[+] Restarting Free5GC with modified config...")
-        subprocess.run(["docker", "compose", "-f", docker_compose, "down"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "down"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("[+] Free5GC terminated")
         
-        subprocess.run(["docker", "compose", "-f", docker_compose, "up", "--build", "-d"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        cmd_q.put(("restart", "sniff_packets"))
+        
+        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "up", "--build", "-d"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("[+] Free5GC started with modified config")
 
         self.__ue_check_alive()
         return True
-
-    def tc_nas_int_selection_use_amf(self, pipe, ctrl_pipe):
+    
+    def tc_nas_int_selection_use_amf(self, cmd_q, ctrl_pipe):
         """ Verify that the AMF selects the NAS integrity algorithm which has the highest priority according 
         to the ordered list of supported integrity algorithms and is contained in the 5G security capabilities supported by the UE. """
         
         print("[+] tc_nas_int_selection_use_amf test case STARTED")
 
         for i in range(2):
-            if self.__tc_nas_int_selection_use_amf_core() is False:
-                pipe.send(False)
+            if self.__tc_nas_int_selection_use_amf_core(cmd_q) is False:
+                self.result["tc_nas_int_selection_use_amf"] = False 
+
                 return
-
-        pipe.send(True)
+        self.result["tc_nas_int_selection_use_amf"] = True 
         return 
-
-
-def ctrl(pipe):
-    """ Function handling control connection with the proxy"""
-    """ Receives data from the testCase function through the pipe
-        and sends it to the proxy through the socket """
-    
-    sckt = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sckt.connect((PROXY_IP, PROXY_PORT))
-    print(f"[+] Control connection established with {PROXY_IP}:{PROXY_PORT}", flush=True)
-
-    while True:
-        if pipe.poll():
-            """ Expected data is dict = {'testCase': tc_name, 'msg': msg} """
-
-            data = pipe.recv()
-            print(f"[CTRL] Received data from test case", flush=True)
-            
-            """ Exit condition """
-            if data == "exit":
-                print("[CTRL] Exiting control connection", flush=True)
-                sckt.close()
-                break
-
-            data = json.dumps(data).encode()
-
-            sckt.sendall(data) 
-            print(f"[CTRL] Sent data to proxy", flush=True)
-            sckt.settimeout(5)
-            try:
-                resp = sckt.recv(1024).decode('utf-8').strip()
-            except socket.timeout:
-                print("[!] Timeout waiting for response from proxy", flush=True)
-            if resp == "Test OK":
-                print(f"[CTRL] Test case executed successfully", flush=True)
-                pipe.send("Test OK")
-            elif resp == "Test KO":
-                print(f"[CTRL] Test case execution failed", flush=True)
-                pipe.send("Test KO")  
-            elif not resp:
-                print("[CTRL] Control connection closed by proxy", flush=True)
-                sckt.close()
-                break
-
-def start_free5gc():
-    try:
-        command = ["docker", "compose", "-f", docker_compose, "up", "--build", "-d"]
-        result = subprocess.run(command, check=True, stdout=subprocess.DEVNULL)
-
-        if result.stderr:
-            print(f"[!] Error starting Free5GC: {result.stderr.decode()}", flush=True)
-
-    except Exception as e:
-        print("Error starting Free5GC:", e, flush=True)
-
-def sniff_packets():
-    """ 
-    waiting interface ready
-    """
-    while True:
-        try:
-            result = subprocess.run(
-                ["ip", "link", "show", "br-free5gc"], capture_output=True, text=True
-            ).stdout
-            if "UP" in result:
-                break
-        except Exception as e:
-            print("[!]Error checking interface: ", e)
-            continue
-    
     
 
-    print("[+] Sniffing for packets...", flush=True)
-    packets = sniff(iface="br-free5gc",
-                    filter="sctp port 38412",
-                    prn=lambda packet: qpkt.put(packet),
-                    store=False)    
-    
-        
-        
-def graceful_shutdown(signal=None,frame=None):
-    """ 
-    Function to handle cleanup and shutdown gracefully
-    When multi-process a signal is caught by every process and this function is called multiple times. Watch out>>>Find a method to fix the behavior 
-    """
-    print(f"\nGracefully shutting down docker.")
-    with open("../log/amf.log", "a") as log_file:
-        subprocess.run(["docker", "logs", "amf"], stdout=log_file, stderr=subprocess.STDOUT)
-    with open("../log/gnb.log", "a") as log_file:
-        subprocess.run(["docker", "logs", "ueransim"], stdout=log_file, stderr=subprocess.STDOUT)
-    with open("../log/ue.log", "a") as log_file:
-        subprocess.run(["docker", "logs", "ue"], stdout=log_file, stderr=subprocess.STDOUT)
-    with open("../log/proxy.log", "a") as log_file:
-        subprocess.run(["docker", "logs", "sctp-proxy"], stdout=log_file, stderr=subprocess.STDOUT)
-    subprocess.run(["docker", "compose", "-f", docker_compose, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    
-    print("Docker Compose shutdown completed.")
-    exit(0)
-
-signal.signal(signal.SIGINT, graceful_shutdown) 
-
-
-    
-if __name__ == "__main__":
-    global testbench, main_path, config_path, free5gc_proc, sniffer, PROXY_IP, PROXY_PORT, qpkt, script_dir, docker_compose
-    
-    logo = """ 
-     @@@@@@    @@@@@@@   @@@@@@    @@@@@@    @@@@@@@   @@@@@@   @@@  @@@                   @@@@@@@   @@@@@@@@  
-    @@@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@@@@@  @@@@ @@@                   @@@@@@@  @@@@@@@@@  
-    !@@       !@@       @@!  @@@  !@@       !@@       @@!  @@@  @@!@!@@@                   !@@      !@@        
-    !@!       !@!       !@!  @!@  !@!       !@!       !@!  @!@  !@!!@!@!                   !@!      !@!        
-    !!@@!!    !@!       @!@!@!@!  !!@@!!    !@!       @!@!@!@!  @!@ !!@!     @!@!@!@!@     !!@@!!   !@! @!@!@  
-     !!@!!!   !!!       !!!@!!!!   !!@!!!   !!!       !!!@!!!!  !@!  !!!     !!!@!@!!!     @!!@!!!  !!! !!@!!  
-         !:!  :!!       !!:  !!!       !:!  :!!       !!:  !!!  !!:  !!!                       !:!  :!!   !!: 
-        !:!   :!:       :!:  !:!      !:!   :!:       :!:  !:!  :!:  !:!                       !:!  :!:   !::
-    :::: ::    ::: :::  ::   :::  :::: ::    ::: :::  ::   :::   ::   ::                   :::: ::   ::: ::::  
-    :: : :     :: :: :   :   : :  :: : :     :: :: :   :   : :  ::    :                    :: : :    :: :: :  
-    """
-    PROXY_IP = "10.100.200.200"
-    PROXY_PORT = 1337
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    qpkt = multiprocessing.Queue()
-
-    # Parse arguments
-    argparser = argparse.ArgumentParser(description="SCAScan-5G, a Framework for 5G Vulnerability Assessment following 3GPP SCAS TSs." )
-
-    argparser.add_argument("--path", type=str, dest="path", help="5g core simulatore path")
-    argparser.add_argument("--test",type=str, dest="test", help="Select test case, default 'ANY'. Comma separated values and range values supported . --tests-enum lists available tests", default=-1)
-    argparser.add_argument("--test-enum", action="store_true", help="Show every test available")
-    arg = argparser.parse_args()
-
-    testbench = Testbench(arg.test)
-    
-
-
-    if testbench.td_test is None or arg.test_enum:
-        argparser.print_help()
-        print(f"[/]Available tests:")
-        for key, test in testbench.tests.items():
-            print(f"[>>] Test {key} - {test['name']}")
-        exit(0)
-
-    """ Path configuration """
-    main_path = arg.path
-    if 'free5gc' in main_path:
-        docker_compose = main_path + "/docker-compose.yaml"
-        config_path = os.path.join(main_path, "config")
-
-    # Start Free5GC containers.
-    free5gc_proc = multiprocessing.Process(target=start_free5gc)
-    sniffer = multiprocessing.Process(target=sniff_packets)
-    print(f"[+] [{time.strftime('%Y%m%d_%H:%M:%S')}] Starting Free5GC")
-    
-    """ Start Free5gc Docker env """
-    free5gc_proc.start()
-
-    """ Start Sniffing """
-    sniffer.start()
-
-    free5gc_proc.join()
-    print("[+] FREE5GC Up & Running")
-
-    """ Once free5gc is ready start parsing data"""
-    testbench.pktparser.start()
-
-    """ Create testCase-Controller pipe"""
-    server_pipe, client_pipe = multiprocessing.Pipe()
-
-    """ Create and start controller process"""
-    ctrl_proc = multiprocessing.Process(target=ctrl, args=(server_pipe,)) 
-    ctrl_proc.start()
-
-    """
-    Running tests in self.td_test
-    """
-    parent_pipe, child_pipe = multiprocessing.Pipe() 
-
-    for test in testbench.td_test:
-        fun = getattr(testbench,testbench.tests[test]['name'],None)
-        if callable(fun):
-            t = multiprocessing.Process(target = fun, args=(child_pipe,client_pipe))
-            t.start()
-            print("-----------------------")
-
-            result = parent_pipe.recv()
-            if result:
-                print(f"[+] Test {testbench.tests[test]['name']} PASSED!")
-                testbench.tests[test]["Result"] = "PASSED"
-            else:
-                print(f"[+] Test {testbench.tests[test]['name']} FAILED!")
-                testbench.tests[test]["Result"] = "FAILED"
-            t.join() 
-            print("-----------------------")
-
-        else:
-            print(f'[!] Method {testbench.tests[test]["name"]} not found')
-    client_pipe.send("exit")
-    
-    """
-    End gracefully
-    """
-    sniffer.terminate()
-    sniffer.join()
-
-    ctrl_proc.terminate()
-    ctrl_proc.join()
-
-    testbench.pktparser.terminate()
-    testbench.pktparser.join()
-    
-    graceful_shutdown()
-
-    print("[+] TEST COMPLETED:")
-    for test in testbench.tests:
-        print(f"[>>] Test {test['name']} - {test['Result']}")
-
-        
-    
