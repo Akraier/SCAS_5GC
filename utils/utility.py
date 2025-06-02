@@ -1,15 +1,14 @@
 import socket, json
 
-PROXY_IP = "10.100.200.200"
-PROXY_PORT = 1337
-def ctrl(cmq_q, pipe):
+
+def ctrl(cmq_q, ip , port , pipe):
     """ Function handling control connection with the proxy"""
     """ Receives data from the testCase function through the pipe
         and sends it to the proxy through the socket """
     
     sckt = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sckt.connect((PROXY_IP, PROXY_PORT))
-    print(f"[+] Control connection established with {PROXY_IP}:{PROXY_PORT}", flush=True)
+    sckt.connect((ip, port))
+    print(f"[+] Control connection established with {ip}:{port}", flush=True)
 
     while True:
         if pipe.poll():

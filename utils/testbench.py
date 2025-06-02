@@ -109,20 +109,33 @@ class Testbench:
         self.qpkt = multiprocessing.Queue() #Queue for packet capture
         self.amfip = self.manager.Value('s','')
         self.lock = multiprocessing.Lock()
-        self.simulator_proxy_ip = "10.100.200.200"
         self.simulator_proxy_port = 1337
         self.result = self.manager.dict()
         if 'free5gc' in path:
+            self.simulator_proxy_ip = "10.100.200.200"
             self.simulator_name = "free5gc"
             self.simulator_path = path
             self.simulator_config_path = os.path.join(path, "config")
             self.simulator_docker_compose = os.path.join(path, "docker-compose.yaml")
             self.simulator_interface = "br-free5gc"
             self.nfs = {
-                "amf": "amf",
-                "gnb": "ueransim",
-                "ue": "ue",
-                "proxy": "sctp-proxy"
+                "amf": "free5gc-amf-1",
+                "gnb": "free5gc-ueransim-1",
+                "ue": "free5gc-ue-1",
+                "proxy": "free5gc-sctp-proxy-1"
+            }
+        elif 'open5gs' in path:
+            self.simulator_proxy_ip = "172.22.0.200"
+            self.simulator_name = "open5gs"
+            self.simulator_path = path
+            self.simulator_config_path = path
+            self.simulator_docker_compose = os.path.join(path, "my_deploy.yaml")
+            self.simulator_interface = "br-open5gs"
+            self.nfs = {
+                "amf": "open5gs-amf-1",
+                "gnb": "open5gs-ueransim-1",
+                "ue": "open5gs-ue-1",
+                "proxy": "open5gs-sctp-proxy-1"
             }
         #Other simulators missing... TBD
     def _saveLog(self):
@@ -148,7 +161,7 @@ class Testbench:
         self._saveLog()
         cmd_q.put(("shutdown_all",None))  # Notify the procManager to shutdown all processes
         
-        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["docker", "compose", "-p", self.simulator_name, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("Docker Compose shutdown completed.")
         exit(0)
 
@@ -164,14 +177,13 @@ class Testbench:
 
         if action == "start":
             command = [
-                "docker", "compose", "-f", self.simulator_docker_compose,
-                "up", "--build", "-d"
-            ]
+                "docker", "compose", "-p", self.simulator_name , "-f", self.simulator_docker_compose,
+                "up", "--build"]
             operation = "Starting"
             error_prefix = "Error starting"
         else:
             command = [
-                "docker", "compose", "-f", self.simulator_docker_compose,
+                "docker", "compose", "-p", self.simulator_name,
                 "restart"
             ]
             operation = "Restarting"
@@ -180,9 +192,8 @@ class Testbench:
         try:
             result = subprocess.run(
                 command,
+                capture_output=True,
                 check=True,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL
             )
         except subprocess.CalledProcessError as e:
             error_message = e.stderr.decode(errors="ignore").strip() or str(e)
@@ -817,12 +828,12 @@ class Testbench:
         cmd_q.put(("stop", "sniff_packets"))
         """Restart Free5GC with modified config"""
         print("[+] Restarting Free5GC with modified config...")
-        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "down"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["docker", "compose", "-p", self.simulator_name, "down"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("[+] Free5GC terminated")
         
         cmd_q.put(("restart", "sniff_packets"))
         
-        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "up", "--build", "-d"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "up", "-d"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         print("[+] Free5GC started with modified config")
 
         self.__ue_check_alive()

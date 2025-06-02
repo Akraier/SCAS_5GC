@@ -1,0 +1,6 @@
+
+asn1tools==0.167.0
+pycrate==0.7.9
+pysctp==0.7.2
+ruamel.yaml==0.18.12
+scapy==2.6.1

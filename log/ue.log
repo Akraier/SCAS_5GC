@@ -1,0 +1,37 @@
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ue-1/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ue-1/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ue-1/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ue-1/json": dial unix /var/run/docker.sock: connect: permission denied
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ue-1/json": dial unix /var/run/docker.sock: connect: permission denied
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1
+Error response from daemon: No such container: open5gs-ue-1

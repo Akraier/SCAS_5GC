@@ -1,4 +1,4 @@
-import time, json, yaml, socket, logging, argparse, os, signal, multiprocessing, subprocess
+import logging, argparse, signal, multiprocessing, subprocess
 from utils.procManager import ProcManager
 from utils.testbench import Testbench
 from utils.utility import *
@@ -30,7 +30,7 @@ def sniff_packets(cmd_q, testbench):
                     store=False)    
     except OSError as e:
         print(f"[!] Interface seems to be down: {e}")
-        cmd_q.put("restart sniff_packets")
+        cmd_q.put(("restart", "sniff_packets"))
     return 
     
 if __name__ == "__main__":
@@ -78,9 +78,8 @@ if __name__ == "__main__":
         pManager.run_process(testbench.manage_core_simulator)
         pManager.run_process(sniff_packets, testbench)
         pManager.wait_process(testbench.manage_core_simulator)
-
         pManager.run_process(testbench.pktparser)
-        pManager.run_process(ctrl, server_pipe)
+        pManager.run_process(ctrl, (testbench.simulator_proxy_ip, testbench.simulator_proxy_port, server_pipe))
         for test in testbench.tests:
             fun = getattr(testbench, testbench.available_tests[test]['name'], None)
             if callable(fun):
@@ -92,13 +91,10 @@ if __name__ == "__main__":
             else:
                 print(f"[!] Test case {testbench.available_tests[test]['name']} is not callable or does not exist.")
                 exit(1)
-
-    
     except Exception as e:
         print(f"[!] Error: {e}")
         testbench.graceful_shutdown(pManager.cmd_q)
         exit(1)
-    
     print("///////// RESULTS \\\\\\\\\\\\\\\\\\")
     for test,result in testbench.result.items():
         print(f"[//] {test} -> {result}")
