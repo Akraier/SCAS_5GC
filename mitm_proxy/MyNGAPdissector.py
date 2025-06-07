@@ -1,5 +1,7 @@
-import json, traceback, logging
-from scapy.all import *
+from utilities import * # type: ignore
+import json
+import traceback
+
 
 NGAP_procedure_code_values = {
     0: "id-AMFConfigurationUpdate",
@@ -216,7 +218,7 @@ ngap_ie_dict = {
     128: "id-DL-NGU-UP-TNLInformation",
     129: "id-NetworkInstance",
     130: "id-PDUSessionAggregateMaximumBitRate",
-    131: "id-PDUSessionResourceFailedToModifyListModCfm",
+     131: "id-PDUSessionResourceFailedToModifyListModCfm",
     132: "id-PDUSessionResourceFailedToSetupListCxtFail",
     133: "id-PDUSessionResourceListCxtRelReq",
     134: "id-PDUSessionType",
@@ -524,47 +526,25 @@ ngap_ie_dict = {
 }
 
 nas_int_algs = {
-    0 : "NIA0",
-    1 : "NIA1",
-    2 : "NIA2",
-    3 : "NIA3",
-    4 : "NIA4",
-    5 : "NIA5",
-    6 : "NIA6",
-    7 : "NIA7"
+    0 : "5GIA0",
+    1 : "128 5GIA1",
+    2 : "128 5GIA2",
+    3 : "128 5GIA3",
+    4 : "5GIA4",
+    5 : "5GIA5",
+    6 : "5GIA6",
+    7 : "5GIA7"
 }
 
 nas_enc_algs = {
-    0 : "NEA0",
-    1 : "NEA1",
-    2 : "NEA2",
-    3 : "NEA3",
-    4 : "NEA4",
-    5 : "NEA5",
-    6 : "NEA6",
-    7 : "NEA7"
-}
-
-eutra_enc_algs = {
-    0: "128-EEA0",
-    1: "128-EEA1",
-    2: "128-EEA2",
-    3: "128-EEA3",
-    4: "EEA4",
-    5: "EEA5",
-    6: "EEA6",
-    7: "EEA7"
-}
-
-eutra_int_algs = {
-    0: "128-EIA0",
-    1: "128-EIA1",
-    2: "128-EIA2",
-    3: "128-EIA3",
-    4: "EIA4",
-    5: "EIA5",
-    6: "EIA6",
-    7: "EIA7"
+    0 : "5GEA0",
+    1 : "128 5GEA1",
+    2 : "128 5GEA2",
+    3 : "128 5GEA3",
+    4 : "5GEA4",
+    5 : "5GEA5",
+    6 : "5GEA6",
+    7 : "5GEA7"
 }
 
 message_type_dict = {
@@ -658,13 +638,11 @@ Tested with AMF integrity only. In case of encryption enforced there could be
 errors handling Plain messages
 """
 
-logger = logging.getLogger(__name__)
-
 class NAS:
     
 
-    def __init__(self):
-        self.logger = logger
+    """def __init__(self,raw_data):
+        self.dissect_nas_pdu(raw_data) """
     
     def build_plain_nas_pdu(self,pdu):
         #construct raw binary data from pdu dictionary
@@ -696,7 +674,8 @@ class NAS:
             
             return raw
         except Exception as e:
-            self.logger.exception("Error building plain NAS PDU")
+            print("[!]Error building plain NAS PDU:")
+            traceback.print_exc()
             return None
 
     def build_nas_pdu(self,pdu):
@@ -726,7 +705,8 @@ class NAS:
             #print("[DEBUG] serialized nas pdu", raw.hex())
             return raw
         except Exception as e:
-            self.logger.exception(f"[!]An Error Occurred during NAS serialization")
+            print(f"[!]An Error Occurred during NAS serialization {e}")
+            traceback.print_exc()
             return None
 
 
@@ -771,7 +751,8 @@ class NAS:
             
             return pdu
         except Exception as e:
-            self.logger.exception("[!]Error dissecting plain NAS PDU:")
+            print("[!]Error dissecting plain NAS PDU:")
+            traceback.print_exc()
             return None
 
     def dissect_nas_pdu(self,raw):
@@ -794,9 +775,13 @@ class NAS:
                 raw = raw[1:] """
 
             sht = raw[2] & 0x0F    #SHT is lower nibble bits 0-3
-            
+            #print(f"[DEBUG] Raw NAS PDU: {raw.hex()}")
+            #print(f"[DEBUG] Length: {length}")
+            #print(f"[DEBUG] epd value: {epd}")
+            #print(f"[DEBUG] sht value: {sht}")
             if sht == 0:
                 #plain NAS PDU
+                #print("[DEBUG] Plain NAS PDU")
                 pdu = self.dissect_plain_nas_pdu(raw[3:], epd, sht)
                 if pdu != None:
                     self.pdu = {"PlainNASPDU":pdu}
@@ -811,10 +796,15 @@ class NAS:
                 epd_enc = enc_msg[0]
                 sht_enc = enc_msg[1] & 0x0F
                 pdu_enc = enc_msg[2:]
+                #print(f"[DEBUG] MAC : {mac.hex()}")
+                #print(f"[DEBUG] Seq.No: {seq_no}")
+                #print(f"[DEBUG]EPD_ENC: {epd_enc}")
+                #print(f"[DEBUG]SHT_ENC: {sht_enc}")
+                #print(f"[DEBUG]PDU_END: {pdu_enc.hex()}")
 
                 plain_pdu = self.dissect_plain_nas_pdu(pdu_enc, epd_enc, sht_enc)
                 if plain_pdu is None:
-                    self.logger.debug("Error dissecting plain PDU")
+                    print("[-] Error dissecting plain PDU")
                     return None
                 pdu = {
                     "SecurityProtectedNASPDU":{
@@ -828,9 +818,27 @@ class NAS:
                 self.pdu = pdu
                 return 1
         except Exception as e:
-            self.logger.debug("Error dissecting NAS PDU:")
+            print("[!]Error dissecting NAS PDU:")
+            traceback.print_exc()
             return None
         
+    @staticmethod
+    def dissect_NAS_Sec_Alg(NAS_PDU):
+        msg_v = NAS_PDU.get('PlainNASPDU').get('message_value')
+        if msg_v is not None:
+            raw_msg = bytes.fromhex(msg_v)
+            security_algs = raw_msg[0]
+
+            """4 LSBits"""
+            int_alg = security_algs & 0x0F
+            """4 MSBits"""
+            cipher_alg = (security_algs & 0xF0) >> 4
+            
+            return [nas_enc_algs[cipher_alg], nas_int_algs[int_alg]]
+
+        else:
+            print('[!] Wrong NAS PDU')
+            return None
 
 """
 NGAP Serialization & Deserialization class
@@ -845,9 +853,13 @@ class NGAP:
         1: "Unsuccessful Outcome"
     }
 
-    def __init__(self):
-        self.logger = logger 
-
+    """ def __init__(self, raw_segment):
+        self.segment = self.dissect_ngap_pdu(raw_segment)
+        #print("[!] TYPE OF SEGMENT:", type(self.segment))
+        if self.segment != None:
+            self.print_ngap(self.segment)
+        else:
+            print("[!] Error dissecting NGAP") """
     def build__ngap_ie(self, ie_dict):
         #IE SERIALIZATION
         #input IEs dictionary {"id-ie1":"","id-ie2":"",..} -- ie_dict should be dict["IEs"]
@@ -862,7 +874,7 @@ class NGAP:
 
             for ie_id, ie_value in ie_dict.items():
                 if ie_id not in reverse_ngap_ie_dict:
-                    self.logger.debug(f"[!] Unknown IE ID: {ie_id}")
+                    print(f"[!] Unknown IE ID: {ie_id}")
                     return None
                 #IE's first 2 bytes are its ID  
                 IE_id_ = reverse_ngap_ie_dict[ie_id]
@@ -887,7 +899,7 @@ class NGAP:
                     nas = NAS()
                     nas_pdu_raw = nas.build_nas_pdu(nas_pdu)
                     if nas_pdu_raw is None:
-                        self.logger.debug("Error building NAS PDU")
+                        print("[-] Error building NAS PDU")
                         return None
                     raw += nas_pdu_raw
                 else:
@@ -896,7 +908,8 @@ class NGAP:
                     raw += IE_value_bytes
             return raw
         except Exception as e:
-            self.logger.exception("Error building NGAP IEs:")
+            print("[!]Error building NGAP IEs:")
+            traceback.print_exc()
             return None
 
     def build_ngap_pdu(self, ngap_dict):
@@ -936,7 +949,7 @@ class NGAP:
             ies_dict = pdu_data["IEs"]
             IEs = self.build__ngap_ie(ies_dict)
             if IEs is None:
-                self.logger.debug("Error building IEs")
+                print("[-] Error building IEs")
                 return None
             pdu += IEs            
             #padding
@@ -949,7 +962,8 @@ class NGAP:
             return pdu
 
         except Exception as e:
-            self.logger.exception("[!]Error building NGAP PDU:")
+            print("[!]Error building NGAP PDU:")
+            traceback.print_exc()
             return None
     
     def dissect_ngap_ie(self, raw_segment):
@@ -958,25 +972,26 @@ class NGAP:
 
         try:
             if raw_segment is None or len(raw_segment) < 4:
-                self.logger.debug("Empty NGAP value")
+                print("[!]Empty NGAP value")
                 return None
             protocol_ies = int.from_bytes(raw_segment[:3], byteorder='big')   #3 bytes
             #raw_segment = raw_segment[3:]
             ie = {}
-            #self.logger.debug(f"Protocol IEs: {protocol_ies}")
+            #print(f"[DEBUG] Protocol IEs: {protocol_ies}")
             raw_segment = raw_segment[3:]   #update ngap value
             for i in range(protocol_ies):
-                #self.logger.debug(f"Remaining IEs: {raw_segment.hex()}")
+                #print(f"[DEBUG] Remaining IEs: {raw_segment.hex()}")
                 IE_id = int.from_bytes(raw_segment[:2],byteorder='big')     #IE id, 2 bytes
                 IE_criticality = (raw_segment[2] & 0b11000000) >> 6  #IE criticality, 2 bits
                 IE_length = raw_segment[3]   #IE length, 1 byte
                 IE_value = raw_segment[4:4+IE_length]    #IE value, variable length
-                #self.logger.debug(f"IE ID: {IE_id}")
+                #print(f"[DEBUG] IE ID: {IE_id}")
                 if IE_id == id_NAS_PDU:
+                    #print("[DEBUG] Dissecting NAS PDU")
                     #dissect NAS PDU
                     nas = NAS()
                     if not nas.dissect_nas_pdu(IE_value):
-                        self.logger.debug("Error dissecting NAS PDU")
+                        print("[-] Error dissecting NAS PDU")
                         return None
                     else:
                         ie[ngap_ie_dict[IE_id]] = {"IE_criticality": IE_criticality, "IE_length": IE_length, "NAS PDU": nas.pdu}
@@ -996,7 +1011,8 @@ class NGAP:
             return ie
 
         except Exception as e:
-            self.logger.exception("[!]Error dissecting ngap ie:")
+            print("[!]Error dissecting ngap ie:")
+            traceback.print_exc()
             return None
 
     def dissect_ngap_pdu(self, chunk_data):
@@ -1018,18 +1034,23 @@ class NGAP:
             else:
                 value_length = chunk_data[4]
                 value = chunk_data[5:5+value_length]
-            
+            """ print(f"[DEBUG] First Byte: {first_byte}")
+            print(f"[DEBUG] Reserved: {reserved}")
+            print(f"[DEBUG] PDU Type: {pdu_type}")
+            print(f"[DEBUG] Procedure Code: {procedure_code}")
+            print(f"[DEBUG] Criticality: {criticality}") 
+            print(f"[DEBUG] Value Length: {value_length}")
+            print(f"[DEBUG] Value: {value.hex()}")"""
             IEs = self.dissect_ngap_ie(value)    #returns a dictionary containing all IEs in the packet
             if IEs is None:
-                self.logger.debug(f"Error dissecting IEs")
-                
+                print("[-] Error dissecting IEs")
                 return 0
             #print(f"[+] Dissected IEs: {IEs}")
             ngap[self.pdu_type_values[pdu_type]] = {"procedure_code": NGAP_procedure_code_values[procedure_code], "criticality": criticality, "value_length": value_length, "IEs": IEs, "raw": chunk_data.hex()}
             self.segment = ngap
             return 1 
         except Exception as e:
-            self.logger.exception("Error dissecting ngap:")
+            print("[!]Error dissecting ngap:", e)
             return 0
         
     def get_nas_pdu(self):
@@ -1040,7 +1061,7 @@ class NGAP:
         if not nas_pdu_entry:
             return None
         return nas_pdu_entry
-
+    
     def print_ngap(self):
         #Utility function for printing NGAP in any of its fields
         try:
@@ -1059,6 +1080,7 @@ class NGAP:
                     print(f"\t\t[>>] IE Value: {IE['IE_value'].hex()}") """
             return
         except Exception as e:
-            self.logger.exception("[!]Error printing ngap:")
+            print("[!]Error printing ngap:")
+            traceback.print_exc()            
             return
         

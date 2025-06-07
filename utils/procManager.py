@@ -1,4 +1,4 @@
-import multiprocessing, threading
+import multiprocessing, threading, logging
 from collections.abc import Iterable
 
 class ProcManager:
@@ -8,6 +8,7 @@ class ProcManager:
 
     def __init__(self):
         self._lock      = multiprocessing.Lock()
+        self.logger = logging.getLogger(__name__)
         self.cmd_q     = multiprocessing.Queue()    # Communication queue for commands
         self.processes = {}   # name -> Process
         self.targets   = {}   # name -> (target, args)
@@ -21,28 +22,28 @@ class ProcManager:
         while True:
             cmd, name = self.cmd_q.get()
             if cmd == "restart":
-                print(f"[*] Restart required for '{name}'")
+                self.logger.info(f"Restart required for process '{name}'")
                 try:
                     if self.processes[name].is_alive():
-                        print(f"[*] Stopping process '{name}'")
+                        self.logger.info(f"Stopping process '{name}'")
                         self.stop_process(name)
                     else:
-                        print(f"[*] '{name}' is not running...")
+                        self.logger.info(f"'{name}' is not running...")
                         return
                     target, args = self.targets[name]
                     self.run_process(target, args)
                 except Exception as e:
-                    print(f"[*] Error restarting {name}: {e}")
+                    self.logger.exception(f"Error restarting {name}")
             elif cmd == "stop":
-                print(f"[*] Stop required for '{name}'")
+                self.logger.info(f"Stop required for '{name}'")
                 try:
                     if self.process[name].is_alive():
-                        print(f"[*] Stopping '{name}'")
+                        self.logger.info(f"Stopping '{name}'")
                         self.stop_process(name)
                     else:
-                        print(f"[*] '{name}' is not running...")
+                        self.logger.info(f"'{name}' is not running...")
                 except Exception as e:
-                    print(f"[*] Error stopping {name}: {e}")
+                    self.logger.exception(f"Error stopping {name}")
             elif cmd == "shutdown_all":
                 self.cleanup()
                 break
@@ -62,19 +63,19 @@ class ProcManager:
                 self.processes[name] = p
             return True
         except Exception as e:
-            print(f"[!] Error starting {name}:{e}")
+            self.logger.exception(f"Error starting {name}")
             return False
     
     def stop_process(self, name, timeout = 5):
         with self._lock:
             p = self.processes.get(name)
         if not p:
-            print(f"[!] No such process '{name}'")
+            self.logger.warning(f"No such process '{name}'")
             return False
         p.terminate()
         p.join(timeout)
         if p.is_alive():
-            logging.warning(f"Process '{name}' did not exit after {timeout}s")
+            self.logger.warning(f"Process '{name}' did not exit after {timeout}s")
         with self._lock:
             del self.processes[name]
     def wait_process(self, target):
@@ -82,7 +83,7 @@ class ProcManager:
         with self._lock:
             p = self.processes.get(name)
         if not p:
-            print(f"[!] No such process '{name}'")
+            self.logger.warning(f"[!] No such process '{name}'")
             return False
         p.join()
         with self._lock:
@@ -97,5 +98,5 @@ class ProcManager:
             try:
                 self.stop_process(name)
             except Exception as e:
-                print(f"[!] Cleanup error on '{name}': {e}")
+                self.logger.exception(f"Cleanup error on '{name}'")
             
