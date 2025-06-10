@@ -1,7 +1,7 @@
 import logging, argparse, signal, multiprocessing, subprocess
 from utils.procManager import ProcManager
 from utils.testbench import Testbench
-from utils.utility import *
+from utils.controller import *
 from utils.logger import setup_logger
 from scapy.all import sniff
 
@@ -54,8 +54,8 @@ if __name__ == "__main__":
 
     argparser.add_argument("--path", type=str, dest="path", help="5g core simulatore path")
     argparser.add_argument("--test",type=str, dest="test", help="Select test case, default 'ANY'. Comma separated values and range values supported . --tests-enum lists available tests", default=-1)
-    argparser.add_argument("--test-enum",  help="Show every test available")
-    argparser.add_argument("-v", "--verbose", help="Set verbose logging")
+    argparser.add_argument("--test-enum", action="store_true", help="Show every test available")
+    argparser.add_argument("-v", "--verbose", action="store_true", help="Set verbose logging")
     argparser.add_argument("--dump", type=str, dest="log_file", help="Save Logs into log_file")
     
     arg = argparser.parse_args()

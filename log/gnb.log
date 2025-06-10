@@ -1,685 +1,85 @@
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ueransim-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ueransim-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ueransim-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ueransim-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-ueransim-1/json": dial unix /var/run/docker.sock: connect: permission denied
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Error response from daemon: No such container: open5gs-ueransim-1
-Deploying component: 'ueransim-gnb'
-[?2004h]0;root@4bd7764d2962: /UERANSIM/buildroot@4bd7764d2962:/UERANSIM/build# UERANSIM v3.2.6
-[2025-06-04 21:23:37.996] [sctp] [[32minfo[m] Trying to establish SCTP connection... (172.22.0.200:38412)
-[2025-06-04 21:23:38.004] [sctp] [[32minfo[m] SCTP connection established (172.22.0.200:38412)
-[2025-06-04 21:23:38.004] [sctp] [[36mdebug[m] SCTP association setup ascId[108]
-[2025-06-04 21:23:38.005] [ngap] [[36mdebug[m] Sending NG Setup Request
-[2025-06-04 21:23:38.022] [ngap] [[36mdebug[m] NG Setup Response received
-[2025-06-04 21:23:38.022] [ngap] [[32minfo[m] NG Setup procedure is successful
-[2025-06-04 21:23:38.318] [rrc] [[36mdebug[m] UE[1] new signal detected
-[2025-06-04 21:23:38.335] [rrc] [[32minfo[m] RRC Setup for UE[1]
-[2025-06-04 21:23:38.335] [ngap] [[36mdebug[m] Initial NAS message received from UE[1]
-[2025-06-04 21:23:38.553] [ngap] [[36mdebug[m] UE Context Release Command received
-[2025-06-04 21:23:38.553] [rrc] [[32minfo[m] Releasing RRC connection for UE[1]
-[2025-06-04 21:23:49.331] [rrc] [[32minfo[m] RRC Setup for UE[1]
-[2025-06-04 21:23:49.331] [ngap] [[36mdebug[m] Initial NAS message received from UE[1]
-[2025-06-04 21:23:49.395] [ngap] [[36mdebug[m] Initial Context Setup Request received
-[2025-06-04 21:23:49.810] [ngap] [[32minfo[m] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 21:23:50.196] [ngap] [[31m[1merror[m] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-Deploying component: 'ueransim-gnb'
-[?2004h]0;root@64cbdb7cb32b: /UERANSIM/buildroot@64cbdb7cb32b:/UERANSIM/build# UERANSIM v3.2.6
-[2025-06-04 21:41:37.225] [sctp] [[32minfo[m] Trying to establish SCTP connection... (172.22.0.200:38412)
-[2025-06-04 21:41:37.227] [sctp] [[32minfo[m] SCTP connection established (172.22.0.200:38412)
-[2025-06-04 21:41:37.228] [sctp] [[36mdebug[m] SCTP association setup ascId[113]
-[2025-06-04 21:41:37.228] [ngap] [[36mdebug[m] Sending NG Setup Request
-[2025-06-04 21:41:37.244] [ngap] [[36mdebug[m] NG Setup Response received
-[2025-06-04 21:41:37.244] [ngap] [[32minfo[m] NG Setup procedure is successful
-[2025-06-04 21:41:37.552] [rrc] [[36mdebug[m] UE[1] new signal detected
-[2025-06-04 21:41:37.555] [rrc] [[32minfo[m] RRC Setup for UE[1]
-[2025-06-04 21:41:37.555] [ngap] [[36mdebug[m] Initial NAS message received from UE[1]
-[2025-06-04 21:41:37.762] [ngap] [[36mdebug[m] UE Context Release Command received
-[2025-06-04 21:41:37.762] [rrc] [[32minfo[m] Releasing RRC connection for UE[1]
-[2025-06-04 21:41:48.566] [rrc] [[32minfo[m] RRC Setup for UE[1]
-[2025-06-04 21:41:48.567] [ngap] [[36mdebug[m] Initial NAS message received from UE[1]
-[2025-06-04 21:41:48.624] [ngap] [[36mdebug[m] Initial Context Setup Request received
-[2025-06-04 21:41:49.032] [ngap] [[32minfo[m] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 21:41:49.437] [ngap] [[31m[1merror[m] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 21:43:12.733] [ngap] [[32minfo[m] PDU session resource(s) setup for UE[1] count[1]
-Deploying component: 'ueransim-gnb'
-[?2004h]0;root@98f6c67b128b: /UERANSIM/buildroot@98f6c67b128b:/UERANSIM/build# UERANSIM v3.2.6
-[2025-06-04 21:47:34.685] [sctp] [[32minfo[m] Trying to establish SCTP connection... (172.22.0.200:38412)
-[2025-06-04 21:47:34.687] [sctp] [[32minfo[m] SCTP connection established (172.22.0.200:38412)
-[2025-06-04 21:47:34.687] [sctp] [[36mdebug[m] SCTP association setup ascId[120]
-[2025-06-04 21:47:34.687] [ngap] [[36mdebug[m] Sending NG Setup Request
-[2025-06-04 21:47:34.698] [ngap] [[36mdebug[m] NG Setup Response received
-[2025-06-04 21:47:34.698] [ngap] [[32minfo[m] NG Setup procedure is successful
-[2025-06-04 21:47:35.050] [rrc] [[36mdebug[m] UE[1] new signal detected
-[2025-06-04 21:47:44.687] [rrc] [[32minfo[m] RRC Setup for UE[1]
-[2025-06-04 21:47:44.687] [ngap] [[36mdebug[m] Initial NAS message received from UE[1]
-[2025-06-04 21:47:44.724] [ngap] [[36mdebug[m] Initial Context Setup Request received
-[2025-06-04 21:47:45.137] [ngap] [[32minfo[m] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 21:47:46.641] [ngap] [[31m[1merror[m] Error indication received. Cause: protocol/message-not-compatible-with-receiver-state
-[2025-06-04 21:49:10.195] [ngap] [[32minfo[m] PDU session resource(s) setup for UE[1] count[1]
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
-Error response from daemon: No such container: free5gc-ueransim-1
 UERANSIM v3.2.7
-[2025-06-04 22:12:55.256] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [debug] SCTP association setup ascId[139]
-[2025-06-04 22:12:55.262] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:12:55.282] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:12:55.282] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:12:55.678] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:12:55.678] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:12:55.679] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:12:55.946] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:12:55.946] [rrc] [info] Releasing RRC connection for UE[1]
+[2025-06-10 19:44:48.869] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-06-10 19:44:48.873] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-06-10 19:44:48.874] [sctp] [debug] SCTP association setup ascId[440]
+[2025-06-10 19:44:48.874] [ngap] [debug] Sending NG Setup Request
+[2025-06-10 19:44:48.878] [ngap] [debug] NG Setup Response received
+[2025-06-10 19:44:48.878] [ngap] [info] NG Setup procedure is successful
+[2025-06-10 19:44:49.302] [rrc] [debug] UE[1] new signal detected
+[2025-06-10 19:44:49.303] [rrc] [info] RRC Setup for UE[1]
+[2025-06-10 19:44:49.303] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-06-10 19:44:49.648] [ngap] [debug] Initial Context Setup Request received
+[2025-06-10 19:44:50.152] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:44:50.179] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
 UERANSIM v3.2.7
-[2025-06-04 22:12:55.256] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [debug] SCTP association setup ascId[139]
-[2025-06-04 22:12:55.262] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:12:55.282] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:12:55.282] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:12:55.678] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:12:55.678] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:12:55.679] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:12:55.946] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:12:55.946] [rrc] [info] Releasing RRC connection for UE[1]
+[2025-06-10 19:44:48.869] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-06-10 19:44:48.873] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-06-10 19:44:48.874] [sctp] [debug] SCTP association setup ascId[440]
+[2025-06-10 19:44:48.874] [ngap] [debug] Sending NG Setup Request
+[2025-06-10 19:44:48.878] [ngap] [debug] NG Setup Response received
+[2025-06-10 19:44:48.878] [ngap] [info] NG Setup procedure is successful
+[2025-06-10 19:44:49.302] [rrc] [debug] UE[1] new signal detected
+[2025-06-10 19:44:49.303] [rrc] [info] RRC Setup for UE[1]
+[2025-06-10 19:44:49.303] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-06-10 19:44:49.648] [ngap] [debug] Initial Context Setup Request received
+[2025-06-10 19:44:50.152] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:44:50.179] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
 UERANSIM v3.2.7
-[2025-06-04 22:12:55.256] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [debug] SCTP association setup ascId[139]
-[2025-06-04 22:12:55.262] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:12:55.282] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:12:55.282] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:12:55.678] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:12:55.678] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:12:55.679] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:12:55.946] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:12:55.946] [rrc] [info] Releasing RRC connection for UE[1]
+[2025-06-10 19:44:48.869] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-06-10 19:44:48.873] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-06-10 19:44:48.874] [sctp] [debug] SCTP association setup ascId[440]
+[2025-06-10 19:44:48.874] [ngap] [debug] Sending NG Setup Request
+[2025-06-10 19:44:48.878] [ngap] [debug] NG Setup Response received
+[2025-06-10 19:44:48.878] [ngap] [info] NG Setup procedure is successful
+[2025-06-10 19:44:49.302] [rrc] [debug] UE[1] new signal detected
+[2025-06-10 19:44:49.303] [rrc] [info] RRC Setup for UE[1]
+[2025-06-10 19:44:49.303] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-06-10 19:44:49.648] [ngap] [debug] Initial Context Setup Request received
+[2025-06-10 19:44:50.152] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:44:50.179] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
 UERANSIM v3.2.7
-[2025-06-04 22:12:55.256] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [debug] SCTP association setup ascId[139]
-[2025-06-04 22:12:55.262] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:12:55.282] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:12:55.282] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:12:55.678] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:12:55.678] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:12:55.679] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:12:55.946] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:12:55.946] [rrc] [info] Releasing RRC connection for UE[1]
+[2025-06-10 19:44:48.869] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-06-10 19:44:48.873] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-06-10 19:44:48.874] [sctp] [debug] SCTP association setup ascId[440]
+[2025-06-10 19:44:48.874] [ngap] [debug] Sending NG Setup Request
+[2025-06-10 19:44:48.878] [ngap] [debug] NG Setup Response received
+[2025-06-10 19:44:48.878] [ngap] [info] NG Setup procedure is successful
+[2025-06-10 19:44:49.302] [rrc] [debug] UE[1] new signal detected
+[2025-06-10 19:44:49.303] [rrc] [info] RRC Setup for UE[1]
+[2025-06-10 19:44:49.303] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-06-10 19:44:49.648] [ngap] [debug] Initial Context Setup Request received
+[2025-06-10 19:44:50.152] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:44:50.179] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
 UERANSIM v3.2.7
-[2025-06-04 22:12:55.256] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:12:55.262] [sctp] [debug] SCTP association setup ascId[139]
-[2025-06-04 22:12:55.262] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:12:55.282] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:12:55.282] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:12:55.678] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:12:55.678] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:12:55.679] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:12:55.946] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:12:55.946] [rrc] [info] Releasing RRC connection for UE[1]
-UERANSIM v3.2.7
-[2025-06-04 22:15:46.730] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:15:46.735] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:15:46.736] [sctp] [debug] SCTP association setup ascId[143]
-[2025-06-04 22:15:46.758] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:15:46.774] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:15:46.774] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:15:47.292] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:15:47.301] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:15:47.304] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:15:47.630] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:15:47.630] [rrc] [info] Releasing RRC connection for UE[1]
-UERANSIM v3.2.7
-[2025-06-04 22:20:15.682] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:20:15.692] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:20:15.692] [sctp] [debug] SCTP association setup ascId[147]
-[2025-06-04 22:20:15.692] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:20:15.701] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:20:15.701] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:20:16.241] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:20:16.254] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:20:16.255] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:20:16.558] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:20:16.559] [rrc] [info] Releasing RRC connection for UE[1]
-UERANSIM v3.2.7
-[2025-06-04 22:26:39.546] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:26:39.550] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:26:39.551] [sctp] [debug] SCTP association setup ascId[151]
-[2025-06-04 22:26:39.551] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:26:39.556] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:26:39.556] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:26:39.911] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:26:39.913] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:26:39.921] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:26:40.195] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:26:40.195] [rrc] [info] Releasing RRC connection for UE[1]
-UERANSIM v3.2.7
-[2025-06-04 22:32:19.304] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:32:19.308] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:32:19.309] [sctp] [debug] SCTP association setup ascId[155]
-[2025-06-04 22:32:19.309] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:32:19.318] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:32:19.318] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:32:19.797] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:32:22.297] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:32:22.298] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:32:22.558] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:32:22.558] [rrc] [info] Releasing RRC connection for UE[1]
-UERANSIM v3.2.7
-[2025-06-04 22:35:43.909] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:35:43.914] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:35:43.914] [sctp] [debug] SCTP association setup ascId[159]
-[2025-06-04 22:35:43.914] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:35:43.930] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:35:43.930] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:35:44.354] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:35:44.354] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:35:44.355] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:35:44.655] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:35:45.184] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:35:45.217] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-04 22:36:19.659] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [debug] SCTP association setup ascId[163]
-[2025-06-04 22:36:19.670] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:36:19.673] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:36:19.673] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:36:20.042] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:36:20.047] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:36:20.047] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:36:20.346] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:36:20.893] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:20.915] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:26.827] [ngap] [warning] Sending an error indication with cause: radio-network/inconsistent-remote-UE-NGAP-ID
-[2025-06-04 22:36:29.750] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:36:45.068] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:00.083] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:15.098] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:30.114] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:45.128] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:38:01.071] [rrc] [debug] UE[2] new signal detected
-[2025-06-04 22:38:02.072] [rls] [debug] UE[1] signal lost
-[2025-06-04 22:38:10.153] [rrc] [info] RRC Setup for UE[2]
-[2025-06-04 22:38:10.154] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-06-04 22:38:25.279] [rrc] [debug] UE[3] new signal detected
-[2025-06-04 22:38:26.280] [rls] [debug] UE[2] signal lost
-UERANSIM v3.2.7
-[2025-06-04 22:36:19.659] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [debug] SCTP association setup ascId[163]
-[2025-06-04 22:36:19.670] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:36:19.673] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:36:19.673] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:36:20.042] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:36:20.047] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:36:20.047] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:36:20.346] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:36:20.893] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:20.915] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:26.827] [ngap] [warning] Sending an error indication with cause: radio-network/inconsistent-remote-UE-NGAP-ID
-[2025-06-04 22:36:29.750] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:36:45.068] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:00.083] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:15.098] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:30.114] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:45.128] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:38:01.071] [rrc] [debug] UE[2] new signal detected
-[2025-06-04 22:38:02.072] [rls] [debug] UE[1] signal lost
-[2025-06-04 22:38:10.153] [rrc] [info] RRC Setup for UE[2]
-[2025-06-04 22:38:10.154] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-06-04 22:38:25.279] [rrc] [debug] UE[3] new signal detected
-[2025-06-04 22:38:26.280] [rls] [debug] UE[2] signal lost
-UERANSIM v3.2.7
-[2025-06-04 22:36:19.659] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [debug] SCTP association setup ascId[163]
-[2025-06-04 22:36:19.670] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:36:19.673] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:36:19.673] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:36:20.042] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:36:20.047] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:36:20.047] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:36:20.346] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:36:20.893] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:20.915] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:26.827] [ngap] [warning] Sending an error indication with cause: radio-network/inconsistent-remote-UE-NGAP-ID
-[2025-06-04 22:36:29.750] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:36:45.068] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:00.083] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:15.098] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:30.114] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:45.128] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:38:01.071] [rrc] [debug] UE[2] new signal detected
-[2025-06-04 22:38:02.072] [rls] [debug] UE[1] signal lost
-[2025-06-04 22:38:10.153] [rrc] [info] RRC Setup for UE[2]
-[2025-06-04 22:38:10.154] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-06-04 22:38:25.279] [rrc] [debug] UE[3] new signal detected
-[2025-06-04 22:38:26.280] [rls] [debug] UE[2] signal lost
-UERANSIM v3.2.7
-[2025-06-04 22:36:19.659] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [debug] SCTP association setup ascId[163]
-[2025-06-04 22:36:19.670] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:36:19.673] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:36:19.673] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:36:20.042] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:36:20.047] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:36:20.047] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:36:20.346] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:36:20.893] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:20.915] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:26.827] [ngap] [warning] Sending an error indication with cause: radio-network/inconsistent-remote-UE-NGAP-ID
-[2025-06-04 22:36:29.750] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:36:45.068] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:00.083] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:15.098] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:30.114] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:45.128] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:38:01.071] [rrc] [debug] UE[2] new signal detected
-[2025-06-04 22:38:02.072] [rls] [debug] UE[1] signal lost
-[2025-06-04 22:38:10.153] [rrc] [info] RRC Setup for UE[2]
-[2025-06-04 22:38:10.154] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-06-04 22:38:25.279] [rrc] [debug] UE[3] new signal detected
-[2025-06-04 22:38:26.280] [rls] [debug] UE[2] signal lost
-UERANSIM v3.2.7
-[2025-06-04 22:36:19.659] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:36:19.670] [sctp] [debug] SCTP association setup ascId[163]
-[2025-06-04 22:36:19.670] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:36:19.673] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:36:19.673] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:36:20.042] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:36:20.047] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:36:20.047] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:36:20.346] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:36:20.893] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:20.915] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:36:26.827] [ngap] [warning] Sending an error indication with cause: radio-network/inconsistent-remote-UE-NGAP-ID
-[2025-06-04 22:36:29.750] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:36:45.068] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:00.083] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:15.098] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:30.114] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:37:45.128] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
-[2025-06-04 22:38:01.071] [rrc] [debug] UE[2] new signal detected
-[2025-06-04 22:38:02.072] [rls] [debug] UE[1] signal lost
-[2025-06-04 22:38:10.153] [rrc] [info] RRC Setup for UE[2]
-[2025-06-04 22:38:10.154] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-06-04 22:38:25.279] [rrc] [debug] UE[3] new signal detected
-[2025-06-04 22:38:26.280] [rls] [debug] UE[2] signal lost
-UERANSIM v3.2.7
-[2025-06-04 22:39:30.635] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-04 22:39:30.639] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-04 22:39:30.639] [sctp] [debug] SCTP association setup ascId[167]
-[2025-06-04 22:39:30.639] [ngap] [debug] Sending NG Setup Request
-[2025-06-04 22:39:30.643] [ngap] [debug] NG Setup Response received
-[2025-06-04 22:39:30.643] [ngap] [info] NG Setup procedure is successful
-[2025-06-04 22:39:31.135] [rrc] [debug] UE[1] new signal detected
-[2025-06-04 22:39:31.138] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:39:31.139] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:39:31.469] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:39:32.047] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:39:32.068] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:39:42.225] [ngap] [debug] UE Context Release Command received
-[2025-06-04 22:39:42.225] [rrc] [info] Releasing RRC connection for UE[1]
-[2025-06-04 22:39:53.157] [rrc] [info] RRC Setup for UE[1]
-[2025-06-04 22:39:53.157] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-04 22:39:53.346] [ngap] [debug] Initial Context Setup Request received
-[2025-06-04 22:39:53.756] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-04 22:39:53.807] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-05 20:41:11.560] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-05 20:41:11.569] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-05 20:41:11.569] [sctp] [debug] SCTP association setup ascId[171]
-[2025-06-05 20:41:11.570] [ngap] [debug] Sending NG Setup Request
-[2025-06-05 20:41:11.572] [ngap] [debug] NG Setup Response received
-[2025-06-05 20:41:11.572] [ngap] [info] NG Setup procedure is successful
-[2025-06-05 20:41:11.924] [rrc] [debug] UE[1] new signal detected
-[2025-06-05 20:41:11.925] [rrc] [info] RRC Setup for UE[1]
-[2025-06-05 20:41:11.925] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-05 20:41:12.247] [ngap] [debug] Initial Context Setup Request received
-[2025-06-05 20:41:12.673] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-05 20:41:12.843] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-05 20:43:57.657] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-05 20:43:57.675] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-05 20:43:57.677] [sctp] [debug] SCTP association setup ascId[175]
-[2025-06-05 20:43:57.677] [ngap] [debug] Sending NG Setup Request
-[2025-06-05 20:43:57.682] [ngap] [debug] NG Setup Response received
-[2025-06-05 20:43:57.682] [ngap] [info] NG Setup procedure is successful
-[2025-06-05 20:43:58.065] [rrc] [debug] UE[1] new signal detected
-[2025-06-05 20:43:58.066] [rrc] [info] RRC Setup for UE[1]
-[2025-06-05 20:43:58.066] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-05 20:43:58.372] [ngap] [debug] Initial Context Setup Request received
-[2025-06-05 20:43:58.781] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-05 20:43:58.909] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-06 16:42:33.503] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-06 16:42:33.509] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-06 16:42:33.509] [sctp] [debug] SCTP association setup ascId[179]
-[2025-06-06 16:42:33.509] [ngap] [debug] Sending NG Setup Request
-[2025-06-06 16:42:33.512] [ngap] [debug] NG Setup Response received
-[2025-06-06 16:42:33.512] [ngap] [info] NG Setup procedure is successful
-[2025-06-06 16:42:33.882] [rrc] [debug] UE[1] new signal detected
-[2025-06-06 16:42:36.390] [rrc] [info] RRC Setup for UE[1]
-[2025-06-06 16:42:36.391] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-06 16:42:36.615] [ngap] [debug] Initial Context Setup Request received
-[2025-06-06 16:42:37.155] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-06 16:42:37.172] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-06 16:42:47.575] [ngap] [debug] UE Context Release Command received
-[2025-06-06 16:42:47.575] [rrc] [info] Releasing RRC connection for UE[1]
-[2025-06-06 16:42:57.904] [rrc] [info] RRC Setup for UE[1]
-[2025-06-06 16:42:57.905] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-06 16:42:58.101] [ngap] [debug] Initial Context Setup Request received
-[2025-06-06 16:42:58.550] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-06 16:42:58.579] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:18:15.387] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:18:15.391] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:18:15.391] [sctp] [debug] SCTP association setup ascId[183]
-[2025-06-07 10:18:15.391] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:18:15.395] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:18:15.395] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:18:15.851] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:18:15.852] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:18:15.852] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:18:16.173] [ngap] [debug] Initial Context Setup Request received
-Error response from daemon: No such container: ueransim
-Error response from daemon: No such container: ueransim
-UERANSIM v3.2.7
-[2025-06-07 10:22:17.598] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:22:17.603] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:22:17.604] [sctp] [debug] SCTP association setup ascId[187]
-[2025-06-07 10:22:17.604] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:22:17.607] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:22:17.607] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:22:17.912] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:22:17.914] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:22:17.914] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:22:18.228] [ngap] [debug] Initial Context Setup Request received
-UERANSIM v3.2.7
-[2025-06-07 10:23:37.652] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [debug] SCTP association setup ascId[191]
-[2025-06-07 10:23:37.657] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:23:37.668] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:23:37.668] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:23:38.126] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:23:38.126] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:23:38.127] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:23:38.437] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:23:38.895] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:23:38.922] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:23:37.652] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [debug] SCTP association setup ascId[191]
-[2025-06-07 10:23:37.657] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:23:37.668] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:23:37.668] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:23:38.126] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:23:38.126] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:23:38.127] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:23:38.437] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:23:38.895] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:23:38.922] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:23:37.652] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [debug] SCTP association setup ascId[191]
-[2025-06-07 10:23:37.657] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:23:37.668] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:23:37.668] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:23:38.126] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:23:38.126] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:23:38.127] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:23:38.437] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:23:38.895] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:23:38.922] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:23:37.652] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:23:37.657] [sctp] [debug] SCTP association setup ascId[191]
-[2025-06-07 10:23:37.657] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:23:37.668] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:23:37.668] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:23:38.126] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:23:38.126] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:23:38.127] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:23:38.437] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:23:38.895] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:23:38.922] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-Error response from daemon: No such container: ueransim
-UERANSIM v3.2.7
-[2025-06-07 10:32:52.828] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:32:52.832] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:32:52.835] [sctp] [debug] SCTP association setup ascId[195]
-[2025-06-07 10:32:52.835] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:32:52.840] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:32:52.840] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:32:53.155] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:32:53.156] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:32:53.156] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:32:53.427] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:32:53.836] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:32:53.876] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:32:52.828] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:32:52.832] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:32:52.835] [sctp] [debug] SCTP association setup ascId[195]
-[2025-06-07 10:32:52.835] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:32:52.840] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:32:52.840] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:32:53.155] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:32:53.156] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:32:53.156] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:32:53.427] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:32:53.836] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:32:53.876] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:32:52.828] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:32:52.832] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:32:52.835] [sctp] [debug] SCTP association setup ascId[195]
-[2025-06-07 10:32:52.835] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:32:52.840] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:32:52.840] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:32:53.155] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:32:53.156] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:32:53.156] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:32:53.427] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:32:53.836] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:32:53.876] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:32:52.828] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:32:52.832] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:32:52.835] [sctp] [debug] SCTP association setup ascId[195]
-[2025-06-07 10:32:52.835] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:32:52.840] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:32:52.840] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:32:53.155] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:32:53.156] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:32:53.156] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:32:53.427] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:32:53.836] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:32:53.876] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:34:05.182] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:34:05.191] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:34:05.192] [sctp] [debug] SCTP association setup ascId[199]
-[2025-06-07 10:34:05.192] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:34:05.198] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:34:05.198] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:34:05.614] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:34:08.118] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:34:08.119] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:34:08.402] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:34:08.843] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:34:08.880] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:34:05.182] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:34:05.191] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:34:05.192] [sctp] [debug] SCTP association setup ascId[199]
-[2025-06-07 10:34:05.192] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:34:05.198] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:34:05.198] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:34:05.614] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:34:08.118] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:34:08.119] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:34:08.402] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:34:08.843] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:34:08.880] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:34:05.182] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:34:05.191] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:34:05.192] [sctp] [debug] SCTP association setup ascId[199]
-[2025-06-07 10:34:05.192] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:34:05.198] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:34:05.198] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:34:05.614] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:34:08.118] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:34:08.119] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:34:08.402] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:34:08.843] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:34:08.880] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:34:05.182] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:34:05.191] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:34:05.192] [sctp] [debug] SCTP association setup ascId[199]
-[2025-06-07 10:34:05.192] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:34:05.198] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:34:05.198] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:34:05.614] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:34:08.118] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:34:08.119] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:34:08.402] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:34:08.843] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:34:08.880] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 10:37:50.152] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 10:37:50.156] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 10:37:50.156] [sctp] [debug] SCTP association setup ascId[203]
-[2025-06-07 10:37:50.156] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 10:37:50.162] [ngap] [debug] NG Setup Response received
-[2025-06-07 10:37:50.162] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 10:37:50.559] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 10:37:53.060] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 10:37:53.060] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 10:37:53.309] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 10:37:53.753] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 10:37:53.790] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 14:07:57.080] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 14:07:57.085] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 14:07:57.086] [sctp] [debug] SCTP association setup ascId[207]
-[2025-06-07 14:07:57.086] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 14:07:57.096] [ngap] [debug] NG Setup Response received
-[2025-06-07 14:07:57.096] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 14:07:57.470] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 14:07:57.470] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 14:07:57.471] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 14:07:57.774] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 14:07:58.184] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 14:07:58.305] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 14:32:20.728] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 14:32:20.734] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 14:32:20.736] [sctp] [debug] SCTP association setup ascId[211]
-[2025-06-07 14:32:20.737] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 14:32:20.744] [ngap] [debug] NG Setup Response received
-[2025-06-07 14:32:20.744] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 14:32:21.071] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 14:32:23.571] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 14:32:23.572] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 14:32:23.800] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 14:32:24.261] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 14:32:24.280] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-UERANSIM v3.2.7
-[2025-06-07 14:33:43.581] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
-[2025-06-07 14:33:43.585] [sctp] [info] SCTP connection established (10.100.200.200:38412)
-[2025-06-07 14:33:43.586] [sctp] [debug] SCTP association setup ascId[215]
-[2025-06-07 14:33:43.587] [ngap] [debug] Sending NG Setup Request
-[2025-06-07 14:33:43.594] [ngap] [debug] NG Setup Response received
-[2025-06-07 14:33:43.594] [ngap] [info] NG Setup procedure is successful
-[2025-06-07 14:33:44.140] [rrc] [debug] UE[1] new signal detected
-[2025-06-07 14:33:44.147] [rrc] [info] RRC Setup for UE[1]
-[2025-06-07 14:33:44.147] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-06-07 14:33:44.509] [ngap] [debug] Initial Context Setup Request received
-[2025-06-07 14:33:45.175] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-06-07 14:33:45.201] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:47:22.983] [sctp] [info] Trying to establish SCTP connection... (10.100.200.200:38412)
+[2025-06-10 19:47:22.992] [sctp] [info] SCTP connection established (10.100.200.200:38412)
+[2025-06-10 19:47:22.993] [sctp] [debug] SCTP association setup ascId[444]
+[2025-06-10 19:47:22.993] [ngap] [debug] Sending NG Setup Request
+[2025-06-10 19:47:22.998] [ngap] [debug] NG Setup Response received
+[2025-06-10 19:47:22.998] [ngap] [info] NG Setup procedure is successful
+[2025-06-10 19:47:23.343] [rrc] [debug] UE[1] new signal detected
+[2025-06-10 19:47:23.343] [rrc] [info] RRC Setup for UE[1]
+[2025-06-10 19:47:23.344] [ngap] [debug] Initial NAS message received from UE[1]
+[2025-06-10 19:47:23.667] [ngap] [debug] Initial Context Setup Request received
+[2025-06-10 19:47:24.316] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:47:24.348] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
+[2025-06-10 19:47:29.692] [ngap] [warning] Sending an error indication with cause: radio-network/inconsistent-remote-UE-NGAP-ID
+[2025-06-10 19:47:32.656] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
+[2025-06-10 19:47:48.368] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
+[2025-06-10 19:48:03.384] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
+[2025-06-10 19:48:18.399] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
+[2025-06-10 19:48:33.415] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
+[2025-06-10 19:48:48.430] [ngap] [error] Error indication received. Cause: radio-network/unknown-local-UE-NGAP-ID
+[2025-06-10 19:49:04.195] [rrc] [debug] UE[2] new signal detected
+[2025-06-10 19:49:05.196] [rls] [debug] UE[1] signal lost
+[2025-06-10 19:49:13.453] [rrc] [info] RRC Setup for UE[2]
+[2025-06-10 19:49:13.453] [ngap] [debug] Initial NAS message received from UE[2]
+[2025-06-10 19:49:28.603] [rrc] [debug] UE[3] new signal detected
+[2025-06-10 19:49:30.406] [rls] [debug] UE[2] signal lost
+[2025-06-10 19:49:38.490] [rrc] [info] RRC Setup for UE[3]
+[2025-06-10 19:49:38.491] [ngap] [debug] Initial NAS message received from UE[3]
+[2025-06-10 19:49:38.572] [ngap] [debug] UE Context Release Command received
+[2025-06-10 19:49:38.572] [rrc] [info] Releasing RRC connection for UE[2]
+[2025-06-10 19:49:38.716] [ngap] [debug] Initial Context Setup Request received
+[2025-06-10 19:49:39.207] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]
+[2025-06-10 19:49:39.231] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]

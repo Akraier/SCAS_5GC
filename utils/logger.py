@@ -12,8 +12,7 @@ def setup_logger(verbose=False, log_file=None):
         return logger
 
     handler = logging.StreamHandler(sys.stdout)
-    formatter = logging.Formatter('[%(levelname)s] %(asctime)s | %(name)s | %(message)s',
-                                  datefmt='%Y-%m-%d %H:%M:%S')
+    formatter = logging.Formatter('[%(levelname)s] %(asctime)s | %(name)s | %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     if log_file:

@@ -1,204 +1,21 @@
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-sctp-proxy-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-sctp-proxy-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-sctp-proxy-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-sctp-proxy-1/json": dial unix /var/run/docker.sock: connect: permission denied
-permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.47/containers/open5gs-sctp-proxy-1/json": dial unix /var/run/docker.sock: connect: permission denied
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-Error response from daemon: No such container: open5gs-sctp-proxy-1
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 172.22.0.23:52858
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:57259
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 46658)
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 172.22.0.23:52858
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:57259
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 46658)
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 172.22.0.23:52858
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:57259
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 46658)
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 172.22.0.23:52858
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:57259
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 46658)
+[INFO] | 2025-06-10 19:44:46 |  Control server listening on port 1337
+[INFO] | 2025-06-10 19:44:46 |  AMF_IP 10.100.200.16
+[INFO] | 2025-06-10 19:44:46 |  Listening on SCTP port 38412
+[INFO] | 2025-06-10 19:44:48 | gNB Connected 10.100.200.13:45073
+[INFO] | 2025-06-10 19:44:48 | Connected to AMF 10.100.200.16:38412
+[INFO] | 2025-06-10 19:44:48 |  Forwarding gNB -> AMF
+[INFO] | 2025-06-10 19:44:48 |  Forwarding AMF -> gNB
+[INFO] | 2025-06-10 19:44:49 |  Control connection accepted ('10.100.200.1', 46376)
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
 Traceback (most recent call last):
   File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    logger.info("[CTRL] Received JSON:", msg, flush=True)
+  File "/usr/local/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'flush'
 Exception in thread Thread-1 (control_server):
 Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
     data = conn.recv(4096).decode('utf-8').strip()
            ^^^^^^^^^^^^^^^
 OSError: [Errno 9] Bad file descriptor
@@ -207,59 +24,36 @@ During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
     self.run()
   File "/usr/local/lib/python3.11/threading.py", line 982, in run
     self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
+  File "/app/sctp_mitm_proxy.py", line 97, in control_server
     conn.send(b"Test KO\n")
 OSError: [Errno 9] Bad file descriptor
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 172.22.0.23:52858
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:57259
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 46658)
+[INFO] | 2025-06-10 19:44:46 |  Control server listening on port 1337
+[INFO] | 2025-06-10 19:44:46 |  AMF_IP 10.100.200.16
+[INFO] | 2025-06-10 19:44:46 |  Listening on SCTP port 38412
+[INFO] | 2025-06-10 19:44:48 | gNB Connected 10.100.200.13:45073
+[INFO] | 2025-06-10 19:44:48 | Connected to AMF 10.100.200.16:38412
+[INFO] | 2025-06-10 19:44:48 |  Forwarding gNB -> AMF
+[INFO] | 2025-06-10 19:44:48 |  Forwarding AMF -> gNB
+[INFO] | 2025-06-10 19:44:49 |  Control connection accepted ('10.100.200.1', 46376)
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
 Traceback (most recent call last):
   File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    logger.info("[CTRL] Received JSON:", msg, flush=True)
+  File "/usr/local/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'flush'
 Exception in thread Thread-1 (control_server):
 Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
     data = conn.recv(4096).decode('utf-8').strip()
            ^^^^^^^^^^^^^^^
 OSError: [Errno 9] Bad file descriptor
@@ -268,148 +62,36 @@ During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
     self.run()
   File "/usr/local/lib/python3.11/threading.py", line 982, in run
     self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
+  File "/app/sctp_mitm_proxy.py", line 97, in control_server
     conn.send(b"Test KO\n")
 OSError: [Errno 9] Bad file descriptor
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:42551
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 35246)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] Control server listening on port 1337
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+]gNB Connected 172.22.0.23:46564
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 59342)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e4067000004000a000200020055000200020026003d3c7e04241ba06a007e005e7700094573806121856151f17100237e004179000d0100f1100000000021436587591001002e04f0f0f0f02f020101530100007940135000f110000000010000f110000001ebeb3c1c'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@g\x00\x00\x04\x00\n\x00\x02\x00\x02\x00U\x00\x02\x00\x02\x00&\x00=<~\x04$\x1b\xa0j\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00#~\x00Ay\x00\r\x01\x00\xf1\x10\x00\x00\x00\x00!Ce\x87Y\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\x02\x01\x01S\x01\x00\x00y@\x13P\x00\xf1\x10\x00\x00\x00\x01\x00\x00\xf1\x10\x00\x00\x01\xeb\xeb<\x1c'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200020026001a197e004179000d0100f1100000000021436587592e0400000000007900135000f110000000010000f110000001ebeb3c1c005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x02\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x00\xf1\x10\x00\x00\x00\x00!Ce\x87Y.\x04\x00\x00\x00\x00\x00y\x00\x13P\x00\xf1\x10\x00\x00\x00\x01\x00\x00\xf1\x10\x00\x00\x01\xeb\xeb<\x1c\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-[+] AMF_IP 172.22.0.10
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 172.22.0.23:55910
-[+]Connected to AMF 172.22.0.10:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('172.22.0.1', 51624)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e4067000004000a000200010055000200010026003d3c7e0477f9ed55007e005e7700094573806121856151f17100237e004179000d0100f1100000000021436587591001002e04f0f0f0f02f020101530100007940135000f110000000010000f110000001ebeb3d80'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@g\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00=<~\x04w\xf9\xedU\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00#~\x00Ay\x00\r\x01\x00\xf1\x10\x00\x00\x00\x00!Ce\x87Y\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\x02\x01\x01S\x01\x00\x00y@\x13P\x00\xf1\x10\x00\x00\x00\x01\x00\x00\xf1\x10\x00\x00\x01\xeb\xeb=\x80'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0100f1100000000021436587592e0400000000007900135000f110000000010000f110000001ebeb3d80005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x00\xf1\x10\x00\x00\x00\x00!Ce\x87Y.\x04\x00\x00\x00\x00\x00y\x00\x13P\x00\xf1\x10\x00\x00\x00\x01\x00\x00\xf1\x10\x00\x00\x01\xeb\xeb=\x80\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-Error response from daemon: No such container: free5gc-sctp-proxy-1
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.12:46050
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 55076)
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.12:46050
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 55076)
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.12:46050
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 55076)
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.12:46050
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 55076)
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.12:46050
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 55076)
+[INFO] | 2025-06-10 19:44:46 |  Control server listening on port 1337
+[INFO] | 2025-06-10 19:44:46 |  AMF_IP 10.100.200.16
+[INFO] | 2025-06-10 19:44:46 |  Listening on SCTP port 38412
+[INFO] | 2025-06-10 19:44:48 | gNB Connected 10.100.200.13:45073
+[INFO] | 2025-06-10 19:44:48 | Connected to AMF 10.100.200.16:38412
+[INFO] | 2025-06-10 19:44:48 |  Forwarding gNB -> AMF
+[INFO] | 2025-06-10 19:44:48 |  Forwarding AMF -> gNB
+[INFO] | 2025-06-10 19:44:49 |  Control connection accepted ('10.100.200.1', 46376)
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
 Traceback (most recent call last):
   File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    logger.info("[CTRL] Received JSON:", msg, flush=True)
+  File "/usr/local/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'flush'
 Exception in thread Thread-1 (control_server):
 Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
     data = conn.recv(4096).decode('utf-8').strip()
            ^^^^^^^^^^^^^^^
 OSError: [Errno 9] Bad file descriptor
@@ -418,198 +100,36 @@ During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
+Traceback (most recent call last):
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
+    data = conn.recv(4096).decode('utf-8').strip()
+           ^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
     self.run()
   File "/usr/local/lib/python3.11/threading.py", line 982, in run
     self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
+  File "/app/sctp_mitm_proxy.py", line 97, in control_server
     conn.send(b"Test KO\n")
 OSError: [Errno 9] Bad file descriptor
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.12:45915
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-BrokenPipeError: [Errno 32] Broken pipe
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:42508
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-BrokenPipeError: [Errno 32] Broken pipe
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.14:59114
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-BrokenPipeError: [Errno 32] Broken pipe
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:56643
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-BrokenPipeError: [Errno 32] Broken pipe
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:41420
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 54946)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:57262
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 41216)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e04ea552537007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebeb48e4'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\xeaU%7\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebeb48e4005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:57262
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 41216)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e04ea552537007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebeb48e4'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\xeaU%7\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebeb48e4005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:57262
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 41216)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e04ea552537007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebeb48e4'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\xeaU%7\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebeb48e4005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-[!] Invalid JSON format: 
+[INFO] | 2025-06-10 19:44:46 |  Control server listening on port 1337
+[INFO] | 2025-06-10 19:44:46 |  AMF_IP 10.100.200.16
+[INFO] | 2025-06-10 19:44:46 |  Listening on SCTP port 38412
+[INFO] | 2025-06-10 19:44:48 | gNB Connected 10.100.200.13:45073
+[INFO] | 2025-06-10 19:44:48 | Connected to AMF 10.100.200.16:38412
+[INFO] | 2025-06-10 19:44:48 |  Forwarding gNB -> AMF
+[INFO] | 2025-06-10 19:44:48 |  Forwarding AMF -> gNB
+[INFO] | 2025-06-10 19:44:49 |  Control connection accepted ('10.100.200.1', 46376)
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
 Traceback (most recent call last):
   File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
+    logger.info("[CTRL] Received JSON:", msg, flush=True)
+  File "/usr/local/lib/python3.11/logging/__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'flush'
 Exception in thread Thread-1 (control_server):
 Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
     data = conn.recv(4096).decode('utf-8').strip()
            ^^^^^^^^^^^^^^^
 OSError: [Errno 9] Bad file descriptor
@@ -618,690 +138,38 @@ During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:57262
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 41216)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e04ea552537007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebeb48e4'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\xeaU%7\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebeb48e4005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-[!] Invalid JSON format: 
+[ERROR] | 2025-06-10 19:44:49 | [!] Error
 Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
+  File "/app/sctp_mitm_proxy.py", line 76, in control_server
     data = conn.recv(4096).decode('utf-8').strip()
            ^^^^^^^^^^^^^^^
 OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
     self.run()
   File "/usr/local/lib/python3.11/threading.py", line 982, in run
     self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
+  File "/app/sctp_mitm_proxy.py", line 97, in control_server
     conn.send(b"Test KO\n")
 OSError: [Errno 9] Bad file descriptor
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:57262
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 41216)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_nas_replay_amf', 'msg': '002e406f000004000a0002000100550002000100260045447e04ea552537007e005e7700094573806121856151f171002b7e004179000d0102f8390000000000000000101001002e04f0f0f0f02f0a04010102030401112233530100007940135002f839000000010002f839000001ebeb48e4'}
-[CTRL] Test case: tc_nas_replay_amf STARTED
-[CTRL] Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\xeaU%7\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4'
-[CTRL] tc_nas_replay_amf injected
-[CTRL] Test case: tc_nas_replay_amf FINISHED
-[CTRL] Received JSON: {'testCase': 'tc_ue_sec_cap_handling_amf', 'msg': '000f40480000050055000200010026001a197e004179000d0102f8390000000000000000102e0400000000007900135002f839000000010002f839000001ebeb48e4005a4001180070400100'}
-[CTRL] Test case: tc_ue_sec_cap_handling_amf STARTED
-[CTRL] Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xebH\xe4\x00Z@\x01\x18\x00p@\x01\x00'
-[CTRL] tc_ue_sec_cap_handling_amf injected
-[CTRL] Test case: tc_ue_sec_cap_handling_amf FINISHED
-[!] Invalid JSON format: 
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:33172
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 47778)
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.14:57182
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 37584)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.14:40368
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 51302)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:51974
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 38174)
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:43512
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 39286)
-[!] Invalid JSON format: 
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-[!] Error: [Errno 9] Bad file descriptor
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:43512
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 39286)
-[!] Invalid JSON format: 
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-[!] Error: [Errno 9] Bad file descriptor
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 32, in forward
-    dst_sock.sctp_send(data[2], ppid=ppid)
-  File "/usr/local/lib/python3.11/site-packages/sctp.py", line 1178, in sctp_send
-    return _sctp.sctp_send_msg(self._sk.fileno(), msg, to, ppid, flags, stream, timetolive, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: Empty messages are not allowed, except if coupled with the MSG_EOF flag.
-Error response from daemon: No such container: sctp-proxy
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.14:36715
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 46122)
-[!] Invalid JSON format: 
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-[!] Error: [Errno 9] Bad file descriptor
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:36006
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 43850)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:36006
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 43850)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:36006
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 43850)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:36006
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 43850)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-[!] Error: [Errno 9] Bad file descriptor
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-Error response from daemon: No such container: sctp-proxy
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:34410
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:34410
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:34410
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:34410
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:33447
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 58356)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:33447
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 58356)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:33447
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 58356)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:33447
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 58356)
-Traceback (most recent call last):
-[!] Invalid JSON format: 
-  File "/app/sctp_mitm_proxy.py", line 78, in control_server
-    msg = json.loads(data)
-          ^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-[!] Error: [Errno 9] Bad file descriptor
-Exception in thread Thread-1 (control_server):
-Traceback (most recent call last):
-  File "/app/sctp_mitm_proxy.py", line 77, in control_server
-    data = conn.recv(4096).decode('utf-8').strip()
-           ^^^^^^^^^^^^^^^
-OSError: [Errno 9] Bad file descriptor
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.11/threading.py", line 982, in run
-    self._target(*self._args, **self._kwargs)
-  File "/app/sctp_mitm_proxy.py", line 99, in control_server
-    conn.send(b"Test KO\n")
-OSError: [Errno 9] Bad file descriptor
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:44953
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 41758)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:33712
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 49044)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+] Control server listening on port 1337
-[+]gNB Connected 10.100.200.13:36914
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 56376)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
-[+] Control server listening on port 1337
-[+] AMF_IP 10.100.200.16
-[+] Listening on SCTP port 38412
-[+]gNB Connected 10.100.200.13:49544
-[+]Connected to AMF 10.100.200.16:38412
-[+] Forwarding gNB -> AMF
-[+] Forwarding AMF -> gNB
-[+] Control connection accepted ('10.100.200.1', 51452)
-[CTRL] Received JSON: {'testCase': 'tc_amf_nas_integrity_failure', 'msg': '002e4043000004000a0002000100550002000100260019187e02ffffffff047e004501000bf202f839cafe0000000001007940135002f839000000010002f839000001eb856406'}
-[CTRL] Test case: tc_amf_nas_integrity_failure STARTED
-[CTRL] Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
-[CTRL] tc_amf_nas_integrity_failure injected
-[CTRL] Test case: tc_amf_nas_integrity_failure FINISHED
+[INFO] | 2025-06-10 19:47:21 |  Control server listening on port 1337
+[INFO] | 2025-06-10 19:47:21 |  AMF_IP 10.100.200.16
+[INFO] | 2025-06-10 19:47:21 |  Listening on SCTP port 38412
+[INFO] | 2025-06-10 19:47:22 | gNB Connected 10.100.200.13:45706
+[INFO] | 2025-06-10 19:47:22 | Connected to AMF 10.100.200.16:38412
+[INFO] | 2025-06-10 19:47:22 |  Forwarding gNB -> AMF
+[INFO] | 2025-06-10 19:47:22 |  Forwarding AMF -> gNB
+[INFO] | 2025-06-10 19:47:23 |  Control connection accepted ('10.100.200.1', 60746)
+[INFO] | 2025-06-10 19:47:23 | [CTRL] Received JSON:
+[INFO] | 2025-06-10 19:47:23 |  Test case: tc_amf_nas_integrity_failure STARTED
+[INFO] | 2025-06-10 19:47:23 |  Trying to inject b'\x00.@C\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00\x19\x18~\x02\xff\xff\xff\xff\x04~\x00E\x01\x00\x0b\xf2\x02\xf89\xca\xfe\x00\x00\x00\x00\x01\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\x85d\x06'
+[INFO] | 2025-06-10 19:47:23 |  tc_amf_nas_integrity_failure injected
+[INFO] | 2025-06-10 19:47:23 |  Test case: tc_amf_nas_integrity_failure FINISHED
+[INFO] | 2025-06-10 19:47:26 | [CTRL] Received JSON:
+[INFO] | 2025-06-10 19:47:26 |  Test case: tc_nas_replay_amf STARTED
+[INFO] | 2025-06-10 19:47:26 |  Trying to inject b'\x00.@o\x00\x00\x04\x00\n\x00\x02\x00\x01\x00U\x00\x02\x00\x01\x00&\x00ED~\x04\xd9\x80)\xbf\x00~\x00^w\x00\tEs\x80a!\x85aQ\xf1q\x00+~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10\x10\x01\x00.\x04\xf0\xf0\xf0\xf0/\n\x04\x01\x01\x02\x03\x04\x01\x11"3S\x01\x00\x00y@\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xf3\nK'
+[INFO] | 2025-06-10 19:47:26 |  tc_nas_replay_amf injected
+[INFO] | 2025-06-10 19:47:26 |  Test case: tc_nas_replay_amf FINISHED
+[INFO] | 2025-06-10 19:47:29 | [CTRL] Received JSON:
+[INFO] | 2025-06-10 19:47:29 |  Test case: tc_ue_sec_cap_handling_amf STARTED
+[INFO] | 2025-06-10 19:47:29 |  Trying to inject b'\x00\x0f@H\x00\x00\x05\x00U\x00\x02\x00\x01\x00&\x00\x1a\x19~\x00Ay\x00\r\x01\x02\xf89\x00\x00\x00\x00\x00\x00\x00\x00\x10.\x04\x00\x00\x00\x00\x00y\x00\x13P\x02\xf89\x00\x00\x00\x01\x00\x02\xf89\x00\x00\x01\xeb\xf3\nK\x00Z@\x01\x18\x00p@\x01\x00'
+[INFO] | 2025-06-10 19:47:29 |  tc_ue_sec_cap_handling_amf injected
+[INFO] | 2025-06-10 19:47:29 |  Test case: tc_ue_sec_cap_handling_amf FINISHED

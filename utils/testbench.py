@@ -134,22 +134,23 @@ class Testbench:
             self.simulator_docker_compose = os.path.join(path, "my_deploy.yaml")
             self.simulator_interface = "br-open5gs"
             self.nfs = {
-                "amf": "open5gs-amf-1",
-                "gnb": "open5gs-nr_gnb-1",
-                "ue": "open5gs-nr_ue-1",
-                "proxy": "open5gs-sctp-proxy-1"
+                "amf": "open5gs-amf",
+                "gnb": "open5gs-nr_gnb",
+                "ue": "open5gs-nr_ue",
+                "proxy": "open5gs-sctp-proxy"
             }
         elif 'oai' in path:
             self.simulator_name = "oai"
             self.simulator_path = path
+            self.simulator_proxy_ip = "192.168.70.200"
             self.simulator_config_path = os.path.join(path, "conf")
-            self.simulator_docker_compose = os.path.join(path, "my_deploy.yaml")
+            self.simulator_docker_compose = os.path.join(path, "docker-compose-oai-scascan5g.yaml")
             self.simulator_interface = "br-oai"
             self.nfs = {
-                "amf": "open5gs-amf-1",
-                "gnb": "open5gs-nr_gnb-1",
-                "ue": "open5gs-nr_ue-1",
-                "proxy": "open5gs-sctp-proxy-1"
+                "amf": "oai-amf",
+                "gnb": "oai-nr-gnb",
+                "ue": "oai-nr-ue",
+                "proxy": "oai-sctp-proxy"
             }
         #Other simulators missing... TBD
     def _saveLog(self):
@@ -175,7 +176,7 @@ class Testbench:
         self._saveLog()
         cmd_q.put(("shutdown_all",None))  # Notify the procManager to shutdown all processes
         
-        subprocess.run(["docker", "compose", "-p", self.simulator_name, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["docker", "compose", "-f", self.simulator_docker_compose, "down"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         self.logger.info("Docker Compose shutdown completed.")
         exit(0)
 
@@ -192,8 +193,8 @@ class Testbench:
 
         if action == "start":
             command = [
-                "docker", "compose", "-p", self.simulator_name , "-f", self.simulator_docker_compose,
-                "up", "-d", "--build"]
+                "docker", "compose", "-f", self.simulator_docker_compose,
+                "up", "-d", "--build"] #"-p", self.simulator_name ,
             operation = "Starting"
             error_prefix = "Error starting"
         else:

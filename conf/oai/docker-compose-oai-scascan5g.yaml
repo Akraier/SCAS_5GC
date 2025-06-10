@@ -19,8 +19,7 @@ services:
             retries: 30
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.131
+                ipv4_address: 192.168.70.131
     oai-udr:
         container_name: "oai-udr"
         image: oaisoftwarealliance/oai-udr:v2.1.0
@@ -36,8 +35,7 @@ services:
             - oai-nrf
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.136
+                ipv4_address: 192.168.70.136
     oai-udm:
         container_name: "oai-udm"
         image: oaisoftwarealliance/oai-udm:v2.1.0
@@ -49,11 +47,12 @@ services:
         environment:
             - TZ=Europe/Paris
         depends_on:
+            - mysql
             - oai-nrf
+            - oai-udr
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.137
+                ipv4_address: 192.168.70.137
     oai-ausf:
         container_name: "oai-ausf"
         image: oaisoftwarealliance/oai-ausf:v2.1.0
@@ -65,25 +64,27 @@ services:
         environment:
             - TZ=Europe/Paris
         depends_on:
+            - mysql
             - oai-nrf
+            - oai-udm
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.138
+                ipv4_address: 192.168.70.138
     oai-nrf:
         container_name: "oai-nrf"
         image: oaisoftwarealliance/oai-nrf:v2.1.0
         expose:
             - 80/tcp
             - 8080/tcp
+        depends_on:
+            - mysql
         volumes:
             - ./conf/basic_nrf_config.yaml:/openair-nrf/etc/config.yaml
         environment:
             - TZ=Europe/Paris
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.130
+                ipv4_address: 192.168.70.130
     oai-amf:
         container_name: "oai-amf"
         image: oaisoftwarealliance/oai-amf:v2.1.0
@@ -97,10 +98,12 @@ services:
             - TZ=Europe/Paris
         depends_on:
             - oai-nrf
+            - oai-ausf
+            - oai-udm
+            - mysql
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.132
+                ipv4_address: 192.168.70.132
     oai-smf:
         container_name: "oai-smf"
         image: oaisoftwarealliance/oai-smf:v2.1.0
@@ -114,10 +117,11 @@ services:
             - TZ=Europe/Paris
         depends_on:
             - oai-nrf
+            - oai-amf
+            - mysql
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.133
+                ipv4_address: 192.168.70.133
     oai-upf:
         container_name: "oai-upf"
         image: oaisoftwarealliance/oai-upf:v2.1.0
@@ -130,6 +134,8 @@ services:
             - TZ=Europe/Paris
         depends_on:
             - oai-nrf
+            - oai-amf
+            - mysql
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
@@ -138,13 +144,16 @@ services:
         privileged: true
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.134
+                ipv4_address: 192.168.70.134
     oai-ext-dn:
         privileged: true
         init: true
         container_name: oai-ext-dn
         image: oaisoftwarealliance/trf-gen-cn5g:latest
+        depends_on:
+            - oai-nrf
+            - oai-amf
+            - mysql
         environment:
             - UPF_FQDN=oai-upf
             - UE_NETWORK=12.1.1.0/24
@@ -156,71 +165,74 @@ services:
             retries: 5
         networks:
             public_net:
-# For CI purposes, we are keeping the line commented
-#                ipv4_address: 192.168.70.135
+                ipv4_address: 192.168.70.135
     nr_gnb:
         build:
             context: ueransim
         container_name: oai-nr-gnb
+        command:  ./nr-gnb -c ./config/gnbcfg.yaml
         stdin_open: true
         tty: true
         depends_on:
-        - sctp-proxy
-        - amf
+            - sctp-proxy
+            - oai-amf
+            - oai-upf
         volumes:
-        - ./ueransim:/mnt/ueransim
+            - ./conf:/ueransim/config
         expose:
-        - "38412/sctp"
-        - "2152/udp"
-        - "4997/udp"
+            - "38412/sctp"
+            - "2152/udp"
+            - "4997/udp"
         cap_add:
-        - NET_ADMIN
+            - NET_ADMIN
         privileged: true
         networks:
-        default:
-            ipv4_address: ${NR_GNB_IP}
+            public_net:
+                ipv4_address: 192.168.70.201
     nr_ue:
         build:
             context: ueransim
         container_name: oai-nr-ue
+        command: ./nr-ue -c ./config/uecfg.yaml
         stdin_open: true
         tty: true
         depends_on:
-        - nr_gnb
+            - nr_gnb
         volumes:
-        - ./ueransim:/mnt/ueransim
+            - ./conf:/ueransim/config
         expose:
-        - "4997/udp"
+            - "4997/udp"
         cap_add:
-        - NET_ADMIN
+            - NET_ADMIN
         privileged: true
         networks:
-        default:
-            ipv4_address: ${NR_UE_IP}
+            public_net:
+                ipv4_address: 192.168.70.202
     sctp-proxy:
         build:
             context: mitm_proxy
+        container_name: oai-sctp-proxy
         networks:
-        default:
-            ipv4_address: ${SCTP_PROXY_IP}
+            public_net:
+                ipv4_address: 192.168.70.200
         cap_add:
-        - NET_ADMIN
+            - NET_ADMIN
         environment:
-        - AMF_HOST=${AMF_IP}
-        - AMF_PORT=38412
-        - GNB_PORT=38412
-        - CTRL_PORT=1337
+            - AMF_HOST=192.168.70.132
+            - AMF_PORT=38412
+            - GNB_PORT=38412
+            - CTRL_PORT=1337
         devices:
-        - "/dev/net/tun"
+            - "/dev/net/tun"
         ports:
-        - "38412:38412"
-        - "1337:1337"
+            - "38412:38412"
+            - "1337:1337"
 networks:
     public_net:
         driver: bridge
         name: demo-oai-public-net
         ipam:
             config:
-                - subnet: 192.168.70.128/26
+                - subnet: 192.168.70.128/25
         driver_opts:
             com.docker.network.bridge.name: "br-oai"
