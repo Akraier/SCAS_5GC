@@ -26,6 +26,11 @@ services:
         expose:
             - 80/tcp
             - 8080/tcp
+        healthcheck:
+            test: ["CMD-SHELL", "netstat -tln | grep ':8080'"]
+            interval: 5s
+            timeout: 3s
+            retries: 5
         volumes:
             - ./conf/basic_nrf_config.yaml:/openair-udr/etc/config.yaml
         environment:
@@ -47,9 +52,12 @@ services:
         environment:
             - TZ=Europe/Paris
         depends_on:
-            - mysql
-            - oai-nrf
-            - oai-udr
+            mysql:
+                condition: service_started
+            oai-nrf:
+                condition: service_started
+            oai-udr:
+                condition: service_healthy
         networks:
             public_net:
                 ipv4_address: 192.168.70.137

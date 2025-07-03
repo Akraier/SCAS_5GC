@@ -376,9 +376,10 @@ class Testbench:
             Looking for it 3 times, roughly 3s should be enough for every response/processing synchronization 
             """  
             if ret is not None:
+                self.logger.info(f"Found {msg} message in history")
                 break
             if attempt == 3:
-                self.logger.warning(f"No {msg} message found in history ")
+                self.logger.info(f"No {msg} message found in history ")
                 break
             else:
                 self.logger.debug(f"#{attempt} attempt failed looking for {msg} message into history...")
@@ -497,10 +498,10 @@ class Testbench:
         NAS Security Mode Complete message.
     """
     def tc_nas_replay_amf(self,cmd_q, ctrl_pipe):
-        print(" tc_nas_replay_amf test case STARTED")
+        self.logger.info(" tc_nas_replay_amf test case STARTED")
 
         self.__ue_check_alive()
-        print(" UE Alive & Registered ")
+        self.logger.info(" UE Alive & Registered ")
 
         """Capture NAS Security Mode Complete message, not necessary the last received one"""
         
@@ -713,7 +714,7 @@ class Testbench:
             self.result["tc_guti_allocation_amf"] = False 
             return
         self.logger.info(f"Extracting GUTI from Registration Accept...")
-        guti = reg_accept['NAS']['NAS PDU']['PlainNASPDU']['message_value'][10:50]  #extracting GUTI from Registration Accept, 16 bytes - 32 chars
+        guti = reg_accept['NAS']['NAS PDU']['PlainNASPDU']['message_value'][12:32]  #extracting GUTI from Registration Accept, 16 bytes - 32 chars
         self.logger.info(f"#1 Registration Accept > GUTI extracted: {guti}")
 
         """ Force new Registration > Registration Request type: Initial Registration """
@@ -724,7 +725,6 @@ class Testbench:
         while not self.__ue_check_alive():
             """ UERANSIM will try to register again """
             time.sleep(5)
-
         self.logger.info(f"Waiting for Registration Accept...")
         new_reg_accept = self.__search_NAS_message('Registration accept', True)
         if new_reg_accept is None:
@@ -733,7 +733,7 @@ class Testbench:
             return
         else:
             self.logger.info(f"Extracting GUTI from NEW Registration Accept...")
-            new_guti = new_reg_accept['NAS']['NAS PDU']['PlainNASPDU']['message_value'][10:50]
+            new_guti = new_reg_accept['NAS']['NAS PDU']['PlainNASPDU']['message_value'][12:32]
             self.logger.info(f"#2 Registration Accept > GUTI extracted: {new_guti}")
             if new_guti == guti:
                 self.logger.info(f"GUTI not changed!")

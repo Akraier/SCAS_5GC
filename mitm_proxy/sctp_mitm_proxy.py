@@ -94,7 +94,7 @@ def control_server():
                 continue
             except Exception as e:
                 logger.exception(f"[!] Error")
-                conn.send(b"Test KO\n")
+                conn.send(b"exit")
                 conn.close()
         conn.close()
 

@@ -88,13 +88,14 @@ if __name__ == "__main__":
         pManager.wait_process(testbench.manage_core_simulator)
         pManager.run_process(testbench.pktparser)
         pManager.run_process(ctrl, (testbench.simulator_proxy_ip, testbench.simulator_proxy_port, server_pipe))
+        
         for test in testbench.tests:
             fun = getattr(testbench, testbench.available_tests[test]['name'], None)
             if callable(fun):
                 plain_logger.info("-----------------------------------------------")
                 pManager.run_process(fun, (client_pipe))
                 pManager.wait_process(fun)
-                logger.info(f"{fun.__name__} {'Passed' if testbench.result[fun.__name__] else 'Failed'}")
+                logger.info(f"{fun.__name__}: {'Passed' if testbench.result[fun.__name__] else 'Failed'}")
                 plain_logger.info("-----------------------------------------------")
             else:
                 logger.error(f"[!] Test case {testbench.available_tests[test]['name']} is not callable or does not exist.")
@@ -109,3 +110,5 @@ if __name__ == "__main__":
         plain_logger.info(f"| {test} | {'Passed' if result else 'Failed'}")
     plain_logger.info("-----------------------------------------------")
     testbench.graceful_shutdown(pManager.cmd_q)
+    pManager.cleanup()
+    logger.info("SCAScan-5G finished.")
