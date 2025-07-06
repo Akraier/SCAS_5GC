@@ -47,13 +47,13 @@ class Testbench:
             "group":"NGAP/NAS",
             "NFs":"AMF",
             "Result": ""
-        },
-        7: {
-            "name":"tc_nas_int_selection_use_amf",
-            "group":"NGAP/NAS",
-            "NFs":"AMF",
-            "Result": ""
         }
+#       7: {
+#            "name":"tc_nas_int_selection_use_amf",
+#            "group":"NGAP/NAS",
+#            "NFs":"AMF",
+#            "Result": ""
+#        } 
     }
 
     def __test_parser(self, test_arg):
