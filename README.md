@@ -1,20 +1,48 @@
-# SCAS_5GC
-Configurations:
-- Free5gc
+# SCAScan-5GC
+A lightweight Python framework for automating Security Assurance testing of 5G Core networks, aligned with 3GPP SCAS specifications.
 
-- Open5gs
+At the current stage SCAScan-5GC is just at the beginning of its process. It's main purpose is to provide automated security assurance on your 5G Core development, helping the community with free test implementation. In this version, only some AMF test cases are implemented, but future versions - in case the project gains curiosity from the community - wants to expand the coverage on many more NFs until the whole Core Network is tested. 
+The behavior of the framework has been tested on docker version of the main Open Source development of 5G, Free5GC, Open5GS, OpenAirInterface.
 
-- OpenAirInterface
-    Copia uecfg.yaml, gnbcfg.yaml sotto /docker-compose/conf
-    Copia docker-compose-oai-scascan5g.yaml sotto /docker-compose
-    Copia la cartella mitm-proxy sotto /docker-compose
-    copia la cartella ueransim sotto /docker-compose
-    
-    Assicurarsi che uecfg.yaml gnbcfg.yaml siano allineati con le informazioni presenti all'interno del db mysql di oai.
-    basic_nrf_config.yaml di default usa NIA0, NEA0 ma UERANSIM non supporta l'emergency registration. Accertarsi di utilizzare almeno NIA1 come algoritmo prioritario. 
-    Default password per mysql * linux * .
+## Install
 
-    UPDATE SessionManagementSubscriptionData SET singleNssai='{"sst": 1}', dnnConfigurations='{"default": {"sscModes": {"defaultSscMode": "SSC_MODE_1"}, "sessionAmbr": {"uplink": "100Mbps", "downlink": "100Mbps"}, "5gQosProfile": {"5qi": 6, "arp": {"preemptCap": "NOT_PREEMPT","preemptVuln": "NOT_PREEMPTABLE", "priorityLevel": 1}, "priorityLevel": 1}, "pduSessionTypes": {"defaultSessionType": "IPV4"}}}' WHERE ueid='208950000000031';
+```bash 
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+git clone https://github.com/Akraier/SCAS_5GC.git
+```
 
-    INSERT INTO AccessAndMobilitySubscriptionData (ueid, servingPlmnid, subscribedUeAmbr, nssai) VALUES ('208950000000031', '20895', '{"uplink": "1 Gbps", "downlink": "2 Gbps"}', '{"defaultSingleNssais": [{"sst": 1}]}');
+### Configure Free5gc
+Install Free5GC compose following https://free5gc.org/guide/0-compose/
+```bash
+cd SCAS_5GC
+cp conf/free5gc/docker-compose.yaml ~/free5gc-compose/
+cp mitm_proxy ~/free5gc-compose/
+```
+
+### Configure Open5gs
+
+```bash
+git clone https://github.com/herlesupreeth/docker_open5gs.git
+cd SCAS_5GC
+cp conf/open5gs/my_deploy.yaml ~/docker_open5gs/
+cp conf/open5gs/ueransim-gnb.yaml ~/docker_open5gs/ueransim/
+cp mitm_proxy ~/docker_open5gs
+cp
+```
+### Configure OpenAirInterface
+```bash 
+git clone https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-fed.git
+cd SCAS_5GC
+cp conf/oai/docker-compose-oai-scascan5g.yaml ~/oai-cn5g-fed/docker-compose/
+cp mitm_proxy ~/oai-cn5g-fed/docker-compose/
+cp -r conf/oai/ueransim ~/oai-cn5g-fed/docker-compose/
+cp conf/oai/gnbcfg.yaml ~/oai-cn5g-fed/docker-compose/conf/
+cp conf/oai/uecfg.yaml ~/oai-cn5g-fed/docker-compose/conf/
+cp conf/oai/basic_nrf_config.yaml ~/oai-cn5g-fed/docker-compose/conf/
+cp conf/oai/oai_db2.sql ~/oai-cn5g-fed/docker-compose/database/
+
+```
+
 
